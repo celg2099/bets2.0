@@ -1,0 +1,179 @@
+<div class="dashboard">
+
+  <!-- Stat Cards Row -->
+  <div class="cards-row">
+
+    <!-- Card 1: Total Earning -->
+    <div class="stat-card card-purple">
+      <div class="card-header">
+        <div class="card-icon">
+          <span class="material-icons">credit_card</span>
+        </div>
+        <button class="card-menu-btn">
+          <span class="material-icons">more_horiz</span>
+        </button>
+      </div>
+      <div class="card-body">
+        <div class="card-value">$500.00</div>
+        <div class="card-label">Total Earning</div>
+      </div>
+    </div>
+
+    <!-- Card 2: C/w Last Year -->
+    <div class="stat-card card-blue">
+      <div class="card-top-tabs">
+        <button class="tab">Month</button>
+        <button class="tab active">Year</button>
+      </div>
+      <div class="card-content-row">
+        <div>
+          <div class="card-value">$961</div>
+          <div class="card-label">C/w Last Year</div>
+        </div>
+        <div class="sparkline">
+          <svg viewBox="0 0 120 50" preserveAspectRatio="none">
+            <polyline
+              points="0,40 20,30 40,35 60,15 80,20 100,10 120,18"
+              fill="none"
+              stroke="rgba(255,255,255,0.8)"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: Total Income -->
+    <div class="stat-card card-income">
+      <div class="card-income-header">
+        <div class="income-icon">
+          <span class="material-icons">bar_chart</span>
+        </div>
+        <div>
+          <div class="income-value">$203k</div>
+          <div class="income-label">Total Income</div>
+        </div>
+      </div>
+      <div class="card-income-body">
+        <div class="income-row">
+          <div class="income-icon-sm">
+            <span class="material-icons">bar_chart</span>
+          </div>
+          <div>
+            <div class="income-body-value">$203k</div>
+            <div class="income-body-label">Total Income</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Row: Chart + Stocks -->
+  <div class="bottom-row">
+
+    <!-- Total Growth Chart -->
+    <div class="chart-card">
+      <div class="chart-card-header">
+        <div>
+          <div class="chart-title">Total Growth</div>
+          <div class="chart-value">$2,324.00</div>
+        </div>
+        <div class="chart-controls">
+          <button class="period-btn">
+            Month
+            <span class="material-icons">expand_more</span>
+          </button>
+          <button class="icon-only-btn">
+            <span class="material-icons">drag_handle</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="chart-area">
+        <canvas #chartCanvas></canvas>
+      </div>
+
+      <div class="chart-legend">
+        <span class="legend-item">
+          <span class="legend-dot" style="background:#90CAF9"></span>Investment
+        </span>
+        <span class="legend-item">
+          <span class="legend-dot" style="background:#42A5F5"></span>Loss
+        </span>
+        <span class="legend-item">
+          <span class="legend-dot" style="background:#7E57C2"></span>Profit
+        </span>
+        <span class="legend-item">
+          <span class="legend-dot" style="background:#D1C4E9"></span>Maintenance
+        </span>
+      </div>
+    </div>
+
+    <!-- Popular Stocks -->
+    <div class="stocks-card">
+      <div class="stocks-header">
+        <h3 class="stocks-title">Popular Stocks</h3>
+      </div>
+
+      <!-- Featured stock -->
+      <div class="stock-featured">
+        <div class="stock-featured-info">
+          <div class="stock-featured-name">Bajaj Finery</div>
+          <div class="stock-featured-sub">10% Profit</div>
+          <div class="stock-featured-value">$1839.00</div>
+        </div>
+        <div class="stock-featured-chart">
+          <svg viewBox="0 0 120 60" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="stockGrad" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#9575CD" stop-opacity="0.4" />
+                <stop offset="100%" stop-color="#9575CD" stop-opacity="0.05" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M0,50 L20,35 L40,42 L60,20 L80,28 L100,15 L120,22 L120,60 L0,60Z"
+              fill="url(#stockGrad)"
+            />
+            <polyline
+              points="0,50 20,35 40,42 60,20 80,28 100,15 120,22"
+              fill="none"
+              stroke="#9575CD"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Stock list -->
+      <div class="stocks-list">
+        @for (stock of stocks; track stock.name) {
+          <div class="stock-item">
+            <div class="stock-info">
+              <div class="stock-name">{{ stock.name }}</div>
+              <div class="stock-sub">{{ stock.subtitle }}</div>
+            </div>
+            <div class="stock-right">
+              <span class="stock-value">{{ stock.value }}</span>
+              <span class="trend-icon" [class.up]="stock.trend === 'up'" [class.down]="stock.trend === 'down'">
+                <span class="material-icons">
+                  {{ stock.trend === 'up' ? 'arrow_drop_up' : 'arrow_drop_down' }}
+                </span>
+              </span>
+            </div>
+          </div>
+        }
+      </div>
+
+      <div class="stocks-footer">
+        <a href="#" class="view-all">View all <span class="material-icons">chevron_right</span></a>
+      </div>
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,107 @@
+.dist-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  @media (max-width: 640px) { grid-template-columns: 1fr; }
+}
+
+.sub-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #424242;
+  margin-bottom: 10px;
+}
+
+// ─── Barras verticales ────────────────────────────────────
+.vbar-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  height: 140px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 2px;
+}
+
+.vbar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  height: 100%;
+  cursor: default;
+}
+
+.vbar-fill {
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+  transition: height 0.4s ease;
+  min-height: 2px;
+
+  &.fill-verde { background: #43a047; }
+  &.fill-azul  { background: #1e88e5; }
+  &.fill-ambar { background: #ffa000; }
+  &.fill-rojo  { background: #e53935; }
+}
+
+.vbar-lbl {
+  font-size: 10px;
+  color: #757575;
+  margin-top: 4px;
+}
+
+.legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  font-size: 11px;
+  color: #616161;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 4px;
+  vertical-align: middle;
+  &.verde { background: #43a047; }
+  &.azul  { background: #1e88e5; }
+  &.ambar { background: #ffa000; }
+  &.rojo  { background: #e53935; }
+}
+
+// ─── Percentiles ──────────────────────────────────────────
+.pct-row { margin-bottom: 10px; }
+
+.pct-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.pct-label { color: #757575; }
+
+.bar-bg {
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.4s ease;
+  &.azul { background: #1e88e5; }
+}
+
+.insight {
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  line-height: 1.5;
+  &.azul  { background: #e3f2fd; color: #1565c0; }
+}

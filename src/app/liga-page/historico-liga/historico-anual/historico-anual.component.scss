@@ -1,0 +1,70 @@
+.sub-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #424242;
+  margin-bottom: 10px;
+}
+
+.bars-list { display: flex; flex-direction: column; gap: 6px; }
+
+.bar-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bar-lbl {
+  width: 90px;
+  font-size: 12px;
+  color: #616161;
+  flex-shrink: 0;
+}
+
+.bar-bg {
+  flex: 1;
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.4s ease;
+  &.azul { background: #1e88e5; }
+}
+
+.bar-val { font-size: 12px; min-width: 44px; text-align: right; color: #424242; }
+.rojo  { color: #c62828; font-weight: 700; }
+.ambar { color: #f57f17; font-weight: 700; }
+.muted { color: #9e9e9e; }
+
+.tabla-scroll { overflow-x: auto; }
+
+.tabla-anual {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+
+  th {
+    padding: 8px 12px;
+    background: #f5f5f5;
+    border-bottom: 2px solid #e0e0e0;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 700;
+    color: #424242;
+    text-transform: uppercase;
+  }
+
+  td {
+    padding: 7px 12px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #424242;
+  }
+
+  .temporada-col { font-weight: 600; color: #1565c0; }
+  .celda-alta { background: #fff9c4; color: #f57f17; font-weight: 700; }
+  .celda-max  { background: #ffcdd2; color: #c62828; font-weight: 700; }
+}

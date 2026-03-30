@@ -1,0 +1,65 @@
+<div class="resultados-grid">
+
+  <!-- Tabla principal -->
+  <div class="table-main">
+    @if (resultados().length > 0) {
+      <table class="results-table">
+        <thead>
+          <tr>
+            <th>LOCAL</th>
+            <th class="col-score"></th>
+            <th class="col-score"></th>
+            <th>VISITA</th>
+            <th>FECHA</th>
+            <th class="col-count"></th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (evento of resultados(); track evento.Eid) {
+            <tr [class.draw]="evento.TLGoals === evento.TVGoals">
+              <td class="team-name">{{ evento.TLName }}</td>
+              <td class="score">{{ evento.TLGoals }}</td>
+              <td class="score">{{ evento.TVGoals }}</td>
+              <td class="team-name">{{ evento.TVName }}</td>
+              <td class="date-col">{{ evento.Date | date:'dd/MM/yyyy HH:mm:ss' }}</td>
+              <td class="count-inline" [class.draw-count]="evento.TLGoals === evento.TVGoals">
+                {{ evento.CurrentCount }}
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    }
+  </div>
+
+  <!-- Columna CONTEO -->
+  @if (shortCount().length > 0) {
+    <div class="table-side">
+      <table class="side-table">
+        <thead>
+          <tr><th>CONTEO</th></tr>
+        </thead>
+        <tbody>
+          @for (item of shortCount(); track $index) {
+            <tr><td>{{ item }}</td></tr>
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Columna REVERSE -->
+    <div class="table-side">
+      <table class="side-table">
+        <thead>
+          <tr><th>REVERSE</th></tr>
+        </thead>
+        <tbody>
+          @for (item of shortCountReverse(); track $index) {
+            <tr><td>{{ item }}</td></tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  }
+
+</div>

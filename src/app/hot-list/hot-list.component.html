@@ -1,0 +1,234 @@
+<div class="hot-list-page">
+
+  <!-- Toolbar -->
+  <div class="toolbar">
+    <button class="btn-generar" (click)="generar()" [disabled]="loading()">
+      <span class="material-icons">play_circle</span>
+      Generar Lista
+    </button>
+
+    <div class="toolbar-sep"></div>
+
+    <!-- Email status indicator -->
+    @if (enviandoEmail()) {
+      <span class="material-icons spin status-icon">sync</span>
+    } @else if (emailOk() === true) {
+      <span class="material-icons status-icon ok">check_circle</span>
+    } @else if (emailOk() === false) {
+      <span class="material-icons status-icon err">error</span>
+    } @else {
+      <span class="status-dot"></span>
+    }
+
+    <span class="material-icons toolbar-icon">email</span>
+    <span class="toolbar-label">Enviar Email</span>
+    <label class="toggle-wrap">
+      <input type="checkbox" [checked]="enviarEmail()" (change)="enviarEmail.update(v => !v)" />
+      <span class="toggle-slider"></span>
+    </label>
+
+    <div class="toolbar-sep"></div>
+
+    <span class="material-icons toolbar-icon">picture_as_pdf</span>
+    <span class="toolbar-label">Generar PDF</span>
+    <label class="toggle-wrap">
+      <input type="checkbox" [checked]="generarPdf()" (change)="generarPdf.update(v => !v)" />
+      <span class="toggle-slider"></span>
+    </label>
+
+    <div class="toolbar-sep"></div>
+
+    <!-- Proceso Automático status -->
+    @if (schedulerSvc.enabled()) {
+      <span class="material-icons status-icon ok">radio_button_checked</span>
+    } @else {
+      <span class="status-dot"></span>
+    }
+
+    <span class="material-icons toolbar-icon">settings</span>
+    <span class="toolbar-label">Proceso Automático</span>
+    <label class="toggle-wrap">
+      <input type="checkbox" [checked]="schedulerSvc.enabled()" (change)="toggleScheduler()" />
+      <span class="toggle-slider"></span>
+    </label>
+
+    <div class="toolbar-sep"></div>
+
+    <span class="material-icons toolbar-icon">filter_list</span>
+    <span class="toolbar-label">Limitar Acumulado</span>
+    <label class="toggle-wrap">
+      <input type="checkbox" [checked]="limitarAcumulado()" (change)="limitarAcumulado.update(v => !v)" />
+      <span class="toggle-slider"></span>
+    </label>
+  </div>
+
+  <!-- Progress bar -->
+  @if (loading()) {
+    <div class="progress-wrap">
+      <div class="progress-bar">
+        <div class="progress-fill" [style.width.%]="progresoPct()"></div>
+      </div>
+      <span class="progress-label">{{ progreso() }} / {{ total() }} ligas procesadas</span>
+    </div>
+  }
+
+  <!-- Sub-tabs -->
+  @if (!loading() && listaOrdenada().length > 0) {
+    <div class="sub-tabs">
+      <button class="sub-tab-btn" [class.active]="activeSubTab() === 'todos'" (click)="setSubTab('todos')">
+        <span class="material-icons">schedule</span>
+        Todos
+        <span class="badge">{{ listaOrdenada().length }}</span>
+      </button>
+      <button class="sub-tab-btn" [class.active]="activeSubTab() === 'hot'" (click)="setSubTab('hot')">
+        <span class="material-icons">local_fire_department</span>
+        Only HOT
+        <span class="badge badge-hot">{{ hotOrdenada().length }}</span>
+      </button>
+      <button class="sub-tab-btn" [class.active]="activeSubTab() === 'historico'" (click)="setSubTab('historico')">
+        <span class="material-icons">history</span>
+        Histórico Acumulado
+        <span class="badge">{{ historico().length }}</span>
+      </button>
+    </div>
+  }
+
+  <!-- Tab: Todos / Only HOT -->
+  @if (!loading() && (activeSubTab() === 'todos' || activeSubTab() === 'hot')) {
+    @let filas = activeSubTab() === 'todos' ? listaOrdenada() : hotOrdenada();
+    @if (filas.length === 0 && listaOrdenada().length === 0) {
+      <div class="empty-state">
+        <span class="material-icons">sports_soccer</span>
+        <p>Presiona "Generar Lista" para cargar los datos de todas las ligas.</p>
+      </div>
+    }
+    @if (filas.length === 0 && listaOrdenada().length > 0) {
+      <div class="empty-state">
+        <span class="material-icons">search_off</span>
+        <p>No hay ligas HOT en este momento.</p>
+      </div>
+    }
+    @if (filas.length > 0) {
+      <div class="table-wrap">
+        <table class="hl-table">
+          <thead>
+            <tr>
+              <th class="sortable" (click)="clickMainSort('pais')">
+                PAIS
+                <span class="material-icons sort-icon">{{ mainCol() === 'pais' ? (mainAsc() ? 'arrow_upward' : 'arrow_downward') : 'unfold_more' }}</span>
+              </th>
+              <th class="col-num sortable" (click)="clickMainSort('conteoActual')">
+                CONTEO ACTUAL
+                <span class="material-icons sort-icon">{{ mainCol() === 'conteoActual' ? (mainAsc() ? 'arrow_upward' : 'arrow_downward') : 'unfold_more' }}</span>
+              </th>
+              <th class="col-num sortable" (click)="clickMainSort('maxConteo')">
+                MÁX CONTEO
+                <span class="material-icons sort-icon">{{ mainCol() === 'maxConteo' ? (mainAsc() ? 'arrow_upward' : 'arrow_downward') : 'unfold_more' }}</span>
+              </th>
+              <th class="col-num sortable" (click)="clickMainSort('gamesFinished')">
+                JUEGOS
+                <span class="material-icons sort-icon">{{ mainCol() === 'gamesFinished' ? (mainAsc() ? 'arrow_upward' : 'arrow_downward') : 'unfold_more' }}</span>
+              </th>
+              <th class="col-num sortable" (click)="clickMainSort('totDraw')">
+                EMPATES
+                <span class="material-icons sort-icon">{{ mainCol() === 'totDraw' ? (mainAsc() ? 'arrow_upward' : 'arrow_downward') : 'unfold_more' }}</span>
+              </th>
+              <th class="col-num sortable" (click)="clickMainSort('percentDraw')">
+                % EMPATES
+                <span class="material-icons sort-icon">{{ mainCol() === 'percentDraw' ? (mainAsc() ? 'arrow_upward' : 'arrow_downward') : 'unfold_more' }}</span>
+              </th>
+              <th class="sortable" (click)="clickMainSort('dateNextGame')">
+                PRÓXIMO JUEGO
+                <span class="material-icons sort-icon">{{ mainCol() === 'dateNextGame' ? (mainAsc() ? 'arrow_upward' : 'arrow_downward') : 'unfold_more' }}</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (item of filas; track item.liga) {
+              <tr [class.row-hot]="isHot(item)" [class.row-super-hot]="item.conteoActual >= item.maxConteo">
+                <td class="col-pais">{{ item.pais }}</td>
+                <td class="col-num"
+                    [class.celda-max]="item.conteoActual >= item.maxConteo"
+                    [class.celda-alta]="item.conteoActual >= item.maxConteo - 2 && item.conteoActual < item.maxConteo">
+                  {{ item.conteoActual }}
+                </td>
+                <td class="col-num">{{ item.maxConteo }}</td>
+                <td class="col-num">{{ item.gamesFinished }}</td>
+                <td class="col-num">{{ item.totDraw }}</td>
+                <td class="col-num">{{ item.percentDraw | number:'1.1-1' }}%</td>
+                <td class="col-date">{{ item.dateNextGame || '—' }}</td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    }
+  }
+
+  <!-- Tab: Histórico Acumulado -->
+  @if (!loading() && activeSubTab() === 'historico') {
+    @if (historico().length === 0 && listaOrdenada().length === 0) {
+      <div class="empty-state">
+        <span class="material-icons">sports_soccer</span>
+        <p>Presiona "Generar Lista" para cargar los datos históricos.</p>
+      </div>
+    }
+    @if (historico().length === 0 && listaOrdenada().length > 0) {
+      <div class="empty-state">
+        <span class="material-icons">folder_open</span>
+        <p>No se encontraron archivos históricos para las ligas cargadas.</p>
+      </div>
+    }
+    @if (historico().length > 0) {
+      @let rows = limitarAcumulado() ? historico().slice(0, 20) : historico();
+      <div class="table-wrap">
+        <table class="hl-table hl-table-hist">
+          <thead>
+            <tr>
+              <th class="sortable" (click)="clickHistSort('pais')">
+                PAIS
+                <span class="material-icons sort-icon">{{ histCol() === 'pais' ? (histAsc() ? 'arrow_upward' : 'arrow_downward') : 'unfold_more' }}</span>
+              </th>
+              <th class="col-num sortable" (click)="clickHistSort('pctInmediato')">
+                INMEDIATO
+                <span class="material-icons sort-icon">{{ histCol() === 'pctInmediato' ? (histAsc() ? 'arrow_upward' : 'arrow_downward') : 'unfold_more' }}</span>
+              </th>
+              <th class="col-num sortable" (click)="clickHistSort('pctLeq3')">
+                ≤ 3
+                <span class="material-icons sort-icon">{{ histCol() === 'pctLeq3' ? (histAsc() ? 'arrow_upward' : 'arrow_downward') : 'unfold_more' }}</span>
+              </th>
+              <th class="col-num sortable" (click)="clickHistSort('pctLeq5')">
+                ≤ 5
+                <span class="material-icons sort-icon">{{ histCol() === 'pctLeq5' ? (histAsc() ? 'arrow_upward' : 'arrow_downward') : 'unfold_more' }}</span>
+              </th>
+              <th class="col-num sortable" (click)="clickHistSort('pctLeq7')">
+                ≤ 7
+                <span class="material-icons sort-icon">{{ histCol() === 'pctLeq7' ? (histAsc() ? 'arrow_upward' : 'arrow_downward') : 'unfold_more' }}</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (item of rows; track item.liga; let i = $index) {
+              <tr>
+                <td class="col-pais">{{ item.pais }}</td>
+                <td class="col-num" [class.hist-top]="i === 0" [class.hist-second]="i === 1">
+                  {{ item.pctInmediato }}%
+                </td>
+                <td class="col-num" [class.hist-top]="i === 0" [class.hist-second]="i === 1">
+                  {{ item.pctLeq3 }}%
+                </td>
+                <td class="col-num" [class.hist-top]="i === 0" [class.hist-second]="i === 1">
+                  {{ item.pctLeq5 }}%
+                </td>
+                <td class="col-num" [class.hist-top]="i === 0" [class.hist-second]="i === 1">
+                  {{ item.pctLeq7 }}%
+                </td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    }
+  }
+
+</div>

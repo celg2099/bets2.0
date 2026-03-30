@@ -1,0 +1,46 @@
+<p class="sub-title">Promedio y máxima por temporada</p>
+
+<div class="bars-list">
+  @for (item of statsAnual; track item.temporada) {
+    <div class="bar-row">
+      <span class="bar-lbl">{{ item.temporada }}</span>
+      <div class="bar-bg">
+        <div class="bar-fill azul" [style.width.%]="item.s.avg / maxAvgAnual * 100"></div>
+      </div>
+      <span class="bar-val">{{ item.s.avg | number:'1.2-2' }}</span>
+      <span class="bar-val"
+        [ngClass]="item.s.max >= 15 ? 'rojo' : item.s.max >= 9 ? 'ambar' : 'muted'">
+        (máx {{ item.s.max }})
+      </span>
+    </div>
+  }
+</div>
+
+<div class="tabla-scroll mt-3">
+  <table class="tabla-anual">
+    <thead>
+      <tr>
+        <th>Temporada</th>
+        <th>N</th>
+        <th>Promedio</th>
+        <th>Mediana</th>
+        <th>Máxima</th>
+        <th>% ceros</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (item of statsAnual; track item.temporada) {
+        <tr>
+          <td class="temporada-col">{{ item.temporada }}</td>
+          <td>{{ item.s.n }}</td>
+          <td>{{ item.s.avg | number:'1.2-2' }}</td>
+          <td>{{ item.s.median }}</td>
+          <td [ngClass]="item.s.max >= 15 ? 'celda-max' : item.s.max >= 9 ? 'celda-alta' : ''">
+            {{ item.s.max }}
+          </td>
+          <td>{{ (item.s.zeros / item.s.n * 100) | number:'1.0-0' }}%</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

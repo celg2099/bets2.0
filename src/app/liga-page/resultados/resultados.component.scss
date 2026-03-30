@@ -1,0 +1,109 @@
+.resultados-grid {
+  display: flex;
+  gap: 0;
+  align-items: flex-start;
+  overflow-x: auto;
+}
+
+.table-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.table-side {
+  flex-shrink: 0;
+}
+
+// ─── Tabla principal ──────────────────────────────────────
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+
+  thead tr {
+    background: transparent;
+
+    th {
+      padding: 10px 12px;
+      text-align: left;
+      font-size: 11px;
+      font-weight: 700;
+      color: #424242;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 2px solid #e0e0e0;
+      white-space: nowrap;
+    }
+  }
+
+  tbody tr {
+    border-bottom: 1px solid #f5f5f5;
+    transition: background 0.15s ease;
+
+    &:hover { background: #fafafa; }
+    &.draw { background: #f3e5f5; }
+    &.draw:hover { background: #ede7f6; }
+
+    td {
+      padding: 9px 12px;
+      color: #424242;
+    }
+  }
+}
+
+.team-name { min-width: 160px; }
+
+.col-score,
+.score {
+  text-align: center;
+  width: 36px;
+  font-weight: 600;
+}
+
+.col-count { width: 40px; }
+
+.date-col {
+  color: #757575;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.count-inline {
+  text-align: center;
+  font-weight: 600;
+  color: #424242;
+}
+
+.draw-count { color: #7b1fa2; }
+
+// ─── Tablas laterales (conteo/reverse) ───────────────────
+.side-table {
+  border-collapse: collapse;
+  font-size: 13px;
+
+  thead tr {
+    background: #212121;
+
+    th {
+      padding: 10px 14px;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+    }
+  }
+
+  tbody tr {
+    background: #303030;
+    border-bottom: 1px solid #424242;
+
+    td {
+      padding: 9px 14px;
+      color: #fff;
+      text-align: center;
+      font-weight: 500;
+    }
+  }
+}

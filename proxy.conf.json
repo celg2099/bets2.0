@@ -1,0 +1,14 @@
+{
+  "/v1/api": {
+    "target": "https://prod-public-api.livescore.com",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  },
+  "/en/football": {
+    "target": "https://www.livescore.com",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

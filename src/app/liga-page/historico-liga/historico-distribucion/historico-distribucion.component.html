@@ -1,0 +1,42 @@
+<div class="dist-grid">
+
+  <div class="dist-col">
+    <p class="sub-title">Frecuencia por longitud de racha</p>
+    <div class="vbar-chart">
+      @for (f of frecuencias; track f.val) {
+        <div class="vbar-item" [title]="f.val + ': ' + f.count + ' veces (' + f.pct + '%)'">
+          <div class="vbar-fill" [ngClass]="'fill-' + getFreqColor(f.val)"
+               [style.height.%]="f.count / maxFrecuencia * 100"></div>
+          <div class="vbar-lbl">{{ f.val }}</div>
+        </div>
+      }
+    </div>
+    <div class="legend">
+      <span><span class="dot verde"></span>0 (inmediato)</span>
+      <span><span class="dot azul"></span>1–8</span>
+      <span><span class="dot ambar"></span>9–14</span>
+      <span><span class="dot rojo"></span>≥ 15</span>
+    </div>
+  </div>
+
+  <div class="pct-col">
+    <p class="sub-title">Percentiles</p>
+    @for (p of percentiles; track p.label) {
+      <div class="pct-row">
+        <div class="pct-header">
+          <span class="pct-label">{{ p.label }}</span>
+          <strong>{{ p.value }} partidos</strong>
+        </div>
+        <div class="bar-bg">
+          <div class="bar-fill azul" [style.width.%]="p.value / maxPercentil * 100"></div>
+        </div>
+      </div>
+    }
+    <div class="insight azul mt-2">
+      Mediana: <strong>{{ statsGlobal.median }}</strong> ·
+      Moda: <strong>{{ statsGlobal.moda }}</strong> ·
+      σ: <strong>{{ statsGlobal.std | number:'1.2-2' }}</strong>
+    </div>
+  </div>
+
+</div>

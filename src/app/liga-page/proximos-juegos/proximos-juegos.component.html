@@ -1,0 +1,29 @@
+@if (proximos().length > 0) {
+  <table class="proximos-table">
+    <thead>
+      <tr>
+        <th>LOCAL</th>
+        <th class="col-vs"></th>
+        <th class="col-vs"></th>
+        <th>VISITA</th>
+        <th>FECHA</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (evento of proximos(); track $index) {
+        <tr>
+          <td class="team-name">{{ evento.TLName }}</td>
+          <td class="vs">--</td>
+          <td class="vs">--</td>
+          <td class="team-name">{{ evento.TVName }}</td>
+          <td class="date-col">{{ evento.Date | date:'dd/MM/yyyy HH:mm:ss' }}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+} @else {
+  <div class="empty">
+    <span class="material-icons">calendar_today</span>
+    <p>No hay próximos juegos disponibles.</p>
+  </div>
+}

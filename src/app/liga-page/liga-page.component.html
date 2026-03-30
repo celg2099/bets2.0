@@ -1,0 +1,114 @@
+<!-- Loading -->
+@if (loading()) {
+  <div class="loading-overlay">
+    <div class="spinner"></div>
+    <span>Cargando datos...</span>
+  </div>
+}
+
+<!-- Contenido -->
+@if (hayDatos() && !loading()) {
+  <div class="liga-page">
+
+    <!-- Chips de información -->
+    <div class="chips-row">
+      <div class="chip chip-pais">
+        <span class="material-icons">flag</span>
+        {{ nombrePais() }}
+      </div>
+      <div class="chip chip-liga">
+        <span class="material-icons">sports_soccer</span>
+        {{ nombreLiga() }}
+      </div>
+      <div class="chip chip-stat chip-teal">
+        <span class="material-icons">functions</span>
+        {{ conteoActual() }}
+      </div>
+      <div class="chip chip-stat chip-green">
+        <span class="material-icons">today</span>
+        {{ maxConteo() }}
+      </div>
+      <div class="chip chip-stat chip-green">
+        <span class="material-icons">assignment_turned_in</span>
+        {{ resultados().length }}
+      </div>
+      <div class="chip chip-stat chip-green">
+        <span class="material-icons">leaderboard</span>
+        {{ moda() }}
+      </div>
+      <div class="chip chip-stat chip-teal">
+        <span class="material-icons">pie_chart</span>
+        {{ pctEmpates() | number:'1.2-2' }} %
+      </div>
+      @if (proximoJuego()) {
+        <div class="chip chip-next">
+          <span class="material-icons">content_paste_go</span>
+          {{ proximoJuego() | date:'dd/MM/yyyy HH:mm:ss' }}
+        </div>
+      }
+    </div>
+
+    <hr class="divider" />
+
+    <!-- Tabs -->
+    <div class="tabs-nav">
+      <button
+        class="tab-btn"
+        [class.active]="activeTab() === 'resultados'"
+        (click)="setTab('resultados')"
+      >
+        <span class="material-icons">assignment</span>
+        Resultados
+      </button>
+      <button
+        class="tab-btn"
+        [class.active]="activeTab() === 'proximos'"
+        (click)="setTab('proximos')"
+      >
+        <span class="material-icons">calendar_today</span>
+        Próximos Juegos
+      </button>
+      <button
+        class="tab-btn"
+        [class.active]="activeTab() === 'detalle'"
+        (click)="setTab('detalle')"
+      >
+        <span class="material-icons">query_stats</span>
+        Detalle
+      </button>
+      <button
+        class="tab-btn"
+        [class.active]="activeTab() === 'historico'"
+        (click)="setTab('historico')"
+      >
+        <span class="material-icons">history</span>
+        Histórico Liga
+      </button>
+    </div>
+
+    <!-- Tab content -->
+    <div class="tab-content">
+      @if (activeTab() === 'resultados') {
+        <app-resultados />
+      }
+      @if (activeTab() === 'proximos') {
+        <app-proximos-juegos />
+      }
+      @if (activeTab() === 'detalle') {
+        <app-detalle />
+      }
+      @if (activeTab() === 'historico') {
+        <app-historico-liga />
+      }
+    </div>
+
+  </div>
+}
+
+<!-- Sin datos -->
+@if (!hayDatos() && !loading()) {
+  <div class="empty-state">
+    <span class="material-icons">sports_soccer</span>
+    <p>No hay datos disponibles para esta liga.</p>
+  </div>
+}

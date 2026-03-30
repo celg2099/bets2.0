@@ -1,0 +1,70 @@
+@if (!bdHistorico() && !error()) {
+  <div class="empty-state">
+    <span class="material-icons">history</span>
+    <p>Sin datos históricos para esta liga.</p>
+  </div>
+}
+
+@if (error()) {
+  <div class="error-state">
+    <span class="material-icons">warning_amber</span>
+    <p>No se encontró archivo histórico para esta liga.</p>
+  </div>
+}
+
+@if (bdHistorico()) {
+  <div class="historico-wrap">
+
+    <!-- Tabla de conteos por temporada -->
+    <app-historico-tabla
+      [temporadas]="temporadas"
+      [nombrePublico]="bdHistorico()!.nombrePublico"
+    />
+
+    <!-- Análisis de rachas -->
+    @if (computed()) {
+      <hr class="divider" />
+      <p class="analisis-title">Análisis de rachas entre empates</p>
+
+      <div class="analisis-tabs">
+        <button [class.active]="activeTab() === 'resumen'" (click)="setTab('resumen')">Resumen</button>
+        <button [class.active]="activeTab() === 'anual'"   (click)="setTab('anual')">Evolución</button>
+        <button [class.active]="activeTab() === 'dist'"    (click)="setTab('dist')">Distribución</button>
+        <button [class.active]="activeTab() === 'pred'"    (click)="setTab('pred')">Siguiente empate</button>
+      </div>
+
+      <div class="analisis-content">
+        @if (activeTab() === 'resumen') {
+          <app-historico-resumen
+            [statsGlobal]="computed()!.statsGlobal"
+            [pctRachaAlta]="computed()!.pctRachaAlta"
+          />
+        }
+        @if (activeTab() === 'anual') {
+          <app-historico-anual
+            [statsAnual]="computed()!.statsAnual"
+            [maxAvgAnual]="computed()!.maxAvgAnual"
+            [maxMaxAnual]="computed()!.maxMaxAnual"
+          />
+        }
+        @if (activeTab() === 'dist') {
+          <app-historico-distribucion
+            [frecuencias]="computed()!.frecuencias"
+            [percentiles]="computed()!.percentiles"
+            [statsGlobal]="computed()!.statsGlobal"
+            [maxFrecuencia]="computed()!.maxFrecuencia"
+            [maxPercentil]="computed()!.maxPercentil"
+          />
+        }
+        @if (activeTab() === 'pred') {
+          <app-historico-pred
+            [probEmpate]="computed()!.probEmpate"
+            [maxProbExacta]="computed()!.maxProbExacta"
+            [mediana]="computed()!.statsGlobal.median"
+          />
+        }
+      </div>
+    }
+
+  </div>
+}

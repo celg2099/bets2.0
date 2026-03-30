@@ -1,0 +1,21 @@
+<div class="tabla-historico-wrap">
+  <h5 class="liga-title">{{ nombrePublico }}</h5>
+  <div class="tabla-scroll">
+    <table class="tabla-historico">
+      <tbody>
+        @for (temporada of temporadas; track temporada.temporada) {
+          <tr>
+            <td class="col-temporada">{{ temporada.temporada }}</td>
+            @for (idx of columnas; track idx) {
+              <td [ngClass]="getCeldaClase(temporada, idx)">
+                @if (getCelda(temporada, idx) !== null) {
+                  {{ getCelda(temporada, idx) }}
+                }
+              </td>
+            }
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>

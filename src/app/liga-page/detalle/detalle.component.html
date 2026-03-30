@@ -1,0 +1,98 @@
+<div class="detalle-wrap">
+
+  <div class="detalle-actions">
+    <button class="btn-ht" (click)="cargarHtScores()" [disabled]="procesando()">
+      <span class="material-icons">play_circle_outline</span>
+      {{ procesando() ? 'Procesando...' : 'Show HT Score' }}
+    </button>
+  </div>
+
+  @if (mostrarResumen()) {
+    <div class="ht-summary">
+      <div class="ht-stat">
+        <span class="material-icons">functions</span>
+        <span class="ht-val">{{ conteoActualHt() }}</span>
+        <span class="ht-label">Conteo HT</span>
+      </div>
+      <div class="ht-stat">
+        <span class="material-icons">today</span>
+        <span class="ht-val">{{ maxConteoHt() }}</span>
+        <span class="ht-label">Máx Conteo HT</span>
+      </div>
+      <div class="ht-stat">
+        <span class="material-icons">assignment_turned_in</span>
+        <span class="ht-val">{{ juegosFinalizados().length }}</span>
+        <span class="ht-label">Juegos</span>
+      </div>
+      <div class="ht-stat stat-primary">
+        <span class="material-icons">leaderboard</span>
+        <span class="ht-val">{{ modaHt() }}</span>
+        <span class="ht-label">Moda HT</span>
+      </div>
+    </div>
+  }
+
+  <div class="resultados-grid">
+
+    <div class="table-main">
+      @if (resultadosDetail().length > 0) {
+        <table class="results-table">
+          <thead>
+            <tr>
+              <th>LOCAL</th>
+              <th class="col-score"></th>
+              <th class="col-score"></th>
+              <th>VISITA</th>
+              <th class="col-score">HT L</th>
+              <th class="col-score">HT V</th>
+              <th>FECHA</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (evento of resultadosDetail(); track $index) {
+              <tr [class.draw]="evento.TLHtGoals === evento.TVHtGoals">
+                <td class="team-name">{{ evento.TLName }}</td>
+                <td class="score">{{ evento.TLGoals }}</td>
+                <td class="score">{{ evento.TVGoals }}</td>
+                <td class="team-name">{{ evento.TVName }}</td>
+                <td class="score ht">{{ evento.TLHtGoals ?? '-' }}</td>
+                <td class="score ht">{{ evento.TVHtGoals ?? '-' }}</td>
+                <td class="date-col">{{ evento.Date | date:'dd/MM/yyyy HH:mm:ss' }}</td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      } @else if (!procesando()) {
+        <div class="empty">
+          <span class="material-icons">query_stats</span>
+          <p>Presiona "Show HT Score" para cargar los marcadores de medio tiempo.</p>
+        </div>
+      }
+    </div>
+
+    @if (shortCountHt().length > 0) {
+      <div class="table-side">
+        <table class="side-table">
+          <thead><tr><th>CONTEO</th></tr></thead>
+          <tbody>
+            @for (item of shortCountHt(); track $index) {
+              <tr><td>{{ item }}</td></tr>
+            }
+          </tbody>
+        </table>
+      </div>
+      <div class="table-side">
+        <table class="side-table">
+          <thead><tr><th>REVERSE</th></tr></thead>
+          <tbody>
+            @for (item of shortCountHtReverse(); track $index) {
+              <tr><td>{{ item }}</td></tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    }
+
+  </div>
+
+</div>

@@ -1,0 +1,38 @@
+@if (probEmpate.length >= 9) {
+  <div class="cards-row">
+    <div class="pred-card verde">
+      <div class="card-val">{{ probEmpate[0].acum }}%</div>
+      <div class="card-lbl">Empate inmediato</div>
+    </div>
+    <div class="pred-card azul">
+      <div class="card-val">{{ probEmpate[3].acum }}%</div>
+      <div class="card-lbl">Empate en ≤ 3 partidos</div>
+    </div>
+    <div class="pred-card amarillo">
+      <div class="card-val">{{ probEmpate[7].acum }}%</div>
+      <div class="card-lbl">Empate en ≤ 7 partidos</div>
+    </div>
+  </div>
+
+  <p class="sub-title">Probabilidad de empate en exactamente X partidos</p>
+  <div class="bars-list">
+    @for (p of probEmpate; track p.x) {
+      <div class="bar-row">
+        <span class="bar-lbl">{{ p.x === 0 ? '0 (ya)' : p.x }}</span>
+        <div class="bar-bg">
+          <div class="bar-fill azul" [style.width.%]="p.exacta / maxProbExacta * 100"></div>
+        </div>
+        <span class="bar-val">{{ p.exacta }}%</span>
+        <span class="bar-val muted">(ac. {{ p.acum }}%)</span>
+      </div>
+    }
+  </div>
+
+  <div class="insight azul">
+    Hay un <strong>{{ probEmpate[0].acum }}%</strong> de probabilidad de empate inmediato.
+    En la mitad de los casos el empate llega en <strong>{{ mediana }}</strong> partidos o menos.
+  </div>
+  <div class="insight ambar">
+    Solo el <strong>{{ (100 - probEmpate[8].acum) | number:'1.1-1' }}%</strong> de las veces la racha supera los 8 partidos.
+  </div>
+}

@@ -1,0 +1,82 @@
+<aside class="sidebar" [class.collapsed]="collapsed()">
+
+  <!-- Header / Logo -->
+  <div class="sidebar-header">
+    <div class="logo">
+      <div class="logo-icon">
+        <span class="material-icons">casino</span>
+      </div>
+      <span class="logo-text">BERRY</span>
+    </div>
+  </div>
+
+  <nav class="sidebar-nav">
+
+    <!-- Dashboard -->
+    <div class="nav-section">
+      <span class="nav-section-title">Dashboard</span>
+      <ul class="nav-list">
+        <li>
+          <a class="nav-item" routerLink="/dashboard" routerLinkActive="active">
+            <span class="material-icons nav-icon">dashboard</span>
+            <span class="nav-label">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a class="nav-item" routerLink="/hot-list" routerLinkActive="active">
+            <span class="material-icons nav-icon">local_fire_department</span>
+            <span class="nav-label">Hot List</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Ligas -->
+    <div class="nav-section ligas-section">
+      <span class="nav-section-title">Ligas</span>
+
+      <!-- Buscador -->
+      <div class="search-liga" [class.hidden]="collapsed()">
+        <span class="material-icons search-liga-icon">search</span>
+        <input
+          type="text"
+          class="search-liga-input"
+          placeholder="Buscar liga..."
+          [value]="ligasService.busqueda()"
+          (input)="onSearch($event)"
+        />
+        @if (ligasService.busqueda()) {
+          <button class="search-liga-clear" (click)="clearSearch()" aria-label="Limpiar">
+            <span class="material-icons">close</span>
+          </button>
+        }
+      </div>
+
+      <!-- Lista de ligas -->
+      <ul class="nav-list ligas-list">
+        @for (liga of ligasService.ligasFiltradas(); track liga.nombreForApi) {
+          <li>
+            <button
+              class="nav-item liga-item"
+              [class.active]="ligasService.ligaSeleccionada()?.nombreForApi === liga.nombreForApi"
+              [title]="liga.nombrePublico"
+              (click)="seleccionarLiga(liga)"
+            >
+              <span class="material-icons nav-icon">sports_soccer</span>
+              <span class="nav-label">{{ liga.nombrePublico }}</span>
+            </button>
+          </li>
+        }
+        @if (ligasService.ligasFiltradas().length === 0) {
+          <li class="no-results">Sin resultados</li>
+        }
+      </ul>
+    </div>
+
+  </nav>
+
+  <div class="sidebar-footer">
+    <span class="version">v5.3.0</span>
+  </div>
+
+</aside>

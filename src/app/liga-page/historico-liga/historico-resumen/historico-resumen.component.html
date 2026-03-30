@@ -1,0 +1,27 @@
+<div class="cards-row">
+  <div class="analisis-card azul">
+    <div class="card-val">{{ statsGlobal.avg | number:'1.2-2' }}</div>
+    <div class="card-lbl">Promedio global</div>
+  </div>
+  <div class="analisis-card amarillo">
+    <div class="card-val">{{ statsGlobal.median }}</div>
+    <div class="card-lbl">Mediana</div>
+  </div>
+  <div class="analisis-card naranja">
+    <div class="card-val">{{ statsGlobal.max }}</div>
+    <div class="card-lbl">Racha máxima</div>
+  </div>
+  <div class="analisis-card verde">
+    <div class="card-val">{{ (statsGlobal.zeros / statsGlobal.n * 100) | number:'1.0-0' }}%</div>
+    <div class="card-lbl">% empate inmediato</div>
+  </div>
+</div>
+
+<div class="insight azul">
+  El promedio de partidos entre empates es <strong>{{ statsGlobal.avg | number:'1.2-2' }}</strong>
+  con una desviación estándar de <strong>{{ statsGlobal.std | number:'1.2-2' }}</strong>.
+  La moda es <strong>{{ statsGlobal.moda }}</strong>.
+</div>
+<div class="insight ambar">
+  Solo el <strong>{{ pctRachaAlta }}%</strong> de las veces la racha supera los 8 partidos — eventos realmente inusuales.
+</div>
