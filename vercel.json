@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/v1/api/:path*",
+      "destination": "https://prod-public-api.livescore.com/v1/api/:path*"
+    },
+    {
+      "source": "/en/football/:path*",
+      "destination": "https://www.livescore.com/en/football/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
