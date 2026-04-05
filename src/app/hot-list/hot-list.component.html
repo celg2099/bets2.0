@@ -208,19 +208,27 @@
             </tr>
           </thead>
           <tbody>
-            @for (item of rows; track item.liga; let i = $index) {
+            @for (item of rows; track item.liga) {
               <tr>
                 <td class="col-pais">{{ item.pais }}</td>
-                <td class="col-num" [class.hist-top]="i === 0" [class.hist-second]="i === 1">
+                <td class="col-num"
+                    [class.hist-top]="item.pctInmediato === histTopValues()['pctInmediato'][0]"
+                    [class.hist-second]="item.pctInmediato === histTopValues()['pctInmediato'][1]">
                   {{ item.pctInmediato }}%
                 </td>
-                <td class="col-num" [class.hist-top]="i === 0" [class.hist-second]="i === 1">
+                <td class="col-num"
+                    [class.hist-top]="item.pctLeq3 === histTopValues()['pctLeq3'][0]"
+                    [class.hist-second]="item.pctLeq3 === histTopValues()['pctLeq3'][1]">
                   {{ item.pctLeq3 }}%
                 </td>
-                <td class="col-num" [class.hist-top]="i === 0" [class.hist-second]="i === 1">
+                <td class="col-num"
+                    [class.hist-top]="item.pctLeq5 === histTopValues()['pctLeq5'][0]"
+                    [class.hist-second]="item.pctLeq5 === histTopValues()['pctLeq5'][1]">
                   {{ item.pctLeq5 }}%
                 </td>
-                <td class="col-num" [class.hist-top]="i === 0" [class.hist-second]="i === 1">
+                <td class="col-num"
+                    [class.hist-top]="item.pctLeq7 === histTopValues()['pctLeq7'][0]"
+                    [class.hist-second]="item.pctLeq7 === histTopValues()['pctLeq7'][1]">
                   {{ item.pctLeq7 }}%
                 </td>
               </tr>

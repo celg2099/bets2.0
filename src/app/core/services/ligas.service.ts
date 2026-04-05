@@ -42,11 +42,11 @@ export class LigasService {
     { nombrePublico: 'Costa_Rica', nombreForApi: 'costa-rica/primera-division-clausura/', historico: 0 },
     { nombrePublico: 'Croacia', nombreForApi: 'croatia/1st-league/', historico: 0 },
     { nombrePublico: 'Dinamarca', nombreForApi: 'denmark/superliga/', historico: 0 },
-    { nombrePublico: 'Dinamarca_1_Div', nombreForApi: 'denmark/1-division/', historico: 0 },
+    { nombrePublico: 'Dinamarca_L1', nombreForApi: 'denmark/1-division/', historico: 0 },
     { nombrePublico: 'Ecuador', nombreForApi: 'ecuador/serie-a/', historico: 0 },
     { nombrePublico: 'Ecuador_B', nombreForApi: 'ecuador/liga-pro-serie-b/', historico: 0 },
     { nombrePublico: 'Egipto', nombreForApi: 'egypt/premier-league/', historico: 0 },
-    { nombrePublico: 'Egipto_Div_A', nombreForApi: 'egypt/2-division-a/', historico: 0 },
+    { nombrePublico: 'Egipto_L2', nombreForApi: 'egypt/2-division-a/', historico: 0 },
     { nombrePublico: 'El_Salvador', nombreForApi: 'el-salvador/primera-division-clausura/', historico: 0 },
     { nombrePublico: 'Emiratos_Arabes_Unidos', nombreForApi: 'united-arab-emirates/uae-league/', historico: 0 },
     { nombrePublico: 'Escocia', nombreForApi: 'scotland/scotland-premiership/', historico: 0 },
@@ -122,6 +122,28 @@ export class LigasService {
     { nombrePublico: 'Venezuela', nombreForApi: 'venezuela/primera-division/', historico: 0 },
     { nombrePublico: 'Vietnam', nombreForApi: 'vietnam/v-league/', historico: 0 },
   ];
+
+  private readonly historicosDisponibles = new Set<string>([
+    'Albania', 'Alemania_L2', 'Arabia_Saudita', 'Argelia', 'Argentina',
+    'Argentina_Women', 'Armenia', 'Australia', 'Australia_Tasmania',
+    'Bielorusia', 'Bolivia', 'Brasil', 'Brasil_B', 'Bulgaria', 'Camerun',
+    'Canada', 'Chile', 'China', 'Colombia', 'Colombia_B', 'Costa_Rica',
+    'Croacia', 'Dinamarca', 'Ecuador', 'Ecuador_B', 'Egipto', 'Egipto_L2',
+    'El_Salvador', 'Emiratos_Arabes_Unidos', 'Eslovenia', 'España',
+    'España_L2', 'Estonia', 'Finlandia', 'Francia', 'Francia_L2', 'Georgia',
+    'Grecia', 'Guatemala', 'Holanda', 'Hong_Kong', 'Hungria', 'India',
+    'Indonesia', 'Israel', 'Italia', 'Italia_B', 'Jamaica', 'Japon',
+    'Jordania', 'Kazajistan', 'Korea_del_Sur', 'Kuwait', 'Lituania',
+    'Marruecos', 'Mexico', 'Mexico_Expansion', 'México_Femenil', 'Paraguay',
+    'Peru', 'Polonia', 'Polonia_L1', 'Portugal', 'Portugal_L2', 'Qatar',
+    'Republica_Checa', 'Rumania', 'Senegal', 'Singapur', 'Sudafrica',
+    'Suecia', 'Suiza', 'Tanzania', 'Thailandia', 'Turquia', 'Ucrania',
+    'Uruguay', 'USA_MLS', 'Uzbekistan', 'Vietnam',
+  ]);
+
+  tieneHistorico(nombrePublico: string): boolean {
+    return this.historicosDisponibles.has(nombrePublico);
+  }
 
   busqueda = signal('');
   ligaSeleccionada = signal<LigaHomologada | null>(null);

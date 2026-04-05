@@ -1,143 +1,194 @@
-import { Component, ElementRef, AfterViewInit, ViewChild } from '@angular/core';
+import { Component, OnInit, inject, computed } from '@angular/core';
+import { DecimalPipe, NgClass } from '@angular/common';
+import { HotListService } from '../core/services/hot-list.service';
+import { HotCheck } from '../core/interfaces/results.interface';
 
-interface Stock {
-  name: string;
-  subtitle: string;
-  value: string;
-  trend: 'up' | 'down';
+export interface SignalCombinada {
+  pais: string;
+  conteoActual: number;
+  maxConteo: number;
+  dateNextGame: string;
+  percentDraw: number;
+  pctInmediato: number | null;
+  pctLeq3: number | null;
+  score: number;
 }
 
-interface ChartBar {
-  month: string;
-  investment: number;
-  loss: number;
-  profit: number;
-  maintenance: number;
+export interface GrupoHistograma {
+  label: string;
+  count: number;
+  pct: number;
 }
 
 @Component({
   selector: 'app-dashboard',
-  imports: [],
+  imports: [DecimalPipe, NgClass],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss',
 })
-export class DashboardComponent implements AfterViewInit {
-  @ViewChild('chartCanvas') chartCanvas!: ElementRef<HTMLCanvasElement>;
+export class DashboardComponent implements OnInit {
+  hotListSvc = inject(HotListService);
 
-  selectedPeriod: 'month' | 'year' = 'year';
+  loading    = computed(() => this.hotListSvc.loading());
+  progreso   = computed(() => this.hotListSvc.progreso());
+  total      = computed(() => this.hotListSvc.total());
+  progresoPct = computed(() => {
+    const t = this.total();
+    return t > 0 ? (this.progreso() / t) * 100 : 0;
+  });
 
-  stocks: Stock[] = [
-    { name: 'Bajaj Finery', subtitle: '10% Profit', value: '$1839.00', trend: 'up' },
-    { name: 'TTML', subtitle: '10% Loss', value: '$100.00', trend: 'down' },
-    { name: 'Reliance', subtitle: '10% Profit', value: '$200.00', trend: 'up' },
-    { name: 'ATGL', subtitle: '10% Loss', value: '$189.00', trend: 'down' },
-    { name: 'Stolon', subtitle: '10% Profit', value: '$210.00', trend: 'up' },
-  ];
+  // ── Chips: resumen global ─────────────────────────────────
 
-  chartData: ChartBar[] = [
-    { month: 'Jan', investment: 65, loss: 50, profit: 80, maintenance: 30 },
-    { month: 'Feb', investment: 140, loss: 130, profit: 290, maintenance: 100 },
-    { month: 'Mar', investment: 55, loss: 40, profit: 50, maintenance: 20 },
-    { month: 'Apr', investment: 80, loss: 70, profit: 100, maintenance: 40 },
-    { month: 'May', investment: 100, loss: 115, profit: 110, maintenance: 50 },
-    { month: 'Jun', investment: 150, loss: 155, profit: 330, maintenance: 80 },
-    { month: 'Jul', investment: 120, loss: 130, profit: 230, maintenance: 100 },
-    { month: 'Aug', investment: 50, loss: 40, profit: 60, maintenance: 20 },
-    { month: 'Sep', investment: 80, loss: 100, profit: 80, maintenance: 40 },
-    { month: 'Oct', investment: 90, loss: 110, profit: 180, maintenance: 60 },
-    { month: 'Nov', investment: 70, loss: 50, profit: 60, maintenance: 30 },
-    { month: 'Dec', investment: 80, loss: 60, profit: 150, maintenance: 30 },
-  ];
+  totalLigas = computed(() => this.hotListSvc.lista().length);
 
-  readonly maxValue = 400;
-  readonly chartHeight = 260;
-  readonly barWidth = 12;
-  readonly groupGap = 6;
-  readonly monthGap = 20;
-  readonly paddingLeft = 40;
-  readonly paddingBottom = 30;
-  readonly colors = {
-    investment: '#90CAF9',
-    loss: '#42A5F5',
-    profit: '#7E57C2',
-    maintenance: '#D1C4E9',
-  };
+  totalHot = computed(() => this.hotListSvc.listaHot().length);
 
-  ngAfterViewInit(): void {
-    this.drawChart();
+  hotConProximoCount = computed(() =>
+    this.hotListSvc.lista().filter(
+      (r) => r.conteoActual >= r.maxConteo - 2 && r.dateNextGame !== ''
+    ).length
+  );
+
+  pctEmpateGlobal = computed(() => {
+    const lista = this.hotListSvc.lista();
+    if (lista.length === 0) return 0;
+    return lista.reduce((s, r) => s + r.percentDraw, 0) / lista.length;
+  });
+
+  // ── Top cards ─────────────────────────────────────────────
+
+  mayorEmpateInmediato = computed(() => {
+    const rows = this.hotListSvc.listaHistorico();
+    if (rows.length === 0) return null;
+    return rows.reduce((best, r) => (r.pctInmediato > best.pctInmediato ? r : best));
+  });
+
+  mayorConteoActual = computed<HotCheck | null>(() => {
+    const lista = this.hotListSvc.lista();
+    if (lista.length === 0) return null;
+    return lista.reduce((best, r) => (r.conteoActual > best.conteoActual ? r : best));
+  });
+
+  proximoMayorEmpate = computed<HotCheck | null>(() => {
+    const conProximo = this.hotListSvc.lista().filter((r) => r.dateNextGame !== '');
+    if (conProximo.length === 0) return null;
+    return conProximo.reduce((best, r) => (r.percentDraw > best.percentDraw ? r : best));
+  });
+
+  // ── Señal combinada ───────────────────────────────────────
+  // Score 0-100: 40% racha/máximo + 35% pctInmediato + 25% pctLeq3
+
+  senalCombinada = computed<SignalCombinada[]>(() => {
+    const lista = this.hotListSvc.lista();
+    const histMap = new Map(
+      this.hotListSvc.listaHistorico().map((h) => [h.pais, h])
+    );
+
+    return lista
+      .filter((r) => r.conteoActual >= r.maxConteo - 2 && r.dateNextGame !== '')
+      .map((r) => {
+        const h = histMap.get(r.pais) ?? null;
+        const rachaFactor = r.maxConteo > 0 ? (r.conteoActual / r.maxConteo) * 40 : 0;
+        const inmFactor   = h ? h.pctInmediato * 0.35 : 0;
+        const leq3Factor  = h ? h.pctLeq3 * 0.25 : 0;
+        return {
+          pais: r.pais,
+          conteoActual: r.conteoActual,
+          maxConteo: r.maxConteo,
+          dateNextGame: r.dateNextGame,
+          percentDraw: r.percentDraw,
+          pctInmediato: h ? h.pctInmediato : null,
+          pctLeq3: h ? h.pctLeq3 : null,
+          score: Math.round(rachaFactor + inmFactor + leq3Factor),
+        };
+      })
+      .sort((a, b) => b.score - a.score);
+  });
+
+  scoreColor(score: number): string {
+    if (score >= 70) return 'score-high';
+    if (score >= 50) return 'score-mid';
+    return 'score-low';
   }
 
-  private drawChart(): void {
-    const canvas = this.chartCanvas.nativeElement;
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
+  // ── Partidos de hoy ───────────────────────────────────────
 
-    const dpr = window.devicePixelRatio || 1;
-    const rect = canvas.getBoundingClientRect();
-    canvas.width = rect.width * dpr;
-    canvas.height = rect.height * dpr;
-    ctx.scale(dpr, dpr);
+  partidosHoy = computed<HotCheck[]>(() => {
+    const now   = new Date();
+    const dd    = now.getDate().toString().padStart(2, '0');
+    const mm    = (now.getMonth() + 1).toString().padStart(2, '0');
+    const yyyy  = now.getFullYear();
+    const prefix = `${dd}/${mm}/${yyyy}`;
+    return [...this.hotListSvc.lista()]
+      .filter((r) => r.dateNextGame.startsWith(prefix))
+      .sort((a, b) => b.percentDraw - a.percentDraw);
+  });
 
-    const w = rect.width;
-    const h = rect.height;
-    const chartH = h - this.paddingBottom - 20;
-    const chartW = w - this.paddingLeft - 10;
+  // ── Ranking histórico pctLeq3 ─────────────────────────────
 
-    ctx.clearRect(0, 0, w, h);
+  rankingLeq3 = computed(() =>
+    [...this.hotListSvc.listaHistorico()]
+      .sort((a, b) => b.pctLeq3 - a.pctLeq3)
+      .slice(0, 10)
+  );
 
-    // Grid lines
-    const gridLines = [0, 100, 200, 300, 400];
-    ctx.strokeStyle = '#f0f0f0';
-    ctx.lineWidth = 1;
-    ctx.fillStyle = '#9e9e9e';
-    ctx.font = '11px Roboto, sans-serif';
-    ctx.textAlign = 'right';
+  maxLeq3 = computed(() => {
+    const r = this.rankingLeq3();
+    return r.length > 0 ? Math.max(r[0].pctLeq3, 1) : 1;
+  });
 
-    for (const val of gridLines) {
-      const y = 20 + chartH - (val / this.maxValue) * chartH;
-      ctx.beginPath();
-      ctx.moveTo(this.paddingLeft, y);
-      ctx.lineTo(w - 10, y);
-      ctx.stroke();
-      ctx.fillText(String(val), this.paddingLeft - 6, y + 4);
+  // ── Top 10 rachas actuales ────────────────────────────────
+
+  topRachas = computed<HotCheck[]>(() =>
+    [...this.hotListSvc.lista()]
+      .sort((a, b) => b.conteoActual - a.conteoActual)
+      .slice(0, 10)
+  );
+
+  maxRachaActual = computed(() => {
+    const top = this.topRachas();
+    return top.length > 0 ? Math.max(top[0].conteoActual, 1) : 1;
+  });
+
+  barPct(conteo: number): number {
+    return (conteo / this.maxRachaActual()) * 100;
+  }
+
+  // ── Histograma de distribución de rachas ─────────────────
+
+  histograma = computed<GrupoHistograma[]>(() => {
+    const lista = this.hotListSvc.lista();
+    const grupos = [
+      { label: '0',    min: 0,  max: 0  },
+      { label: '1–3',  min: 1,  max: 3  },
+      { label: '4–6',  min: 4,  max: 6  },
+      { label: '7–10', min: 7,  max: 10 },
+      { label: '10+',  min: 11, max: Infinity },
+    ];
+    const counts = grupos.map((g) =>
+      lista.filter((r) => r.conteoActual >= g.min && r.conteoActual <= g.max).length
+    );
+    const maxCount = Math.max(...counts, 1);
+    return grupos.map((g, i) => ({
+      label: g.label,
+      count: counts[i],
+      pct: (counts[i] / maxCount) * 100,
+    }));
+  });
+
+  // ── Helpers ───────────────────────────────────────────────
+
+  isSuperHot(item: { conteoActual: number; maxConteo: number }): boolean {
+    return item.conteoActual >= item.maxConteo;
+  }
+
+  isHot(item: { conteoActual: number; maxConteo: number }): boolean {
+    return item.conteoActual >= item.maxConteo - 2 && item.conteoActual < item.maxConteo;
+  }
+
+  ngOnInit(): void {
+    if (this.hotListSvc.lista().length === 0 && !this.hotListSvc.loading()) {
+      this.hotListSvc.generarLista();
     }
-
-    // Bars
-    const totalBarWidth = this.barWidth * 4 + this.groupGap * 3;
-    const monthWidth = chartW / this.chartData.length;
-
-    this.chartData.forEach((d, i) => {
-      const x = this.paddingLeft + i * monthWidth + (monthWidth - totalBarWidth) / 2;
-      const bars = [
-        { color: this.colors.investment, value: d.investment },
-        { color: this.colors.loss, value: d.loss },
-        { color: this.colors.profit, value: d.profit },
-        { color: this.colors.maintenance, value: d.maintenance },
-      ];
-
-      bars.forEach((bar, j) => {
-        const barH = (bar.value / this.maxValue) * chartH;
-        const bx = x + j * (this.barWidth + this.groupGap);
-        const by = 20 + chartH - barH;
-
-        ctx.fillStyle = bar.color;
-        ctx.beginPath();
-        const radius = 3;
-        ctx.moveTo(bx + radius, by);
-        ctx.lineTo(bx + this.barWidth - radius, by);
-        ctx.quadraticCurveTo(bx + this.barWidth, by, bx + this.barWidth, by + radius);
-        ctx.lineTo(bx + this.barWidth, by + barH);
-        ctx.lineTo(bx, by + barH);
-        ctx.lineTo(bx, by + radius);
-        ctx.quadraticCurveTo(bx, by, bx + radius, by);
-        ctx.fill();
-      });
-
-      // Month label
-      ctx.fillStyle = '#9e9e9e';
-      ctx.textAlign = 'center';
-      ctx.font = '11px Roboto, sans-serif';
-      ctx.fillText(d.month, x + totalBarWidth / 2, h - 6);
-    });
   }
 }

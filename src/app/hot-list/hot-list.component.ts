@@ -38,7 +38,7 @@ export class HotListComponent {
   mainAsc = signal(true);
 
   // ─── Sort: historico table ────────────────────────────────
-  histCol = signal<HistCol>('pctLeq5');
+  histCol = signal<HistCol>('pctInmediato');
   histAsc = signal(false);
 
   // ─── Data ─────────────────────────────────────────────────
@@ -58,6 +58,17 @@ export class HotListComponent {
       if (typeof va === 'string') return asc ? va.localeCompare(vb as string) : (vb as string).localeCompare(va);
       return asc ? (va as number) - (vb as number) : (vb as number) - (va as number);
     });
+  });
+
+  histTopValues = computed(() => {
+    const rows = this.hotListSvc.listaHistorico();
+    const cols: HistCol[] = ['pctInmediato', 'pctLeq3', 'pctLeq5', 'pctLeq7'];
+    const result: Record<string, [number, number]> = {};
+    for (const col of cols) {
+      const vals = [...new Set(rows.map((r) => r[col as keyof HistAcumRow] as number))].sort((a, b) => b - a);
+      result[col] = [vals[0] ?? -Infinity, vals[1] ?? -Infinity];
+    }
+    return result;
   });
 
   progresoPct = computed(() => {

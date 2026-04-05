@@ -62,7 +62,9 @@
               [title]="liga.nombrePublico"
               (click)="seleccionarLiga(liga)"
             >
-              <span class="material-icons nav-icon">sports_soccer</span>
+              <span class="material-icons nav-icon"
+                [class.sin-historico]="!ligasService.tieneHistorico(liga.nombrePublico)"
+              >sports_soccer</span>
               <span class="nav-label">{{ liga.nombrePublico }}</span>
             </button>
           </li>
