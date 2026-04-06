@@ -1,4 +1,5 @@
-import { Component, output } from '@angular/core';
+import { Component, inject, output } from '@angular/core';
+import { ThemeService } from '../../core/services/theme.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,6 +9,7 @@ import { Component, output } from '@angular/core';
 })
 export class NavbarComponent {
   menuToggle = output<void>();
+  themeSvc = inject(ThemeService);
 
   onMenuToggle() {
     this.menuToggle.emit();

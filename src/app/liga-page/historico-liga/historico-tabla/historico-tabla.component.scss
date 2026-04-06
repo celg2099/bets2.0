@@ -1,7 +1,7 @@
 .liga-title {
   font-size: 15px;
   font-weight: 600;
-  color: #1565c0;
+  color: var(--blue);
   margin-bottom: 10px;
 }
 
@@ -14,36 +14,36 @@
   font-size: 12px;
   white-space: nowrap;
 
-  tr { border-bottom: 1px solid #f0f0f0; }
+  tr { border-bottom: 1px solid var(--border-light); }
 
   td {
     padding: 4px 7px;
     text-align: center;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--border);
     min-width: 28px;
-    color: #424242;
+    color: var(--text-secondary);
   }
 
   .col-temporada {
     font-weight: 600;
-    color: #1565c0;
+    color: var(--blue);
     text-align: left;
     min-width: 90px;
-    background: #fafafa;
+    background: var(--bg-surface-3);
     position: sticky;
     left: 0;
     z-index: 1;
   }
 
   .celda-alta {
-    background: #fff9c4;
+    background: var(--celda-alta-bg);
     font-weight: 700;
-    color: #f57f17;
+    color: var(--celda-alta-color);
   }
 
   .celda-max {
-    background: #ffcdd2;
+    background: var(--celda-max-bg);
     font-weight: 700;
-    color: #c62828;
+    color: var(--celda-max-color);
   }
 }
