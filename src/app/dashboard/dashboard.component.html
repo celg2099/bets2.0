@@ -192,7 +192,7 @@
                   {{ item.conteoActual }}
                 </td>
                 <td class="cn txt-gray">{{ item.maxConteo }}</td>
-                <td class="td-date">{{ item.dateNextGame }}</td>
+                <td class="td-date" [class.cell-today]="isToday(item.dateNextGame)">{{ item.dateNextGame }}</td>
                 <td class="cn">{{ item.percentDraw | number:'1.1-1' }}%</td>
                 <td class="cn">{{ item.pctInmediato !== null ? (item.pctInmediato | number:'1.1-1') + '%' : '—' }}</td>
                 <td class="cn">{{ item.pctLeq3 !== null ? (item.pctLeq3 | number:'1.1-1') + '%' : '—' }}</td>

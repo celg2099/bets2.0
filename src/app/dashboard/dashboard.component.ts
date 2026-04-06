@@ -178,6 +178,11 @@ export class DashboardComponent implements OnInit {
 
   // ── Helpers ───────────────────────────────────────────────
 
+  isToday(dateNextGame: string): boolean {
+    const today = new Date().toISOString().substring(0, 10);
+    return dateNextGame.substring(0, 10) === today;
+  }
+
   isSuperHot(item: { conteoActual: number; maxConteo: number }): boolean {
     return item.conteoActual >= item.maxConteo;
   }
