@@ -255,6 +255,7 @@
     transition: background 0.15s;
     &:last-child { border-bottom: none; }
     &:hover { background: var(--bg-surface-3); }
+    &.row-clickable { cursor: pointer; }
 
     &.row-hot {
       background: var(--row-hot-bg);

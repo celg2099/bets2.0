@@ -1,9 +1,11 @@
 import { Component, inject, computed, signal } from '@angular/core';
 import { DecimalPipe } from '@angular/common';
+import { Router } from '@angular/router';
 import { HotListService } from '../core/services/hot-list.service';
 import { EmailHotListService } from '../core/services/email-hot-list.service';
 import { PdfHotListService } from '../core/services/pdf-hot-list.service';
 import { SchedulerHotListService } from '../core/services/scheduler-hot-list.service';
+import { LigasService } from '../core/services/ligas.service';
 import { HistAcumRow, HotCheck } from '../core/interfaces/results.interface';
 
 type SubTab = 'todos' | 'hot' | 'historico';
@@ -21,6 +23,8 @@ export class HotListComponent {
   emailSvc = inject(EmailHotListService);
   pdfSvc = inject(PdfHotListService);
   schedulerSvc = inject(SchedulerHotListService);
+  ligasSvc = inject(LigasService);
+  private router = inject(Router);
 
   // ─── Toolbar toggles ─────────────────────────────────────
   enviarEmail = signal(false);
@@ -112,6 +116,13 @@ export class HotListComponent {
 
   isHot(item: HotCheck): boolean {
     return item.conteoActual >= item.maxConteo - 2;
+  }
+
+  irALiga(nombrePublico: string): void {
+    const liga = this.ligasSvc.ligas.find((l) => l.nombrePublico === nombrePublico);
+    if (!liga) return;
+    this.ligasSvc.ligaSeleccionada.set(liga);
+    this.router.navigate(['/liga']);
   }
 
   async generar(): Promise<void> {

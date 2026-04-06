@@ -145,7 +145,8 @@
           </thead>
           <tbody>
             @for (item of filas; track item.liga) {
-              <tr [class.row-hot]="isHot(item)" [class.row-super-hot]="item.conteoActual >= item.maxConteo">
+              <tr [class.row-hot]="isHot(item)" [class.row-super-hot]="item.conteoActual >= item.maxConteo"
+                  class="row-clickable" (click)="irALiga(item.pais)">
                 <td class="col-pais">{{ item.pais }}</td>
                 <td class="col-num"
                     [class.celda-max]="item.conteoActual >= item.maxConteo"
@@ -209,7 +210,7 @@
           </thead>
           <tbody>
             @for (item of rows; track item.liga) {
-              <tr>
+              <tr class="row-clickable" (click)="irALiga(item.pais)">
                 <td class="col-pais">{{ item.pais }}</td>
                 <td class="col-num"
                     [class.hist-top]="item.pctInmediato === histTopValues()['pctInmediato'][0]"
