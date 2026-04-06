@@ -6,13 +6,14 @@ import { ResultadosComponent } from './resultados/resultados.component';
 import { ProximosJuegosComponent } from './proximos-juegos/proximos-juegos.component';
 import { DetalleComponent } from './detalle/detalle.component';
 import { HistoricoLigaComponent } from './historico-liga/historico-liga.component';
+import { DataAnalisisComponent } from './data-analisis/data-analisis.component';
 import { ListStatics } from '../core/interfaces/results.interface';
 
-type Tab = 'resultados' | 'proximos' | 'detalle' | 'historico';
+type Tab = 'resultados' | 'proximos' | 'detalle' | 'historico' | 'analisis';
 
 @Component({
   selector: 'app-liga-page',
-  imports: [DatePipe, DecimalPipe, ResultadosComponent, ProximosJuegosComponent, DetalleComponent, HistoricoLigaComponent],
+  imports: [DatePipe, DecimalPipe, ResultadosComponent, ProximosJuegosComponent, DetalleComponent, HistoricoLigaComponent, DataAnalisisComponent],
   templateUrl: './liga-page.component.html',
   styleUrl: './liga-page.component.scss',
 })
@@ -71,6 +72,8 @@ export class LigaPageComponent {
     const slash = api.indexOf('/');
     return slash >= 0 ? api.substring(slash + 1).replace(/\/$/, '') : api;
   });
+
+  tieneAnalisis = computed(() => !!this.liga()?.archivoLigas);
 
   constructor() {
     // Reacciona cada vez que cambia la liga seleccionada

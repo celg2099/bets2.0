@@ -1,0 +1,247 @@
+@if (loading()) {
+  <div class="da-loading">
+    <div class="spinner"></div>
+    <span>Cargando datos de análisis...</span>
+  </div>
+}
+
+@if (error()) {
+  <div class="da-empty">
+    <span class="material-icons">error_outline</span>
+    <p>No se pudo cargar el archivo de datos.</p>
+  </div>
+}
+
+@if (!loading() && !error() && analisis(); as a) {
+  <div class="da-wrap">
+
+    @if (fuente()) {
+      <p class="da-fuente"><span class="material-icons">source</span>Fuente: {{ fuente() }}</p>
+    }
+
+    <!-- Sub-tabs -->
+    <div class="da-tabs">
+      <button class="da-tab" [class.active]="daTab() === 'global'" (click)="setDaTab('global')">
+        <span class="material-icons">bar_chart</span> Resumen Global
+      </button>
+      <button class="da-tab" [class.active]="daTab() === 'goles'" (click)="setDaTab('goles')">
+        <span class="material-icons">sports_soccer</span> Análisis de Goles
+      </button>
+      <button class="da-tab" [class.active]="daTab() === 'torneos'" (click)="setDaTab('torneos')">
+        <span class="material-icons">emoji_events</span> Por Torneo
+      </button>
+    </div>
+
+    <!-- ══ TAB: RESUMEN GLOBAL ════════════════════════════════ -->
+    @if (daTab() === 'global') {
+
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <span class="material-icons kpi-icon blue">sports_soccer</span>
+          <span class="kpi-value">{{ a.totalPartidos }}</span>
+          <span class="kpi-label">Partidos analizados</span>
+        </div>
+        <div class="kpi-card">
+          <span class="material-icons kpi-icon green">scoreboard</span>
+          <span class="kpi-value">{{ a.golesProm | number:'1.2-2' }}</span>
+          <span class="kpi-label">Goles por partido</span>
+        </div>
+        <div class="kpi-card">
+          <span class="material-icons kpi-icon orange">percent</span>
+          <span class="kpi-value">{{ a.pctEmpate | number:'1.1-1' }}%</span>
+          <span class="kpi-label">% Empates</span>
+        </div>
+        <div class="kpi-card">
+          <span class="material-icons kpi-icon red">local_fire_department</span>
+          <span class="kpi-value">{{ a.maxRachaHistorica }}</span>
+          <span class="kpi-label">Máx. racha sin empate</span>
+        </div>
+        <div class="kpi-card">
+          <span class="material-icons kpi-icon teal">home</span>
+          <span class="kpi-value">{{ a.pctVLocal | number:'1.1-1' }}%</span>
+          <span class="kpi-label">Victoria local</span>
+        </div>
+        <div class="kpi-card">
+          <span class="material-icons kpi-icon purple">flight_land</span>
+          <span class="kpi-value">{{ a.pctVVisitante | number:'1.1-1' }}%</span>
+          <span class="kpi-label">Victoria visitante</span>
+        </div>
+      </div>
+
+      <!-- Distribución de resultados -->
+      <div class="section">
+        <h3 class="section-title"><span class="material-icons">pie_chart</span> Distribución de Resultados</h3>
+        <div class="result-bar-wrap">
+          <div class="result-bar">
+            <div class="result-seg seg-local"   [style.width.%]="a.pctVLocal"></div>
+            <div class="result-seg seg-empate"  [style.width.%]="a.pctEmpate"></div>
+            <div class="result-seg seg-visita"  [style.width.%]="a.pctVVisitante"></div>
+          </div>
+          <div class="result-legend">
+            <span class="leg-item"><span class="leg-dot dot-local"></span> Local {{ a.pctVLocal | number:'1.1-1' }}% ({{ a.totalVLocal }})</span>
+            <span class="leg-item"><span class="leg-dot dot-empate"></span> Empate {{ a.pctEmpate | number:'1.1-1' }}% ({{ a.totalEmpates }})</span>
+            <span class="leg-item"><span class="leg-dot dot-visita"></span> Visitante {{ a.pctVVisitante | number:'1.1-1' }}% ({{ a.totalVVisitante }})</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Goles P1 vs P2 -->
+      <div class="section">
+        <h3 class="section-title"><span class="material-icons">timelapse</span> Goles por Tiempo</h3>
+        <div class="tiempo-grid">
+          <div class="tiempo-card t1">
+            <span class="tiempo-label">1er Tiempo</span>
+            <span class="tiempo-valor">{{ a.golesP1 }}</span>
+            <span class="tiempo-pct">{{ a.pctGolesP1 | number:'1.1-1' }}%</span>
+            <div class="tiempo-bar-bg"><div class="tiempo-fill t1-fill" [style.width.%]="a.pctGolesP1"></div></div>
+          </div>
+          <div class="tiempo-card t2">
+            <span class="tiempo-label">2do Tiempo</span>
+            <span class="tiempo-valor">{{ a.golesP2 }}</span>
+            <span class="tiempo-pct">{{ a.pctGolesP2 | number:'1.1-1' }}%</span>
+            <div class="tiempo-bar-bg"><div class="tiempo-fill t2-fill" [style.width.%]="a.pctGolesP2"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marcadores más frecuentes -->
+      <div class="section">
+        <h3 class="section-title"><span class="material-icons">scoreboard</span> Marcadores más Frecuentes</h3>
+        <div class="marcador-grid">
+          @for (m of a.marcadores; track m.marcador) {
+            <div class="marcador-row">
+              <span class="marcador-score" [class.marcador-empate]="m.esEmpate">{{ m.marcador }}</span>
+              <div class="marcador-bar-wrap">
+                <div class="marcador-bar" [class.marcador-bar-empate]="m.esEmpate"
+                     [style.width.%]="(m.count / maxMarcador()) * 100"></div>
+              </div>
+              <span class="marcador-count">{{ m.count }}</span>
+              <span class="marcador-pct">{{ m.pct | number:'1.1-1' }}%</span>
+            </div>
+          }
+        </div>
+      </div>
+
+    }
+
+    <!-- ══ TAB: ANÁLISIS DE GOLES ═════════════════════════════ -->
+    @if (daTab() === 'goles') {
+
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <span class="material-icons kpi-icon green">scoreboard</span>
+          <span class="kpi-value">{{ a.golesP1 + a.golesP2 }}</span>
+          <span class="kpi-label">Total de goles</span>
+        </div>
+        <div class="kpi-card">
+          <span class="material-icons kpi-icon orange">flag</span>
+          <span class="kpi-value">{{ a.penales }}</span>
+          <span class="kpi-label">Goles de penal</span>
+        </div>
+        <div class="kpi-card">
+          <span class="material-icons kpi-icon purple">percent</span>
+          <span class="kpi-value">{{ a.pctPenales | number:'1.1-1' }}%</span>
+          <span class="kpi-label">% goles de penal</span>
+        </div>
+        <div class="kpi-card">
+          <span class="material-icons kpi-icon blue">trending_up</span>
+          <span class="kpi-value">{{ a.golesP2 - a.golesP1 > 0 ? '+' : '' }}{{ a.golesP2 - a.golesP1 }}</span>
+          <span class="kpi-label">Diferencia 2T vs 1T</span>
+        </div>
+      </div>
+
+      <!-- Goles por franja de 15 min -->
+      <div class="section">
+        <h3 class="section-title"><span class="material-icons">schedule</span> Goles por Franja de Tiempo</h3>
+        <p class="section-hint">Distribución de todos los goles según el minuto en que fueron anotados</p>
+        <div class="franja-chart">
+          @for (f of a.franjas; track f.label; let i = $index) {
+            <div class="franja-col">
+              <span class="franja-pct">{{ f.pct | number:'1.0-0' }}%</span>
+              <div class="franja-bar-bg">
+                <div class="franja-fill" [style.height.%]="(f.count / maxFranja()) * 100"
+                     [class.franja-p2]="i >= 3"></div>
+              </div>
+              <span class="franja-count">{{ f.count }}</span>
+              <span class="franja-label">{{ f.label }}</span>
+            </div>
+          }
+        </div>
+        <div class="franja-legend">
+          <span class="leg-item"><span class="leg-dot dot-p1"></span> 1er tiempo</span>
+          <span class="leg-item"><span class="leg-dot dot-p2"></span> 2do tiempo / tiempo adicional</span>
+        </div>
+      </div>
+
+      <!-- Tipo de gol -->
+      <div class="section">
+        <h3 class="section-title"><span class="material-icons">compare_arrows</span> Tipo de Gol</h3>
+        <div class="result-bar-wrap">
+          <div class="result-bar" style="height:36px; border-radius:8px;">
+            <div class="result-seg seg-gol-normal" [style.width.%]="100 - a.pctPenales"></div>
+            <div class="result-seg seg-penal"       [style.width.%]="a.pctPenales"></div>
+          </div>
+          <div class="result-legend">
+            <span class="leg-item"><span class="leg-dot dot-gnormal"></span> Gol normal {{ 100 - a.pctPenales | number:'1.1-1' }}%</span>
+            <span class="leg-item"><span class="leg-dot dot-penal"></span> Penal {{ a.pctPenales | number:'1.1-1' }}%</span>
+          </div>
+        </div>
+      </div>
+    }
+
+    <!-- ══ TAB: POR TORNEO ════════════════════════════════════ -->
+    @if (daTab() === 'torneos') {
+      <div class="table-wrap">
+        <table class="da-table">
+          <thead>
+            <tr>
+              <th>TORNEO</th>
+              <th class="col-center">TIPO</th>
+              <th class="col-num">JUGADOS</th>
+              <th class="col-num">EMPATES</th>
+              <th class="col-chart">% EMPATE</th>
+              <th class="col-num">MÁX RACHA</th>
+              <th class="col-num">RACHA PROM</th>
+              <th class="col-chart">GOLES/PART.</th>
+              <th class="col-num">G.1T</th>
+              <th class="col-num">G.2T</th>
+              <th class="col-num">PENALES</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (r of torneoRows(); track r.nombre + r.temporada) {
+              <tr>
+                <td class="col-nombre">{{ r.nombre }}</td>
+                <td class="col-center">
+                  <span class="tag" [class.tag-a]="r.tipo === 'Apertura'" [class.tag-c]="r.tipo === 'Clausura'">
+                    {{ r.tipo === 'Apertura' ? 'A' : 'C' }}
+                  </span>
+                </td>
+                <td class="col-num">{{ r.jugados }}</td>
+                <td class="col-num">{{ r.empates }}</td>
+                <td class="col-chart">
+                  <div class="bar-cell">
+                    <span>{{ r.pctEmpate | number:'1.1-1' }}%</span>
+                    <div class="mini-bar"><div class="mini-fill empate-fill" [style.width.%]="(r.pctEmpate / maxPctEmpate()) * 100"></div></div>
+                  </div>
+                </td>
+                <td class="col-num" [class.cell-max]="r.maxRacha === maxRachaTorneo()">{{ r.maxRacha }}</td>
+                <td class="col-num">{{ r.rachaPromedio | number:'1.1-1' }}</td>
+                <td class="col-chart">
+                  <div class="bar-cell">
+                    <span>{{ r.golesProm | number:'1.2-2' }}</span>
+                    <div class="mini-bar"><div class="mini-fill gol-fill" [style.width.%]="(r.golesProm / maxGolesProm()) * 100"></div></div>
+                  </div>
+                </td>
+                <td class="col-num">{{ r.golesP1 }}</td>
+                <td class="col-num">{{ r.golesP2 }}</td>
+                <td class="col-num">{{ r.penales }}</td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    }
+
+  </div>
+}

@@ -84,6 +84,16 @@
         <span class="material-icons">history</span>
         Histórico Liga
       </button>
+      @if (tieneAnalisis()) {
+        <button
+          class="tab-btn"
+          [class.active]="activeTab() === 'analisis'"
+          (click)="setTab('analisis')"
+        >
+          <span class="material-icons">analytics</span>
+          Data Análisis
+        </button>
+      }
     </div>
 
     <!-- Tab content -->
@@ -99,6 +109,9 @@
       }
       @if (activeTab() === 'historico') {
         <app-historico-liga />
+      }
+      @if (activeTab() === 'analisis') {
+        <app-data-analisis />
       }
     </div>
 
