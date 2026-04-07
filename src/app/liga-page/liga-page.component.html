@@ -70,14 +70,6 @@
       </button>
       <button
         class="tab-btn"
-        [class.active]="activeTab() === 'detalle'"
-        (click)="setTab('detalle')"
-      >
-        <span class="material-icons">query_stats</span>
-        Detalle
-      </button>
-      <button
-        class="tab-btn"
         [class.active]="activeTab() === 'historico'"
         (click)="setTab('historico')"
       >
@@ -103,9 +95,6 @@
       }
       @if (activeTab() === 'proximos') {
         <app-proximos-juegos />
-      }
-      @if (activeTab() === 'detalle') {
-        <app-detalle />
       }
       @if (activeTab() === 'historico') {
         <app-historico-liga />

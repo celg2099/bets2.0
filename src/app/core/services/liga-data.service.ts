@@ -21,11 +21,6 @@ export class LigaDataService {
   conteoActual = signal(0);
   totDraw = signal(0);
   ligaActual = signal('');
-  currEvent = '';
-
-  resultadosDetail = signal<Summary[]>([]);
-  shortCountHt = signal<number[]>([]);
-  totDrawHt = signal(0);
 
   temporadaActual = signal<TemporadaHistorica | null>(null);
 
@@ -33,7 +28,6 @@ export class LigaDataService {
 
   buscarResultados(query: string): void {
     this.loading.set(true);
-    this.currEvent = query;
 
     const params = new HttpParams().set('MD', '1');
 
@@ -45,10 +39,7 @@ export class LigaDataService {
           this.resultados.set([]);
           this.proximos.set([]);
           this.shortCount.set([]);
-          this.resultadosDetail.set([]);
-          this.shortCountHt.set([]);
           this.totDraw.set(0);
-          this.totDrawHt.set(0);
 
           if (resp.Stages.length > 0 && resp.Stages[0].Events) {
             const eventos = resp.Stages[0].Events;
@@ -131,10 +122,6 @@ export class LigaDataService {
     const min = dateStr.substring(10, 12);
     const seg = dateStr.substring(12, 14);
     return `${month}/${day}/${year} ${hour}:${min}:${seg}`;
-  }
-
-  getDetailGame(query: string): Observable<string> {
-    return this.http.get(`/en/football/${query}`, { responseType: 'text' });
   }
 
   getHistoricoLiga(nombrePublico: string): Observable<BdTempHistorica> {

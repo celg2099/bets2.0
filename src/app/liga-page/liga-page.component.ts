@@ -4,16 +4,15 @@ import { LigasService } from '../core/services/ligas.service';
 import { LigaDataService } from '../core/services/liga-data.service';
 import { ResultadosComponent } from './resultados/resultados.component';
 import { ProximosJuegosComponent } from './proximos-juegos/proximos-juegos.component';
-import { DetalleComponent } from './detalle/detalle.component';
 import { HistoricoLigaComponent } from './historico-liga/historico-liga.component';
 import { DataAnalisisComponent } from './data-analisis/data-analisis.component';
 import { ListStatics } from '../core/interfaces/results.interface';
 
-type Tab = 'resultados' | 'proximos' | 'detalle' | 'historico' | 'analisis';
+type Tab = 'resultados' | 'proximos' | 'historico' | 'analisis';
 
 @Component({
   selector: 'app-liga-page',
-  imports: [DatePipe, DecimalPipe, ResultadosComponent, ProximosJuegosComponent, DetalleComponent, HistoricoLigaComponent, DataAnalisisComponent],
+  imports: [DatePipe, DecimalPipe, ResultadosComponent, ProximosJuegosComponent, HistoricoLigaComponent, DataAnalisisComponent],
   templateUrl: './liga-page.component.html',
   styleUrl: './liga-page.component.scss',
 })

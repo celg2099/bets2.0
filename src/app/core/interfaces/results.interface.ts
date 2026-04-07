@@ -48,8 +48,6 @@ export interface Summary {
   TVName: string;
   TLGoals: number;
   TVGoals: number;
-  TLHtGoals?: number;
-  TVHtGoals?: number;
   CurrentCount: number;
   Date: Date;
 }
