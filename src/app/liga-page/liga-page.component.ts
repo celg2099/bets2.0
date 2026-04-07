@@ -80,6 +80,7 @@ export class LigaPageComponent {
       const liga = this.ligasService.ligaSeleccionada();
       if (liga) {
         this.activeTab.set('resultados');
+        this.ligaData.nombrePublicoActual.set(liga.nombrePublico);
         this.ligaData.buscarResultados(liga.nombreForApi);
       }
     });

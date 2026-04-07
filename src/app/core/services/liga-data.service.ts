@@ -21,6 +21,7 @@ export class LigaDataService {
   conteoActual = signal(0);
   totDraw = signal(0);
   ligaActual = signal('');
+  nombrePublicoActual = signal('');
 
   temporadaActual = signal<TemporadaHistorica | null>(null);
 
