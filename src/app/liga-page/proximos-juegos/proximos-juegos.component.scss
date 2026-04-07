@@ -19,8 +19,11 @@
   tbody tr {
     border-bottom: 1px solid var(--border-medium);
     &:hover { background: var(--bg-surface-3); }
+    &.hoy { background: #fef08a; }
+    &.hoy:hover { background: #fde047; }
 
     td { padding: 9px 12px; color: var(--text-secondary); }
+    &.hoy td { color: #713f12; }
   }
 }
 

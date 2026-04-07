@@ -1,6 +1,6 @@
 import { Component, inject, OnInit, signal, computed } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { DecimalPipe } from '@angular/common';
+import { DecimalPipe, NgClass } from '@angular/common';
 import { LigasService } from '../../core/services/ligas.service';
 import { LigaDataService } from '../../core/services/liga-data.service';
 
@@ -87,7 +87,7 @@ type DaTab = 'global' | 'torneos' | 'goles';
 
 @Component({
   selector: 'app-data-analisis',
-  imports: [DecimalPipe],
+  imports: [DecimalPipe, NgClass],
   templateUrl: './data-analisis.component.html',
   styleUrl: './data-analisis.component.scss',
 })
@@ -110,6 +110,17 @@ export class DataAnalisisComponent implements OnInit {
   maxFranja = computed(() => {
     const a = this.analisis();
     return a ? Math.max(...a.franjas.map((f) => f.count), 1) : 1;
+  });
+
+  clasesFranja = computed(() => {
+    const a = this.analisis();
+    if (!a) return [];
+    const maxPct = Math.max(...a.franjas.map((f) => f.pct));
+    const hayEmpate = a.franjas.filter((f) => f.pct === maxPct).length > 1;
+    return a.franjas.map((f) => {
+      if (f.pct !== maxPct) return '';
+      return hayEmpate ? 'franja-max-empate' : 'franja-max';
+    });
   });
 
   maxMarcador = computed(() => {

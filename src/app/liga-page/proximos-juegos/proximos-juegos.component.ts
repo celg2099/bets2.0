@@ -11,4 +11,13 @@ import { LigaDataService } from '../../core/services/liga-data.service';
 export class ProximosJuegosComponent {
   ligaData = inject(LigaDataService);
   proximos = computed(() => this.ligaData.proximos());
+
+  esHoy(date: Date): boolean {
+    const hoy = new Date();
+    return (
+      date.getFullYear() === hoy.getFullYear() &&
+      date.getMonth() === hoy.getMonth() &&
+      date.getDate() === hoy.getDate()
+    );
+  }
 }

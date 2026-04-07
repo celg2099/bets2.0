@@ -156,7 +156,7 @@
         <p class="section-hint">Distribución de todos los goles según el minuto en que fueron anotados</p>
         <div class="franja-chart">
           @for (f of a.franjas; track f.label; let i = $index) {
-            <div class="franja-col">
+            <div class="franja-col" [ngClass]="clasesFranja()[i]">
               <span class="franja-pct">{{ f.pct | number:'1.0-0' }}%</span>
               <div class="franja-bar-bg">
                 <div class="franja-fill" [style.height.%]="(f.count / maxFranja()) * 100"

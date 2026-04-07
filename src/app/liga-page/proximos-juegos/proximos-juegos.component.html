@@ -11,7 +11,7 @@
     </thead>
     <tbody>
       @for (evento of proximos(); track $index) {
-        <tr>
+        <tr [class.hoy]="esHoy(evento.Date)">
           <td class="team-name">{{ evento.TLName }}</td>
           <td class="vs">--</td>
           <td class="vs">--</td>

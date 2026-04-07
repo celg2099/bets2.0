@@ -327,6 +327,18 @@
   align-items: center;
   gap: 3px;
   flex: 1;
+  border-radius: 6px;
+  padding: 4px 2px;
+}
+
+.franja-max {
+  background: #dcfce7;
+  .franja-pct, .franja-count, .franja-label { color: #15803d; font-weight: 700; }
+}
+
+.franja-max-empate {
+  background: #fee2e2;
+  .franja-pct, .franja-count, .franja-label { color: #b91c1c; font-weight: 700; }
 }
 
 .franja-pct {

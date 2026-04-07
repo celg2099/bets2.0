@@ -41,7 +41,7 @@
         </thead>
         <tbody>
           @for (item of shortCount(); track $index) {
-            <tr><td>{{ item }}</td></tr>
+            <tr><td [class.celda-alta]="item > 8">{{ item }}</td></tr>
           }
         </tbody>
       </table>
@@ -55,7 +55,7 @@
         </thead>
         <tbody>
           @for (item of shortCountReverse(); track $index) {
-            <tr><td>{{ item }}</td></tr>
+            <tr><td [class.celda-alta]="item > 8">{{ item }}</td></tr>
           }
         </tbody>
       </table>
