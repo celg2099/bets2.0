@@ -45,9 +45,9 @@ export class LigasService {
     { nombrePublico: 'Dinamarca', nombreForApi: 'denmark/superliga/', historico: 0 },
     { nombrePublico: 'Dinamarca_L1', nombreForApi: 'denmark/1-division/', historico: 0 },
     { nombrePublico: 'Ecuador', nombreForApi: 'ecuador/serie-a/', historico: 0 },
-    { nombrePublico: 'Ecuador_B', nombreForApi: 'ecuador/liga-pro-serie-b/', historico: 0 },
+    { nombrePublico: 'Ecuador_B', nombreForApi: 'ecuador/liga-pro-serie-b/', historico: 0, archivoLigas: 'Ecuador_B.json' },
     { nombrePublico: 'Egipto', nombreForApi: 'egypt/premier-league/', historico: 0 },
-    { nombrePublico: 'Egipto_L2', nombreForApi: 'egypt/2-division-a/', historico: 0 },
+    { nombrePublico: 'Egipto_L2', nombreForApi: 'egypt/2-division-a/', historico: 0, archivoLigas: 'Egipto_L2.json'  },
     { nombrePublico: 'El_Salvador', nombreForApi: 'el-salvador/primera-division-clausura/', historico: 0 },
     { nombrePublico: 'Emiratos_Arabes_Unidos', nombreForApi: 'united-arab-emirates/uae-league/', historico: 0 },
     { nombrePublico: 'Escocia', nombreForApi: 'scotland/scotland-premiership/', historico: 0 },
@@ -145,6 +145,10 @@ export class LigasService {
 
   tieneHistorico(nombrePublico: string): boolean {
     return this.historicosDisponibles.has(nombrePublico);
+  }
+
+  tieneAmbosArchivos(liga: LigaHomologada): boolean {
+    return this.historicosDisponibles.has(liga.nombrePublico) && !!liga.archivoLigas;
   }
 
   busqueda = signal('');

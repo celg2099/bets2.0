@@ -206,6 +206,7 @@
               <th class="col-num">G.1T</th>
               <th class="col-num">G.2T</th>
               <th class="col-num">PENALES</th>
+              <th class="col-center">DETALLE</th>
             </tr>
           </thead>
           <tbody>
@@ -236,6 +237,21 @@
                 <td class="col-num">{{ r.golesP1 }}</td>
                 <td class="col-num">{{ r.golesP2 }}</td>
                 <td class="col-num">{{ r.penales }}</td>
+                <td class="col-center">
+                  @if (r.detalleGoles === 'completo') {
+                    <span class="detalle-chip chip-completo">
+                      <span class="material-icons">check_circle</span>Completo
+                    </span>
+                  } @else if (r.detalleGoles === 'parcial') {
+                    <span class="detalle-chip chip-parcial">
+                      <span class="material-icons">pending</span>Parcial
+                    </span>
+                  } @else {
+                    <span class="detalle-chip chip-ninguno">
+                      <span class="material-icons">cancel</span>Sin datos
+                    </span>
+                  }
+                </td>
               </tr>
             }
           </tbody>

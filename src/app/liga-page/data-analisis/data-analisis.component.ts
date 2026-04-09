@@ -54,6 +54,7 @@ export interface TorneoRow {
   golesP1: number;
   golesP2: number;
   penales: number;
+  detalleGoles: 'completo' | 'parcial' | 'ninguno';
 }
 
 export interface MinutoFranja {
@@ -174,6 +175,7 @@ export class DataAnalisisComponent implements OnInit {
     let conteo = 0;
     const rachas: number[] = [];
     let empates = 0, golesTotal = 0, golesP1 = 0, golesP2 = 0, penales = 0;
+    let partidosConGoles = 0, partidosConDetalle = 0;
 
     for (const p of partidos) {
       const gl = p.resultado?.golesLocal ?? -1;
@@ -186,6 +188,12 @@ export class DataAnalisisComponent implements OnInit {
         if (g.periodo === 1) golesP1++; else golesP2++;
         if (g.tipo === 'Penal') penales++;
       }
+      if (gl + gv > 0) {
+        partidosConGoles++;
+        if (p.goles !== undefined && p.goles !== null && p.goles.length === gl + gv) {
+          partidosConDetalle++;
+        }
+      }
     }
     rachas.push(conteo);
 
@@ -193,13 +201,22 @@ export class DataAnalisisComponent implements OnInit {
     const rachaPromedio = rachas.length > 1
       ? rachas.slice(0, -1).reduce((a, b) => a + b, 0) / (rachas.length - 1) : 0;
 
+    let detalleGoles: 'completo' | 'parcial' | 'ninguno';
+    if (partidosConGoles === 0 || partidosConDetalle === partidosConGoles) {
+      detalleGoles = 'completo';
+    } else if (partidosConDetalle === 0) {
+      detalleGoles = 'ninguno';
+    } else {
+      detalleGoles = 'parcial';
+    }
+
     return {
       nombre: t.nombre, tipo: t.tipo ?? '', temporada: t.temporada ?? t.año ?? '',
       jugados, empates,
       pctEmpate: jugados > 0 ? (empates / jugados) * 100 : 0,
       maxRacha, rachaPromedio,
       golesTotal, golesProm: jugados > 0 ? golesTotal / jugados : 0,
-      golesP1, golesP2, penales,
+      golesP1, golesP2, penales, detalleGoles,
     };
   }
 
