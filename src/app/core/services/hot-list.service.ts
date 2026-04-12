@@ -1,6 +1,6 @@
 import { Injectable, signal } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { forkJoin, from, mergeMap, toArray, catchError, of, map, concatMap, delay, reduce } from 'rxjs';
+import { forkJoin, from, mergeMap, toArray, catchError, of, map, concatMap } from 'rxjs';
 import {
   Liga,
   EpsStatus,
@@ -47,7 +47,7 @@ export class HotListService {
         toArray()
       )
       .subscribe({
-        next: (results) => {
+        next: (results: ({ hotCheck: HotCheck; histAcum: HistAcumRow | null } | null)[]) => {
           const tmpLista: HotCheck[] = [];
           const tmpHistorico: HistAcumRow[] = [];
 
@@ -119,31 +119,20 @@ export class HotListService {
               concatMap((roundsResp) => {
                 const currentRound =
                   roundsResp.currentRound?.round ?? roundsResp.rounds.length;
-                const roundNumbers = Array.from(
+                const requests = Array.from(
                   { length: currentRound },
-                  (_, i) => i + 1
-                );
-                return from(roundNumbers).pipe(
-                  concatMap((n) =>
-                    of(n).pipe(
-                      delay(200),
-                      concatMap(() =>
-                        this.http.get<SofascoreEventsResponse>(
-                          `${this.sofascoreUrl}/unique-tournament/${id}/season/${seasonId}/events/round/${n}`
-                        )
-                      )
+                  (_, i) =>
+                    this.http.get<SofascoreEventsResponse>(
+                      `${this.sofascoreUrl}/unique-tournament/${id}/season/${seasonId}/events/round/${i + 1}`
                     )
-                  ),
-                  reduce(
-                    (acc: SofascoreEvent[], resp: SofascoreEventsResponse) =>
-                      acc.concat(resp.events ?? []),
-                    []
-                  )
+                );
+                return forkJoin(requests).pipe(
+                  map((responses) => responses.flatMap((r) => r.events ?? []))
                 );
               })
             );
         }),
-        concatMap((allEvents) =>
+        concatMap((allEvents: SofascoreEvent[]) =>
           this.http
             .get<BdTempHistorica>(`/historico/${liga.nombrePublico}.json`)
             .pipe(
@@ -298,20 +287,16 @@ export class HotListService {
       pais: liga.nombrePublico,
       liga: liga.nombreForApi,
       pctInmediato: +(
-        (allConteos.filter((v) => v === 0).length / n) *
-        100
+        (allConteos.filter((v) => v === 0).length / n) * 100
       ).toFixed(1),
       pctLeq3: +(
-        (allConteos.filter((v) => v <= 3).length / n) *
-        100
+        (allConteos.filter((v) => v <= 3).length / n) * 100
       ).toFixed(1),
       pctLeq5: +(
-        (allConteos.filter((v) => v <= 5).length / n) *
-        100
+        (allConteos.filter((v) => v <= 5).length / n) * 100
       ).toFixed(1),
       pctLeq7: +(
-        (allConteos.filter((v) => v <= 7).length / n) *
-        100
+        (allConteos.filter((v) => v <= 7).length / n) * 100
       ).toFixed(1),
     };
   }

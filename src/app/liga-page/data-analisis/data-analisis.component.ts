@@ -86,6 +86,15 @@ export interface AnalisisGlobal {
 
 type DaTab = 'global' | 'torneos' | 'goles';
 
+export interface PartidoResumen {
+  local: string;
+  visitante: string;
+  golesLocal: number;
+  golesVisitante: number;
+  fecha: string;
+  esEmpate: boolean;
+}
+
 @Component({
   selector: 'app-data-analisis',
   imports: [DecimalPipe, NgClass],
@@ -104,6 +113,27 @@ export class DataAnalisisComponent implements OnInit {
 
   torneoRows = signal<TorneoRow[]>([]);
   analisis = signal<AnalisisGlobal | null>(null);
+  selectedTorneoIdx = signal<number | null>(null);
+
+  private rawTorneos: Torneo[] = [];
+
+  selectedPartidos = computed<PartidoResumen[]>(() => {
+    const idx = this.selectedTorneoIdx();
+    if (idx === null || idx >= this.rawTorneos.length) return [];
+    const t = this.rawTorneos[idx];
+    return this.sortByFecha(
+      t.jornadas.flatMap((j) => j.partidos).filter((p) => p.estado === 'Ended')
+    )
+      .reverse()
+      .map((p) => ({
+        local: p.local,
+        visitante: p.visitante,
+        golesLocal: p.resultado?.golesLocal ?? -1,
+        golesVisitante: p.resultado?.golesVisitante ?? -1,
+        fecha: p.fechaHora,
+        esEmpate: (p.resultado?.golesLocal ?? -1) === (p.resultado?.golesVisitante ?? -2),
+      }));
+  });
 
   maxPctEmpate = computed(() => Math.max(...this.torneoRows().map((r) => r.pctEmpate), 1));
   maxRachaTorneo = computed(() => Math.max(...this.torneoRows().map((r) => r.maxRacha), 1));
@@ -139,6 +169,7 @@ export class DataAnalisisComponent implements OnInit {
       next: (data) => {
         this.fuente.set(data.fuente ?? '');
         const torneos: Torneo[] = data.torneos ?? data.temporadas ?? [];
+        this.rawTorneos = torneos;
         const rows = torneos.map((t) => this.calcTorneoRow(t));
         this.torneoRows.set(rows);
         this.analisis.set(this.calcAnalisis(torneos, rows));
@@ -150,6 +181,10 @@ export class DataAnalisisComponent implements OnInit {
 
   setDaTab(tab: DaTab): void {
     this.daTab.set(tab);
+  }
+
+  selectTorneo(idx: number): void {
+    this.selectedTorneoIdx.update((cur) => (cur === idx ? null : idx));
   }
 
   // fechaHora formato: "DD/MM/YYYY HH:mm"

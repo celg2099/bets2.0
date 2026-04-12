@@ -1,6 +1,6 @@
 import { Injectable, signal } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { Observable, concatMap, delay, from, of, reduce } from 'rxjs';
+import { Observable, concatMap, forkJoin, map } from 'rxjs';
 import {
   Liga,
   Event,
@@ -89,25 +89,16 @@ export class LigaDataService {
               concatMap((roundsResp) => {
                 const currentRound =
                   roundsResp.currentRound?.round ?? roundsResp.rounds.length;
-                const roundNumbers = Array.from(
+                const requests = Array.from(
                   { length: currentRound },
-                  (_, i) => i + 1
-                );
-                return from(roundNumbers).pipe(
-                  concatMap((n) =>
-                    of(n).pipe(
-                      delay(200),
-                      concatMap(() =>
-                        this.http.get<SofascoreEventsResponse>(
-                          `${this.sofascoreUrl}/unique-tournament/${tournamentId}/season/${seasonId}/events/round/${n}`
-                        )
-                      )
+                  (_, i) =>
+                    this.http.get<SofascoreEventsResponse>(
+                      `${this.sofascoreUrl}/unique-tournament/${tournamentId}/season/${seasonId}/events/round/${i + 1}`
                     )
-                  ),
-                  reduce(
-                    (acc: SofascoreEvent[], resp: SofascoreEventsResponse) =>
-                      acc.concat(resp.events ?? []),
-                    []
+                );
+                return forkJoin(requests).pipe(
+                  map((responses) =>
+                    responses.flatMap((r) => r.events ?? [])
                   )
                 );
               })

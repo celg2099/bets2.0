@@ -469,6 +469,107 @@
   color: #ef5350;
 }
 
+// ─── Torneo row selection ─────────────────────────────────
+.torneo-row {
+  cursor: pointer;
+  &.row-selected {
+    background: var(--primary-bg) !important;
+    td { color: var(--primary); font-weight: 600; }
+  }
+}
+
+// ─── Torneo detalle (resultados expandidos) ───────────────
+.torneo-detalle {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  padding: 16px;
+  background: var(--bg-surface);
+}
+
+.torneo-detalle-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary);
+  .material-icons { font-size: 18px; }
+}
+
+.torneo-detalle-hint {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-tertiary);
+  margin-left: 4px;
+}
+
+.torneo-detalle-empty {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-tertiary);
+  text-align: center;
+  padding: 16px 0;
+}
+
+.results-detail-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+
+  thead tr {
+    background: var(--bg-surface-2);
+    border-bottom: 2px solid var(--border);
+  }
+
+  th {
+    padding: 8px 12px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 11px;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    &.col-score, &.col-date { text-align: center; }
+  }
+
+  tbody tr {
+    border-bottom: 1px solid var(--border-light);
+    &:last-child { border-bottom: none; }
+    &:hover { background: var(--bg-surface-3); }
+    &.draw { background: rgba(94, 53, 177, 0.18); }
+    &.draw td { color: var(--text-primary); font-weight: 600; }
+  }
+
+  td {
+    padding: 7px 12px;
+    color: var(--text-primary);
+    vertical-align: middle;
+  }
+
+  .team-name {
+    min-width: 140px;
+    font-weight: 500;
+  }
+
+  .score {
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 7px 6px;
+    min-width: 28px;
+  }
+
+  .col-date {
+    text-align: center;
+    white-space: nowrap;
+    color: var(--text-tertiary);
+    font-size: 12px;
+  }
+}
+
 // ─── Detalle de goles chip ────────────────────────────────
 .detalle-chip {
   display: inline-flex;

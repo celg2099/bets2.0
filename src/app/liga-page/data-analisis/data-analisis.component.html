@@ -210,8 +210,8 @@
             </tr>
           </thead>
           <tbody>
-            @for (r of torneoRows(); track r.nombre + r.temporada) {
-              <tr>
+            @for (r of torneoRows(); track r.nombre + r.temporada; let i = $index) {
+              <tr class="torneo-row" [class.row-selected]="selectedTorneoIdx() === i" (click)="selectTorneo(i)">
                 <td class="col-nombre">{{ r.nombre }}</td>
                 <td class="col-center">
                   <span class="tag" [class.tag-a]="r.tipo === 'Apertura'" [class.tag-c]="r.tipo === 'Clausura'">
@@ -257,6 +257,44 @@
           </tbody>
         </table>
       </div>
+
+      @if (selectedTorneoIdx() !== null) {
+        <div class="torneo-detalle">
+          <div class="torneo-detalle-header">
+            <span class="material-icons">sports_soccer</span>
+            <span>{{ torneoRows()[selectedTorneoIdx()!].nombre }} {{ torneoRows()[selectedTorneoIdx()!].temporada }}</span>
+            <span class="torneo-detalle-hint">{{ selectedPartidos().length }} partidos</span>
+          </div>
+          @if (selectedPartidos().length > 0) {
+            <div class="table-wrap">
+              <table class="results-detail-table">
+                <thead>
+                  <tr>
+                    <th>LOCAL</th>
+                    <th class="col-score"></th>
+                    <th class="col-score"></th>
+                    <th>VISITA</th>
+                    <th class="col-date">FECHA</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  @for (p of selectedPartidos(); track $index) {
+                    <tr [class.draw]="p.esEmpate">
+                      <td class="team-name">{{ p.local }}</td>
+                      <td class="score">{{ p.golesLocal }}</td>
+                      <td class="score">{{ p.golesVisitante }}</td>
+                      <td class="team-name">{{ p.visitante }}</td>
+                      <td class="col-date">{{ p.fecha }}</td>
+                    </tr>
+                  }
+                </tbody>
+              </table>
+            </div>
+          } @else {
+            <p class="torneo-detalle-empty">Sin partidos finalizados en este torneo.</p>
+          }
+        </div>
+      }
     }
 
   </div>

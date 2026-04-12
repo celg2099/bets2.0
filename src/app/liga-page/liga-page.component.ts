@@ -73,6 +73,7 @@ export class LigaPageComponent {
   });
 
   tieneAnalisis = computed(() => !!this.liga()?.archivoLigas);
+  esSofascore = computed(() => !!this.liga()?.sofascoreId);
   tieneHistorico = computed(() => this.ligasService.tieneHistorico(this.liga()?.nombrePublico ?? ''));
   modoSoloAnalisis = computed(() => this.liga()?.historico === 3);
   modoFallbackHistorico = computed(() =>

@@ -2,11 +2,27 @@ import { Injectable } from '@angular/core';
 import emailjs from '@emailjs/browser';
 import { environment } from '../../../environments/environment';
 import { HotCheck, HistAcumRow } from '../interfaces/results.interface';
+import { LigasService } from './ligas.service';
 
 @Injectable({ providedIn: 'root' })
 export class EmailHotListService {
-  constructor() {
+  constructor(private ligasSvc: LigasService) {
     emailjs.init(environment.emailjs.publicKey);
+  }
+
+  private buildAmbosSet(): Set<string> {
+    return new Set(
+      this.ligasSvc.ligas
+        .filter((l) => this.ligasSvc.tieneAmbosArchivos(l))
+        .map((l) => l.nombrePublico)
+    );
+  }
+
+  private ligaLabel(nombrePublico: string, ambosSet: Set<string>): string {
+    const icon = ambosSet.has(nombrePublico)
+      ? '<span style="color:#2e7d32; margin-right:4px;">&#9917;</span>'
+      : '';
+    return `${icon}${nombrePublico}`;
   }
 
   private parseDateNextGame(dateStr: string): Date {
@@ -53,7 +69,8 @@ export class EmailHotListService {
     ligasHot: HotCheck[],
     historico: HistAcumRow[],
     todasLasLigas: HotCheck[],
-    limitarAcumulado: boolean = false
+    limitarAcumulado: boolean = false,
+    includeModa: boolean = true
   ): string {
     const thStyle = 'padding:8px 12px; background:#2c3e50; color:#fff; text-align:left; font-size:13px;';
     const thCStyle = `${thStyle} text-align:center;`;
@@ -64,6 +81,7 @@ export class EmailHotListService {
 
     const fecha = new Date().toLocaleDateString('es-MX', { dateStyle: 'full' });
     const totalHot = ligasHot.length;
+    const ambosSet = this.buildAmbosSet();
 
     // Ligas Principales: top 15 próximas a jugarse
     const top15 = [...todasLasLigas]
@@ -88,11 +106,11 @@ export class EmailHotListService {
         const rowBg = ligasTop10Historico.has(h.liga) ? ' background-color:#e8f5e9;' : '';
         const dateBg = this.nextGameDateBg(h.dateNextGame);
         return `<tr style="${rowBg}">
-          <td style="${tdBase}">${h.pais}</td>
+          <td style="${tdBase}">${this.ligaLabel(h.pais, ambosSet)}</td>
           <td style="${tdCenter}">${h.conteoActual}</td>
           <td style="${tdCenter}">${h.maxConteo}</td>
           <td style="${tdCenter}">${h.gamesFinished}</td>
-          <td style="${tdCenter}">${moda}</td>
+          ${includeModa ? `<td style="${tdCenter}">${moda}</td>` : ''}
           <td style="${tdCenter}">${h.percentDraw.toFixed(1)}%</td>
           <td style="${tdDate}${dateBg}">${h.dateNextGame}</td>
         </tr>`;
@@ -109,11 +127,11 @@ export class EmailHotListService {
         const rowBg = ligasTop10Historico.has(l.liga) ? ' background-color:#e8f5e9;' : '';
         const dateBg = this.nextGameDateBg(l.dateNextGame);
         return `<tr style="${rowBg}">
-          <td style="${tdBase}">${l.pais}</td>
+          <td style="${tdBase}">${this.ligaLabel(l.pais, ambosSet)}</td>
           <td style="${tdCenter}">${l.conteoActual}</td>
           <td style="${tdCenter}">${l.maxConteo}</td>
           <td style="${tdCenter}">${l.gamesFinished}</td>
-          <td style="${tdCenter}">${moda}</td>
+          ${includeModa ? `<td style="${tdCenter}">${moda}</td>` : ''}
           <td style="${tdCenter}">${l.percentDraw.toFixed(1)}%</td>
           <td style="${tdDate}${dateBg}">${l.dateNextGame}</td>
         </tr>`;
@@ -133,11 +151,11 @@ export class EmailHotListService {
         const rowBg = ligasTop10Historico.has(l.liga) ? ' background-color:#e8f5e9;' : '';
         const dateBg = this.nextGameDateBg(l.dateNextGame);
         return `<tr style="${rowBg}">
-          <td style="${tdBase}">${l.pais}</td>
+          <td style="${tdBase}">${this.ligaLabel(l.pais, ambosSet)}</td>
           <td style="${tdCenter} font-weight:bold; color:${rachaColor};">${l.conteoActual}</td>
           <td style="${tdCenter}">${l.maxConteo}</td>
           <td style="${tdCenter}">${l.gamesFinished}</td>
-          <td style="${tdCenter}">${moda}</td>
+          ${includeModa ? `<td style="${tdCenter}">${moda}</td>` : ''}
           <td style="${tdCenter}">${l.percentDraw.toFixed(1)}%</td>
           <td style="${tdDate}${dateBg}">${l.dateNextGame}</td>
         </tr>`;
@@ -155,7 +173,7 @@ export class EmailHotListService {
     const filasHistorico = historicoRows
       .map(
         (h) => `<tr>
-        <td style="${tdBase}">${h.pais}</td>
+        <td style="${tdBase}">${this.ligaLabel(h.pais, ambosSet)}</td>
         <td style="${tdCenter}${this.cellBg(h.pctInmediato, t1Inm, t2Inm)}">${h.pctInmediato}%</td>
         <td style="${tdCenter}${this.cellBg(h.pctLeq3, t1Leq3, t2Leq3)}">${h.pctLeq3}%</td>
         <td style="${tdCenter}${this.cellBg(h.pctLeq5, t1Leq5, t2Leq5)}">${h.pctLeq5}%</td>
@@ -181,7 +199,7 @@ export class EmailHotListService {
         <th style="${thCStyle}">Conteo Actual</th>
         <th style="${thCStyle}">M&aacute;x Conteo</th>
         <th style="${thCStyle}">Juegos</th>
-        <th style="${thCStyle}">Moda</th>
+        ${includeModa ? `<th style="${thCStyle}">Moda</th>` : ''}
         <th style="${thCStyle}">% Empates</th>
         <th style="${thStyle}">Pr&oacute;ximo Partido</th>
       </tr></thead>
@@ -195,7 +213,7 @@ export class EmailHotListService {
         <th style="${thCStyle}">Conteo Actual</th>
         <th style="${thCStyle}">M&aacute;x Conteo</th>
         <th style="${thCStyle}">Juegos</th>
-        <th style="${thCStyle}">Moda</th>
+        ${includeModa ? `<th style="${thCStyle}">Moda</th>` : ''}
         <th style="${thCStyle}">% Empates</th>
         <th style="${thStyle}">Pr&oacute;ximo Partido</th>
       </tr></thead>
@@ -209,7 +227,7 @@ export class EmailHotListService {
         <th style="${thCStyle}">Conteo Actual</th>
         <th style="${thCStyle}">M&aacute;x Conteo</th>
         <th style="${thCStyle}">Juegos</th>
-        <th style="${thCStyle}">Moda</th>
+        ${includeModa ? `<th style="${thCStyle}">Moda</th>` : ''}
         <th style="${thCStyle}">% Empates</th>
         <th style="${thStyle}">Pr&oacute;ximo Partido</th>
       </tr></thead>

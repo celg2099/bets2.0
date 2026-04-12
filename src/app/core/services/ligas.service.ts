@@ -137,7 +137,7 @@ export class LigasService {
     'Canada', 'Chile', 'China', 'Colombia', 'Colombia_B', 'Costa_Rica',
     'Croacia', 'Dinamarca', 'Ecuador', 'Ecuador_B', 'Egipto', 'Egipto_L2',
     'El_Salvador', 'Emiratos_Arabes_Unidos', 'Eslovenia', 'España',
-    'España_L2', 'Estonia', 'Finlandia', 'Francia', 'Francia_L2', 'Georgia',
+    'España_L2', 'España_D2_G3', 'Estonia', 'Finlandia', 'Francia', 'Francia_L2', 'Georgia',
     'Grecia', 'Guatemala', 'Guatemala_1era', 'Holanda', 'Honduras', 'Hong_Kong', 'Hungria', 'India', 'India_I_League',
     'Indonesia', 'Israel', 'Italia', 'Italia_B', 'Jamaica', 'Japon',
     'Jordania', 'Kazajistan', 'Korea_del_Sur', 'Kuwait', 'Lituania',

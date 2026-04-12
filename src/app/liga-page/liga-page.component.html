@@ -86,7 +86,7 @@
         <span class="material-icons">sports_soccer</span>
         {{ nombreLiga() }}
       </div>
-      <div class="chip chip-stat chip-teal">
+      <div class="chip chip-stat chip-fuente-sofascore">
         <span class="material-icons">functions</span>
         {{ conteoActual() }}
       </div>
@@ -112,6 +112,10 @@
           {{ proximoJuego() | date:'dd/MM/yyyy HH:mm:ss' }}
         </div>
       }
+      <div class="chip" [class.chip-fuente-sofascore]="esSofascore()" [class.chip-fuente-livescore]="!esSofascore()">
+        <span class="material-icons">{{ esSofascore() ? 'cloud_sync' : 'stream' }}</span>
+        {{ esSofascore() ? 'Sofascore' : 'LiveScore' }}
+      </div>
     </div>
 
     <hr class="divider" />

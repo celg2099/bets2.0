@@ -135,7 +135,8 @@ export class HotListComponent {
         this.hotListSvc.listaHot(),
         this.hotListSvc.listaHistorico(),
         this.hotListSvc.lista(),
-        this.limitarAcumulado()
+        this.limitarAcumulado(),
+        false
       );
       this.pdfSvc.descargar(html);
     }
