@@ -1,5 +1,71 @@
+<!-- Modo solo análisis (historico = 3) -->
+@if (modoSoloAnalisis() && liga()) {
+  <div class="liga-page">
+    <div class="chips-row">
+      <div class="chip chip-pais">
+        <span class="material-icons">flag</span>
+        {{ nombrePais() }}
+      </div>
+      <div class="chip chip-liga">
+        <span class="material-icons">sports_soccer</span>
+        {{ nombreLiga() }}
+      </div>
+    </div>
+
+    @if (tieneHistorico()) {
+      <hr class="divider" />
+      <div class="tabs-nav">
+        <button
+          class="tab-btn"
+          [class.active]="activeTab() === 'historico'"
+          (click)="setTab('historico')"
+        >
+          <span class="material-icons">history</span>
+          Histórico Liga
+        </button>
+        <button
+          class="tab-btn"
+          [class.active]="activeTab() === 'analisis'"
+          (click)="setTab('analisis')"
+        >
+          <span class="material-icons">analytics</span>
+          Data Análisis
+        </button>
+      </div>
+      <div class="tab-content">
+        @if (activeTab() === 'historico') {
+          <app-historico-liga />
+        }
+        @if (activeTab() === 'analisis') {
+          <app-data-analisis />
+        }
+      </div>
+    } @else {
+      <app-data-analisis />
+    }
+
+  </div>
+}
+
+<!-- Fallback: API error + tiene histórico -->
+@if (!modoSoloAnalisis() && modoFallbackHistorico()) {
+  <div class="liga-page">
+    <div class="chips-row">
+      <div class="chip chip-pais">
+        <span class="material-icons">flag</span>
+        {{ nombrePais() }}
+      </div>
+      <div class="chip chip-liga">
+        <span class="material-icons">sports_soccer</span>
+        {{ nombreLiga() }}
+      </div>
+    </div>
+    <app-historico-liga />
+  </div>
+}
+
 <!-- Loading -->
-@if (loading()) {
+@if (!modoSoloAnalisis() && !modoFallbackHistorico() && loading()) {
   <div class="loading-overlay">
     <div class="spinner"></div>
     <span>Cargando datos...</span>
@@ -7,7 +73,7 @@
 }
 
 <!-- Contenido -->
-@if (hayDatos() && !loading()) {
+@if (!modoSoloAnalisis() && !modoFallbackHistorico() && hayDatos() && !loading()) {
   <div class="liga-page">
 
     <!-- Chips de información -->
@@ -108,7 +174,7 @@
 }
 
 <!-- Sin datos -->
-@if (!hayDatos() && !loading()) {
+@if (!modoSoloAnalisis() && !modoFallbackHistorico() && !hayDatos() && !loading()) {
   <div class="empty-state">
     <span class="material-icons">sports_soccer</span>
     <p>No hay datos disponibles para esta liga.</p>

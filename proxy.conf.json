@@ -1,4 +1,11 @@
 {
+  "/sofascore-api": {
+    "target": "https://www.sofascore.com",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": { "^/sofascore-api": "/api/v1" },
+    "logLevel": "debug"
+  },
   "/v1/api": {
     "target": "https://prod-public-api.livescore.com",
     "secure": false,

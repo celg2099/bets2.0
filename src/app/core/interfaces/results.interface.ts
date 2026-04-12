@@ -88,6 +88,30 @@ export interface HistAcumRow {
   pctLeq7: number;
 }
 
+// ── Sofascore raw API shapes ──────────────────────────────────────────────
+export interface SofascoreEvent {
+  id: number;
+  homeTeam: { name: string };
+  awayTeam: { name: string };
+  startTimestamp: number;
+  status: { type: 'finished' | 'inprogress' | 'notstarted' };
+  homeScore?: { current: number };
+  awayScore?: { current: number };
+}
+
+export interface SofascoreSeasonsResponse {
+  seasons: { id: number; name: string; year: string }[];
+}
+
+export interface SofascoreRoundsResponse {
+  rounds: { round: number }[];
+  currentRound?: { round: number };
+}
+
+export interface SofascoreEventsResponse {
+  events: SofascoreEvent[];
+}
+
 export interface StatsResult {
   n: number;
   avg: number;

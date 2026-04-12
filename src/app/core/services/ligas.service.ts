@@ -5,12 +5,13 @@ export interface LigaHomologada {
   nombreForApi: string;
   historico: number;
   archivoLigas?: string;
+  sofascoreId?: number;
 }
 
 @Injectable({ providedIn: 'root' })
 export class LigasService {
   readonly ligas: LigaHomologada[] = [
-    { nombrePublico: 'Albania', nombreForApi: 'albania/kategoria-superiore/', historico: 0 },
+    { nombrePublico: 'Albania', nombreForApi: 'albania/kategoria-superiore/', historico: 0, archivoLigas: 'Albania.json' },
     { nombrePublico: 'Alemania', nombreForApi: 'germany/bundesliga/', historico: 0 },
     { nombrePublico: 'Alemania_L2', nombreForApi: 'germany/2-bundesliga/', historico: 0 },
     { nombrePublico: 'Alemania_L3', nombreForApi: 'germany/3-liga/', historico: 0 },
@@ -33,7 +34,7 @@ export class LigasService {
     { nombrePublico: 'Brasil_B', nombreForApi: 'brazil/serie-b/', historico: 0 },
     { nombrePublico: 'Bulgaria', nombreForApi: 'bulgaria/parva-liga/', historico: 0 },
     { nombrePublico: 'Camboya', nombreForApi: 'cambodia/c-league/', historico: 0 },
-    { nombrePublico: 'Camerun', nombreForApi: 'cameroon/elite-1/', historico: 0 },
+    { nombrePublico: 'Camerun', nombreForApi: 'cameroon/elite-1/', historico: 0, archivoLigas: 'Camerun.json'  },
     { nombrePublico: 'Canada', nombreForApi: 'canada/premier-league/', historico: 0, archivoLigas: 'Canada.json' },
     { nombrePublico: 'Chile', nombreForApi: 'chile/primera-division/', historico: 0 },
     { nombrePublico: 'China', nombreForApi: 'china/super-league/', historico: 0 },
@@ -55,6 +56,7 @@ export class LigasService {
     { nombrePublico: 'Eslovenia', nombreForApi: 'slovenia/prva-liga/', historico: 0 },
     { nombrePublico: 'España', nombreForApi: 'spain/laliga/', historico: 0 },
     { nombrePublico: 'España_L2', nombreForApi: 'spain/laliga-2/', historico: 0 },
+    { nombrePublico: 'España_D2_G3', nombreForApi: 'spain/segunda-division-rfef-group-3/', historico: 0, archivoLigas: 'España_D2_G3.json'  },
     { nombrePublico: 'Estonia', nombreForApi: 'estonia/meistriliiga-2025/', historico: 0 },
     { nombrePublico: 'Finlandia', nombreForApi: 'finland/veikkausliiga/', historico: 0 },
     { nombrePublico: 'Francia', nombreForApi: 'france/ligue-1/', historico: 0 },
@@ -63,6 +65,7 @@ export class LigasService {
     { nombrePublico: 'Georgia', nombreForApi: 'georgia/erovnuli-liga/', historico: 0 },
     { nombrePublico: 'Grecia', nombreForApi: 'greece/super-league/', historico: 0 },
     { nombrePublico: 'Guatemala', nombreForApi: 'guatemala/liga-nacional-clausura/', historico: 0 },
+    { nombrePublico: 'Guatemala_1era', nombreForApi: 'guatemala/primera-division/', historico: 0, archivoLigas: 'Guatemala_1era.json', sofascoreId: 28165 },
     { nombrePublico: 'Holanda', nombreForApi: 'netherlands/eredivisie/', historico: 0 },
     { nombrePublico: 'Honduras', nombreForApi: 'honduras/liga-nacional-clausura/', historico: 0, archivoLigas: 'Honduras.json' },
     { nombrePublico: 'Hong_Kong', nombreForApi: 'hong-kong/premier-league/', historico: 0 },
@@ -88,7 +91,8 @@ export class LigasService {
     { nombrePublico: 'Lituania', nombreForApi: 'lithuania/a-lyga/', historico: 0 },
     { nombrePublico: 'Luxemburgo', nombreForApi: 'luxembourg/national-division/', historico: 0 },
     { nombrePublico: 'Macedonia_del_Norte', nombreForApi: 'north-macedonia/1st-league', historico: 0 },
-    { nombrePublico: 'Marruecos', nombreForApi: 'morocco/botola-pro/', historico: 0 },
+    { nombrePublico: 'Marruecos', nombreForApi: 'morocco/botola-pro/', historico: 0, archivoLigas: 'Marruecos.json' },
+    { nombrePublico: 'Marruecos_L2', nombreForApi: 'morocco/botola-2/', historico: 0, archivoLigas: 'Marruecos_L2.json', sofascoreId: 10554 },
     { nombrePublico: 'Mexico', nombreForApi: 'mexico/liga-mx-clausura/', historico: 0 },
     { nombrePublico: 'Mexico_Expansion', nombreForApi: 'mexico/liga-de-expansion-mx-clausura/', historico: 0 },
     { nombrePublico: 'México_Femenil', nombreForApi: 'mexico/womens-liga-mx-apertura/', historico: 0 },
@@ -96,7 +100,7 @@ export class LigasService {
     { nombrePublico: 'Moldavia', nombreForApi: 'moldova/national-division/', historico: 0 },
     { nombrePublico: 'Montenegro', nombreForApi: 'montenegro/1-cfl/', historico: 0 },
     { nombrePublico: 'Nicaragua', nombreForApi: 'nicaragua/primera-division-clausura/', historico: 0 },
-    { nombrePublico: 'Noruega', nombreForApi: 'norway/1-division/', historico: 0,archivoLigas: 'Noruega.json' },
+    { nombrePublico: 'Noruega', nombreForApi: 'norway/1-division/', historico: 0, archivoLigas: 'Noruega.json' },
     { nombrePublico: 'Panama_EAST', nombreForApi: 'panama/lpf-apertura-east/', historico: 0 },
     { nombrePublico: 'Panama_West', nombreForApi: 'panama/lpf-apertura-west/', historico: 0 },
     { nombrePublico: 'Paraguay', nombreForApi: 'paraguay/division-profesional-apertura/', historico: 0 },
@@ -134,10 +138,10 @@ export class LigasService {
     'Croacia', 'Dinamarca', 'Ecuador', 'Ecuador_B', 'Egipto', 'Egipto_L2',
     'El_Salvador', 'Emiratos_Arabes_Unidos', 'Eslovenia', 'España',
     'España_L2', 'Estonia', 'Finlandia', 'Francia', 'Francia_L2', 'Georgia',
-    'Grecia', 'Guatemala', 'Holanda', 'Honduras', 'Hong_Kong', 'Hungria', 'India', 'India_I_League',
+    'Grecia', 'Guatemala', 'Guatemala_1era', 'Holanda', 'Honduras', 'Hong_Kong', 'Hungria', 'India', 'India_I_League',
     'Indonesia', 'Israel', 'Italia', 'Italia_B', 'Jamaica', 'Japon',
     'Jordania', 'Kazajistan', 'Korea_del_Sur', 'Kuwait', 'Lituania',
-    'Marruecos', 'Mexico', 'Mexico_Expansion', 'México_Femenil', 'Noruega', 'Paraguay', 'Paraguay_Intermedia',
+    'Marruecos', 'Marruecos_L2', 'Mexico', 'Mexico_Expansion', 'México_Femenil', 'Noruega', 'Paraguay', 'Paraguay_Intermedia',
     'Peru', 'Polonia', 'Polonia_L1', 'Portugal', 'Portugal_L2', 'Qatar',
     'Republica_Checa', 'Rumania', 'Senegal', 'Singapur', 'Sudafrica',
     'Suecia', 'Suiza', 'Tanzania', 'Thailandia', 'Turquia', 'Ucrania',

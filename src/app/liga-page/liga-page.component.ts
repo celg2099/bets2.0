@@ -73,15 +73,27 @@ export class LigaPageComponent {
   });
 
   tieneAnalisis = computed(() => !!this.liga()?.archivoLigas);
+  tieneHistorico = computed(() => this.ligasService.tieneHistorico(this.liga()?.nombrePublico ?? ''));
+  modoSoloAnalisis = computed(() => this.liga()?.historico === 3);
+  modoFallbackHistorico = computed(() =>
+    this.ligaData.apiError() &&
+    this.ligasService.tieneHistorico(this.liga()?.nombrePublico ?? '')
+  );
 
   constructor() {
     // Reacciona cada vez que cambia la liga seleccionada
     effect(() => {
       const liga = this.ligasService.ligaSeleccionada();
       if (liga) {
-        this.activeTab.set('resultados');
         this.ligaData.nombrePublicoActual.set(liga.nombrePublico);
-        this.ligaData.buscarResultados(liga.nombreForApi);
+        if (liga.historico === 3) {
+          // Solo Data Análisis: setear ligaActual sin llamar la API
+          this.ligaData.ligaActual.set(liga.nombreForApi);
+          this.activeTab.set('analisis');
+        } else {
+          this.activeTab.set('resultados');
+          this.ligaData.buscarResultados(liga.nombreForApi);
+        }
       }
     });
   }

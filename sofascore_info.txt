@@ -1,0 +1,152 @@
+Aquí tienes la documentación de las APIs de Sofascore que otro agente necesitaría para consultar la **temporada actual** de una liga específica:
+
+---
+
+## 📡 APIs de Sofascore — Guía para Agente
+
+### Base URL
+```
+https://www.sofascore.com/api/v1
+```
+
+---
+
+### PASO 1 — Obtener todas las temporadas del torneo
+
+```
+GET /unique-tournament/{tournamentId}/seasons
+```
+
+**Respuesta relevante:**
+```json
+{
+  "seasons": [
+    { "id": 78750, "name": "Botola Pro 2025/2026", "year": "2025/2026" },
+    ...
+  ]
+}
+```
+> La temporada actual generalmente es la de `id` más alto (o la que tenga el año más reciente en `name`/`year`). Si el agente solo necesita la actual, toma `seasons[0]` (suelen venir ordenadas de más reciente a más antigua).
+
+---
+
+### PASO 2 (opcional) — Verificar si hay grupos
+
+```
+GET /unique-tournament/{tournamentId}/season/{seasonId}/groups
+```
+
+- Si devuelve **404** → no hay grupos, continúa con el endpoint estándar.
+- Si hay grupos → busca el grupo deseado y guarda su `tournamentId` interno. Desde ese punto usa `/tournament/{groupTournamentId}/` en lugar de `/unique-tournament/{tournamentId}/`.
+
+---
+
+### PASO 3 — Obtener las jornadas disponibles
+
+```
+GET /unique-tournament/{tournamentId}/season/{seasonId}/rounds
+```
+*(Si hay grupos:)*
+```
+GET /tournament/{groupTournamentId}/season/{seasonId}/rounds
+```
+
+**Respuesta relevante:**
+```json
+{
+  "rounds": [
+    { "round": 1 },
+    { "round": 2 },
+    ...
+  ],
+  "currentRound": { "round": 15 }
+}
+```
+> `currentRound.round` indica la jornada actual. Úsalo para consultar solo partidos recientes si se desea.
+
+---
+
+### PASO 4 — Obtener partidos de una jornada
+
+```
+GET /unique-tournament/{tournamentId}/season/{seasonId}/events/round/{roundNumber}
+```
+*(Si hay grupos:)*
+```
+GET /tournament/{groupTournamentId}/season/{seasonId}/events/round/{roundNumber}
+```
+
+**Respuesta relevante — cada evento:**
+```json
+{
+  "id": 12345678,
+  "homeTeam": { "name": "Equipo Local" },
+  "awayTeam": { "name": "Equipo Visitante" },
+  "startTimestamp": 1748000000,
+  "status": {
+    "type": "finished",   // "finished" | "inprogress" | "notstarted"
+    "description": "Ended"
+  },
+  "homeScore": { "current": 2, "period1": 1, "period2": 1 },
+  "awayScore": { "current": 1, "period1": 0, "period2": 1 }
+}
+```
+
+**Mapeo a campo `estado`:**
+| `status.type` | `estado` en JSON |
+|---|---|
+| `"finished"` | `"Ended"` |
+| cualquier otro | `"Scheduled"` |
+
+**Conversión de timestamp a fecha:**
+```javascript
+const ts = 1748000000; // Unix timestamp (segundos)
+const d = new Date(ts * 1000);
+const fechaHora = d.toLocaleDateString('es-AR', {
+  day: '2-digit', month: '2-digit', year: 'numeric',
+  hour: '2-digit', minute: '2-digit', hour12: false,
+  timeZone: 'UTC'
+}).replace(',', ''); // → "22/01/2026 17:00"
+```
+
+---
+
+### PASO 5 (opcional) — Tabla de posiciones
+
+```
+GET /unique-tournament/{tournamentId}/season/{seasonId}/standings/total
+```
+
+---
+
+### Resumen de endpoints en orden
+
+| # | Propósito | Endpoint |
+|---|---|---|
+| 1 | Listar temporadas | `GET /unique-tournament/{id}/seasons` |
+| 2 | Verificar grupos | `GET /unique-tournament/{id}/season/{sid}/groups` |
+| 3 | Listar jornadas | `GET /unique-tournament/{id}/season/{sid}/rounds` |
+| 4 | Partidos por jornada | `GET /unique-tournament/{id}/season/{sid}/events/round/{n}` |
+| 5 | Posiciones | `GET /unique-tournament/{id}/season/{sid}/standings/total` |
+
+---
+
+### IDs de torneos ya conocidos
+
+| Torneo | País | `tournamentId` |
+|---|---|---|
+| Elite One | Camerún | `1006` |
+| Segunda Federación | España | `544` |
+| Abissnet Superiore | Albania | `720` |
+| Botola Pro | Marruecos | `937` |
+
+---
+
+### Notas importantes para el agente
+
+1. **Rate limiting**: Agrega un delay de ~200ms entre llamadas para evitar bloqueos.
+2. **Timeout**: Usa 8000ms por fetch con `AbortController` — algunas jornadas vacías pueden colgar.
+3. **Temporada actual**: Toma `seasons[0].id` del endpoint de temporadas (viene ordenado más reciente primero).
+4. **Jornada actual**: Usa `currentRound.round` del endpoint de rounds para saber en qué jornada está la liga.
+5. **Sin autenticación**: Todos los endpoints son públicos, no requieren API key ni token.
+6. **User-Agent**: Si hay bloqueos, usar un User-Agent de navegador estándar en el header.
