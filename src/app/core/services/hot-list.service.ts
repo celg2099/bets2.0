@@ -18,7 +18,7 @@ import { LigasService, LigaHomologada } from './ligas.service';
 @Injectable({ providedIn: 'root' })
 export class HotListService {
   private readonly servicioUrl = '/v1/api/app/stage/soccer/';
-  private readonly sofascoreUrl = '/sofascore-api';
+  private readonly sofascoreUrl = '/api/sofascore';
 
   loading = signal(false);
   progreso = signal(0);

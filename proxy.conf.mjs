@@ -18,11 +18,11 @@ const SOFASCORE_HEADERS = {
 };
 
 export default {
-  '/sofascore-api': {
+  '/api/sofascore': {
     target: 'https://www.sofascore.com',
     changeOrigin: true,
     secure: false,
-    pathRewrite: { '^/sofascore-api': '/api/v1' },
+    pathRewrite: { '^/api/sofascore': '/api/v1' },
     configure(proxy) {
       proxy.on('proxyReq', (proxyReq) => {
         Object.entries(SOFASCORE_HEADERS).forEach(([key, value]) => {

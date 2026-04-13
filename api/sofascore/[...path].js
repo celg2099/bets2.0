@@ -13,26 +13,51 @@ const SOFASCORE_HEADERS = {
   'Cache-Control': 'no-cache',
 };
 
+const CORS_HEADERS = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'GET, OPTIONS',
+  'Access-Control-Allow-Headers': 'Content-Type',
+};
+
 module.exports = async function handler(req, res) {
-  // req.query.path es un array con los segmentos capturados por [...path]
+  // Manejar preflight CORS
+  if (req.method === 'OPTIONS') {
+    Object.entries(CORS_HEADERS).forEach(([k, v]) => res.setHeader(k, v));
+    return res.status(204).end();
+  }
+
+  // Construir URL destino con query string original
   const segments = Array.isArray(req.query.path) ? req.query.path : [req.query.path].filter(Boolean);
-  const targetUrl = `${SOFASCORE_BASE}/${segments.join('/')}`;
+  const queryParams = new URLSearchParams(
+    Object.fromEntries(
+      Object.entries(req.query).filter(([k]) => k !== 'path')
+    )
+  ).toString();
+  const targetUrl = `${SOFASCORE_BASE}/${segments.join('/')}${queryParams ? `?${queryParams}` : ''}`;
 
   try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 8000);
+
     const upstream = await fetch(targetUrl, {
       method: 'GET',
       headers: SOFASCORE_HEADERS,
+      signal: controller.signal,
     });
+
+    clearTimeout(timeout);
 
     const contentType = upstream.headers.get('content-type') ?? 'application/json';
     const body = await upstream.text();
 
+    Object.entries(CORS_HEADERS).forEach(([k, v]) => res.setHeader(k, v));
     res.setHeader('Content-Type', contentType);
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
     res.status(upstream.status).send(body);
   } catch (err) {
-    res.status(502).json({ error: 'Sofascore proxy error', detail: String(err) });
+    const isTimeout = err.name === 'AbortError';
+    res.status(isTimeout ? 504 : 502).json({
+      error: isTimeout ? 'Sofascore proxy timeout' : 'Sofascore proxy error',
+      detail: String(err),
+    });
   }
 };

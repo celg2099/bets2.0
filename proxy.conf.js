@@ -1,9 +1,9 @@
 module.exports = {
-  '/sofascore-api': {
+  '/api/sofascore': {
     target: 'https://www.sofascore.com',
     changeOrigin: true,
     secure: false,
-    pathRewrite: { '^/sofascore-api': '/api/v1' },
+    pathRewrite: { '^/api/sofascore': '/api/v1' },
     configure: function (proxy) {
       proxy.on('proxyReq', function (proxyReq) {
         proxyReq.setHeader('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36');

@@ -1,10 +1,6 @@
 {
   "rewrites": [
     {
-      "source": "/sofascore-api/:path*",
-      "destination": "/api/sofascore/:path*"
-    },
-    {
       "source": "/v1/api/:path*",
       "destination": "https://prod-public-api.livescore.com/v1/api/:path*"
     },

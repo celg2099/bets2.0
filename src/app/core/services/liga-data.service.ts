@@ -18,7 +18,7 @@ import { LigasService } from './ligas.service';
 @Injectable({ providedIn: 'root' })
 export class LigaDataService {
   private readonly servicioUrl = '/v1/api/app/stage/soccer/';
-  private readonly sofascoreUrl = '/sofascore-api';
+  private readonly sofascoreUrl = '/api/sofascore';
 
   loading = signal(false);
   apiError = signal(false);
