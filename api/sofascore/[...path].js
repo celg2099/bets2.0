@@ -13,9 +13,9 @@ const SOFASCORE_HEADERS = {
   'Cache-Control': 'no-cache',
 };
 
-export default async function handler(req, res) {
-  // req.query.path es un array con los segmentos del path capturados por [...path]
-  const segments = req.query.path ?? [];
+module.exports = async function handler(req, res) {
+  // req.query.path es un array con los segmentos capturados por [...path]
+  const segments = Array.isArray(req.query.path) ? req.query.path : [req.query.path].filter(Boolean);
   const targetUrl = `${SOFASCORE_BASE}/${segments.join('/')}`;
 
   try {
@@ -35,4 +35,4 @@ export default async function handler(req, res) {
   } catch (err) {
     res.status(502).json({ error: 'Sofascore proxy error', detail: String(err) });
   }
-}
+};

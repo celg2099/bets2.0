@@ -3,7 +3,8 @@
     "allow": [
       "Bash(npx ng:*)",
       "Bash(npm install:*)",
-      "Bash(node -e ':*)"
+      "Bash(node -e ':*)",
+      "Bash(node -e \"const p = require\\('./package.json'\\); console.log\\('type:', p.type\\); console.log\\('node engines:', p.engines\\);\")"
     ]
   }
 }
