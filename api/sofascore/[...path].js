@@ -1,10 +1,9 @@
 // Vercel Serverless Function — proxy para Sofascore API
-// Ruta: /api/sofascore?path=unique-tournament/123/seasons
-// O bien: /api/sofascore/unique-tournament/123/seasons  (via rewrite)
+// Captura cualquier subpath: /api/sofascore/unique-tournament/123/seasons, etc.
 
 const SOFASCORE_BASE = 'https://www.sofascore.com/api/v1';
 
-const HEADERS = {
+const SOFASCORE_HEADERS = {
   'Origin': 'https://www.sofascore.com',
   'Referer': 'https://www.sofascore.com/',
   'User-Agent':
@@ -15,15 +14,14 @@ const HEADERS = {
 };
 
 export default async function handler(req, res) {
-  // El path llega en req.url, por ejemplo: /api/sofascore/unique-tournament/123/seasons
-  // Quitamos el prefijo /api/sofascore
-  const rawPath = req.url.replace(/^\/api\/sofascore\/?/, '');
-  const targetUrl = `${SOFASCORE_BASE}/${rawPath}`;
+  // req.query.path es un array con los segmentos del path capturados por [...path]
+  const segments = req.query.path ?? [];
+  const targetUrl = `${SOFASCORE_BASE}/${segments.join('/')}`;
 
   try {
     const upstream = await fetch(targetUrl, {
-      method: req.method,
-      headers: HEADERS,
+      method: 'GET',
+      headers: SOFASCORE_HEADERS,
     });
 
     const contentType = upstream.headers.get('content-type') ?? 'application/json';
