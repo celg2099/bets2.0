@@ -82,7 +82,7 @@ export class LigasService {
     { nombrePublico: 'Islas_Faroe', nombreForApi: 'faroe-islands/premier-league/', historico: 0 },
     { nombrePublico: 'Israel', nombreForApi: 'israel/premier-league/', historico: 0 },
     { nombrePublico: 'Italia', nombreForApi: 'italy/serie-a/', historico: 0 },
-    { nombrePublico: 'Italia_B', nombreForApi: 'italy/serie-b/', historico: 0 },
+    { nombrePublico: 'Italia_B', nombreForApi: 'italy/serie-b/', historico: 0, archivoLigas: 'Italia_B.json' },
     { nombrePublico: 'Jamaica', nombreForApi: 'jamaica/premier-league/', historico: 0 },
     { nombrePublico: 'Japon', nombreForApi: 'japan/j-league/', historico: 0 },
     { nombrePublico: 'Jordania', nombreForApi: 'jordan/pro-league/', historico: 0 },
