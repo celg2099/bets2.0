@@ -17,7 +17,8 @@ export class LigasService {
     { nombrePublico: 'Alemania_L3', nombreForApi: 'germany/3-liga/', historico: 0 },
     { nombrePublico: 'Angola', nombreForApi: 'angola/girabola/', historico: 0 },
     { nombrePublico: 'Arabia_Saudita', nombreForApi: 'saudi-arabia/saudi-professional-league/', historico: 0 },
-    { nombrePublico: 'Argelia', nombreForApi: 'algeria/ligue-1-2025/', historico: 0 },
+    { nombrePublico: 'Argelia', nombreForApi: 'algeria/ligue-1-2025/', historico: 0, archivoLigas: 'Argelia.json' },
+    { nombrePublico: 'Argelia_L2', nombreForApi: 'libia/premier-league/', historico: 0, archivoLigas: 'Argelia_L2.json', sofascoreId: 9459 },
     { nombrePublico: 'Argentina', nombreForApi: 'argentina/primera-division-apertura/', historico: 0, archivoLigas: 'Argentina.json' },
     { nombrePublico: 'Argentina_Women', nombreForApi: 'argentina/womens-primera-division-c/', historico: 0 },
     //{ nombrePublico: 'Argentina B Zone A', nombreForApi: 'argentina/primera-nacional-zone-a/', historico: 0 },
@@ -47,7 +48,7 @@ export class LigasService {
     { nombrePublico: 'Dinamarca_L1', nombreForApi: 'denmark/1-division/', historico: 0 },
     { nombrePublico: 'Ecuador', nombreForApi: 'ecuador/serie-a/', historico: 0 },
     { nombrePublico: 'Ecuador_B', nombreForApi: 'ecuador/liga-pro-serie-b/', historico: 0, archivoLigas: 'Ecuador_B.json' },
-    { nombrePublico: 'Egipto', nombreForApi: 'egypt/premier-league/', historico: 0, archivoLigas: 'Egipto.json'  },
+    { nombrePublico: 'Egipto', nombreForApi: 'egypt/premier-league/', historico: 0, archivoLigas: 'Egipto.json', sofascoreId: 808   },
     { nombrePublico: 'Egipto_L2', nombreForApi: 'egypt/2-division-a/', historico: 0, archivoLigas: 'Egipto_L2.json'  },
     { nombrePublico: 'El_Salvador', nombreForApi: 'el-salvador/primera-division-clausura/', historico: 0 },
     { nombrePublico: 'Emiratos_Arabes_Unidos', nombreForApi: 'united-arab-emirates/uae-league/', historico: 0 },
@@ -119,8 +120,9 @@ export class LigasService {
     { nombrePublico: 'Suiza', nombreForApi: 'switzerland/super-league/', historico: 0 },
     { nombrePublico: 'Tanzania', nombreForApi: 'tanzania/premier-league/', historico: 0 },
     { nombrePublico: 'Thailandia', nombreForApi: 'thailand/thai-league/', historico: 0 },
-    { nombrePublico: 'Turquia', nombreForApi: 'turquia/1st-lig', historico: 0 },
-    { nombrePublico: 'Turquia_L1', nombreForApi: 'turkiye/1st-lig/', historico: 0 },
+    { nombrePublico: 'Tunez', nombreForApi: 'libia/premier-league/', historico: 0, archivoLigas: 'Tunez.json', sofascoreId: 984 },  // 10633 - id tunez L2
+   // { nombrePublico: 'Turquia', nombreForApi: 'turquia/1st-lig', historico: 0 },
+   // { nombrePublico: 'Turquia_L1', nombreForApi: 'turkiye/1st-lig/', historico: 0 },
     { nombrePublico: 'Ucrania', nombreForApi: 'ukraine/premier-league/', historico: 0 },
     { nombrePublico: 'Uganda', nombreForApi: 'uganda/premier-league/', historico: 0 },
     { nombrePublico: 'Uruguay', nombreForApi: 'uruguay/primera-division-apertura/', historico: 0 },
@@ -131,7 +133,7 @@ export class LigasService {
   ];
 
   private readonly historicosDisponibles = new Set<string>([
-    'Albania', 'Alemania_L2', 'Arabia_Saudita', 'Argelia', 'Argentina',
+    'Albania', 'Alemania_L2', 'Arabia_Saudita', 'Argelia', 'Argelia_L2', 'Argentina',
     'Argentina_Women', 'Armenia', 'Australia', 'Australia_Tasmania',
     'Bielorusia', 'Bolivia', 'Brasil', 'Brasil_B', 'Bulgaria', 'Camerun',
     'Canada', 'Chile', 'China', 'Colombia', 'Colombia_B', 'Costa_Rica',
@@ -144,7 +146,7 @@ export class LigasService {
     'Marruecos', 'Marruecos_L2', 'Mexico', 'Mexico_Expansion', 'México_Femenil', 'Noruega', 'Paraguay', 'Paraguay_Intermedia',
     'Peru', 'Polonia', 'Polonia_L1', 'Portugal', 'Portugal_L2', 'Qatar',
     'Republica_Checa', 'Rumania', 'Senegal', 'Singapur', 'Sudafrica',
-    'Suecia', 'Suiza', 'Tanzania', 'Thailandia', 'Turquia', 'Ucrania',
+    'Suecia', 'Suiza', 'Tanzania', 'Thailandia', 'Tunez', 'Turquia', 'Ucrania',
     'Uruguay', 'USA_MLS', 'Uzbekistan', 'Vietnam',
   ]);
 
