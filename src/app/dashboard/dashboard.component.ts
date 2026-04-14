@@ -76,7 +76,7 @@ export class DashboardComponent implements OnInit {
   });
 
   // ── Señal combinada ───────────────────────────────────────
-  // Score 0-100: 40% racha/máximo + 35% pctInmediato + 25% pctLeq3
+  // Score 0-100: 25% racha/máximo + 35% pctInmediato + 40% pctLeq3
 
   senalCombinada = computed<SignalCombinada[]>(() => {
     const lista = this.hotListSvc.lista();
@@ -88,9 +88,9 @@ export class DashboardComponent implements OnInit {
       .filter((r) => r.conteoActual >= r.maxConteo - 2 && r.dateNextGame !== '')
       .map((r) => {
         const h = histMap.get(r.pais) ?? null;
-        const rachaFactor = r.maxConteo > 0 ? (r.conteoActual / r.maxConteo) * 40 : 0;
+        const rachaFactor = r.maxConteo > 0 ? (r.conteoActual / r.maxConteo) * 25 : 0;
         const inmFactor   = h ? h.pctInmediato * 0.35 : 0;
-        const leq3Factor  = h ? h.pctLeq3 * 0.25 : 0;
+        const leq3Factor  = h ? h.pctLeq3 * 0.40 : 0;
         return {
           pais: r.pais,
           conteoActual: r.conteoActual,

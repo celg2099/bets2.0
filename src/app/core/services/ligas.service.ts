@@ -100,7 +100,7 @@ export class LigasService {
     { nombrePublico: 'México_U20', nombreForApi: 'mexico/liga-mx-u20-clausura/', historico: 0 },
     { nombrePublico: 'Moldavia', nombreForApi: 'moldova/national-division/', historico: 0 },
     { nombrePublico: 'Montenegro', nombreForApi: 'montenegro/1-cfl/', historico: 0 },
-    { nombrePublico: 'Nicaragua', nombreForApi: 'nicaragua/primera-division-clausura/', historico: 0 },
+    { nombrePublico: 'Nicaragua', nombreForApi: 'nicaragua/primera-division-clausura/', historico: 0, archivoLigas: 'Nicaragua.json', sofascoreId: 10533 },
     { nombrePublico: 'Noruega', nombreForApi: 'norway/1-division/', historico: 0, archivoLigas: 'Noruega.json' },
     //{ nombrePublico: 'Panama_EAST', nombreForApi: 'panama/lpf-apertura-east/', historico: 0 },
     //{ nombrePublico: 'Panama_West', nombreForApi: 'panama/lpf-apertura-west/', historico: 0 },
@@ -130,7 +130,9 @@ export class LigasService {
     { nombrePublico: 'USA_MLS', nombreForApi: 'usa/major-league-soccer/', historico: 0 },
     { nombrePublico: 'Uzbekistan', nombreForApi: 'uzbekistan/superliga/', historico: 0 },
     { nombrePublico: 'Venezuela', nombreForApi: 'venezuela/primera-division/', historico: 0 },
-    { nombrePublico: 'Vietnam', nombreForApi: 'vietnam/v-league/', historico: 0 },
+    { nombrePublico: 'Vietnam', nombreForApi: 'vietnam/v-league/', historico: 0, archivoLigas: 'Vietnam.json' },
+    //{ nombrePublico: 'Argentina_1era', nombreForApi: 'libia/stars-league/', historico: 0, sofascoreId: 703 }, // NO GOD
+
   ];
 
   private readonly historicosDisponibles = new Set<string>([
@@ -144,7 +146,7 @@ export class LigasService {
     'Grecia', 'Guatemala', 'Guatemala_1era', 'Holanda', 'Honduras', 'Hong_Kong', 'Hungria', 'India', 'India_I_League',
     'Indonesia', 'Israel', 'Italia', 'Italia_B', 'Jamaica', 'Japon',
     'Jordania', 'Kazajistan', 'Korea_del_Sur', 'Kuwait', 'Lituania',
-    'Marruecos', 'Marruecos_L2', 'Mexico', 'Mexico_Expansion', 'México_Femenil', 'Noruega', 'Panama', 'Paraguay', 'Paraguay_Intermedia',
+    'Marruecos', 'Marruecos_L2', 'Mexico', 'Mexico_Expansion', 'México_Femenil', 'Nicaragua', 'Noruega', 'Panama', 'Paraguay', 'Paraguay_Intermedia',
     'Peru', 'Polonia', 'Polonia_L1', 'Portugal', 'Portugal_L2', 'Qatar',
     'Republica_Checa', 'Rumania', 'Senegal', 'Singapur', 'Sudafrica',
     'Suecia', 'Suiza', 'Tanzania', 'Thailandia', 'Tunez', 'Turquia', 'Ucrania',
