@@ -133,15 +133,15 @@ export class LigasService {
     { nombrePublico: 'Venezuela', nombreForApi: 'venezuela/primera-division/', historico: 0, enable: 1 },
     { nombrePublico: 'Vietnam', nombreForApi: 'vietnam/v-league/', historico: 0, archivoLigas: 'Vietnam.json', enable: 1 },
     //{ nombrePublico: 'Argentina_1era', nombreForApi: 'libia/stars-league/', historico: 0, sofascoreId: 703 }, // NO GOD
-    /*
-    { nombrePublico: 'Rusia', nombreForApi: 'libia/stars-league/', historico: 0, sofascoreId: 203, enable: 1 }, // GOOD
-    { nombrePublico: 'Senegal', nombreForApi: 'A/stars-league/', historico: 0, sofascoreId: 1226, enable: 1 },
-    { nombrePublico: 'Etiopia', nombreForApi: 'B/stars-league/', historico: 0, sofascoreId: 16601, enable: 1 },
-    { nombrePublico: 'Gambia', nombreForApi: 'C/stars-league/', historico: 0, sofascoreId: 16610, enable: 1 },
-    { nombrePublico: 'Mali', nombreForApi: 'D/stars-league/', historico: 0, sofascoreId: 21434, enable: 1 },
+
+    { nombrePublico: 'Rusia', nombreForApi: 'libia/stars-league/', historico: 0, archivoLigas: 'Rusia.json', sofascoreId: 203, enable: 1 }, // GOOD
+    { nombrePublico: 'Senegal', nombreForApi: 'senegal/stars-league/', historico: 0, archivoLigas: 'Senegal.json', sofascoreId: 1226, enable: 1 },
+    { nombrePublico: 'Etiopia', nombreForApi: 'B/stars-league/', historico: 0, archivoLigas: 'Etiopia.json', sofascoreId: 16601, enable: 1 },
+    { nombrePublico: 'Oman', nombreForApi: 'F/stars-league/', historico: 0, archivoLigas: 'Oman.json', sofascoreId: 965, enable: 1 },
+    { nombrePublico: 'Gambia', nombreForApi: 'C/stars-league/', historico: 0, archivoLigas: 'Gambia.json', sofascoreId: 16610, enable: 1 },
+   /* { nombrePublico: 'Mali', nombreForApi: 'D/stars-league/', historico: 0, sofascoreId: 21434, enable: 1 },
     { nombrePublico: 'Nigeria', nombreForApi: 'E/stars-league/', historico: 0, sofascoreId: 2060, enable: 1 },
-    { nombrePublico: 'Oman', nombreForApi: 'F/stars-league/', historico: 0, sofascoreId: 965, enable: 1 },
-    */
+*/
   ];
 
   private readonly historicosDisponibles = new Set<string>([
@@ -157,7 +157,7 @@ export class LigasService {
     'Jordania', 'Kazajistan', 'Korea_del_Sur', 'Kuwait', 'Lituania',
     'Marruecos', 'Marruecos_L2', 'Mexico', 'Mexico_Expansion', 'México_Femenil', 'Nicaragua', 'Noruega', 'Panama', 'Paraguay', 'Paraguay_Intermedia',
     'Peru', 'Polonia', 'Polonia_L1', 'Portugal', 'Portugal_L2', 'Qatar',
-    'Republica_Checa', 'Rumania', 'Senegal', 'Singapur', 'Sudafrica',
+    'Etiopia', 'Gambia', 'Oman', 'Republica_Checa', 'Rumania', 'Rusia', 'Senegal', 'Singapur', 'Sudafrica',
     'Suecia', 'Suiza', 'Tanzania', 'Thailandia', 'Tunez', 'Turquia', 'Ucrania',
     'Uruguay', 'USA_MLS', 'Uzbekistan', 'Vietnam',
   ]);

@@ -1,6 +1,6 @@
 import { Injectable, signal } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { Observable, concatMap, forkJoin, map } from 'rxjs';
+import { Observable, catchError, concatMap, forkJoin, map, of } from 'rxjs';
 import {
   Liga,
   Event,
@@ -94,6 +94,11 @@ export class LigaDataService {
                   (_, i) =>
                     this.http.get<SofascoreEventsResponse>(
                       `${this.sofascoreUrl}/unique-tournament/${tournamentId}/season/${seasonId}/events/round/${i + 1}`
+                    ).pipe(
+                      catchError((err) => {
+                        console.log(`[LigaDataService] Round ${i + 1} no encontrado (tournamentId=${tournamentId}, seasonId=${seasonId}):`, err?.message ?? err);
+                        return of({ events: [] } as SofascoreEventsResponse);
+                      })
                     )
                 );
                 return forkJoin(requests).pipe(
