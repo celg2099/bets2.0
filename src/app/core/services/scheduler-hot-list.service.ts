@@ -11,8 +11,10 @@ export class SchedulerHotListService implements OnDestroy {
   constructor(private hotListService: HotListService) {
     // Slots: 7:30 AM y 14:00
     const slots: [number, number][] = [
-      [7, 30],
-      [14, 0],
+      [6, 0],
+      [11, 0],
+      [16, 0],
+      [21, 0],
     ];
 
     const triggers$ = slots.map(([h, m]) =>

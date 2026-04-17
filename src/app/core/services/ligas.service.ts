@@ -117,7 +117,7 @@ export class LigasService {
     { nombrePublico: 'Republica_Checa', nombreForApi: 'czech-republic/1st-league/', historico: 0, enable: 1 },
     { nombrePublico: 'Rumania', nombreForApi: 'romania/liga-1/', historico: 0, enable: 1 },
     { nombrePublico: 'Singapur', nombreForApi: 'singapore/sg-premier-league/', historico: 0, enable: 1 },
-    { nombrePublico: 'Sudafrica', nombreForApi: 'south-africa/premier-league/', historico: 0, enable: 1 },
+    { nombrePublico: 'Sudafrica', nombreForApi: 'south-africa/premier-league/', archivoLigas: 'Tunez.json', historico: 0, enable: 1 },
     { nombrePublico: 'Suecia', nombreForApi: 'sweden/allsvenskan/', historico: 0, enable: 1 },
     { nombrePublico: 'Suiza', nombreForApi: 'switzerland/super-league/', historico: 0, enable: 1 },
     { nombrePublico: 'Tanzania', nombreForApi: 'tanzania/premier-league/', historico: 0, enable: 1 },
@@ -139,6 +139,7 @@ export class LigasService {
     { nombrePublico: 'Etiopia', nombreForApi: 'B/stars-league/', historico: 0, archivoLigas: 'Etiopia.json', sofascoreId: 16601, enable: 1 },
     { nombrePublico: 'Oman', nombreForApi: 'F/stars-league/', historico: 0, archivoLigas: 'Oman.json', sofascoreId: 965, enable: 1 },
     { nombrePublico: 'Gambia', nombreForApi: 'C/stars-league/', historico: 0, archivoLigas: 'Gambia.json', sofascoreId: 16610, enable: 1 },
+    { nombrePublico: 'Gambia_L2', nombreForApi: 'C/stars-leagueL2/', historico: 0, archivoLigas: 'Gambia_L2.json',  sofascoreId: 16638, enable: 1 },
    /* { nombrePublico: 'Mali', nombreForApi: 'D/stars-league/', historico: 0, sofascoreId: 21434, enable: 1 },
     { nombrePublico: 'Nigeria', nombreForApi: 'E/stars-league/', historico: 0, sofascoreId: 2060, enable: 1 },
 */
@@ -157,7 +158,7 @@ export class LigasService {
     'Jordania', 'Kazajistan', 'Korea_del_Sur', 'Kuwait', 'Lituania',
     'Marruecos', 'Marruecos_L2', 'Mexico', 'Mexico_Expansion', 'México_Femenil', 'Nicaragua', 'Noruega', 'Panama', 'Paraguay', 'Paraguay_Intermedia',
     'Peru', 'Polonia', 'Polonia_L1', 'Portugal', 'Portugal_L2', 'Qatar',
-    'Etiopia', 'Gambia', 'Oman', 'Republica_Checa', 'Rumania', 'Rusia', 'Senegal', 'Singapur', 'Sudafrica',
+    'Etiopia', 'Gambia', 'Gambia_L2','Oman', 'Republica_Checa', 'Rumania', 'Rusia', 'Senegal', 'Singapur', 'Sudafrica',
     'Suecia', 'Suiza', 'Tanzania', 'Thailandia', 'Tunez', 'Turquia', 'Ucrania',
     'Uruguay', 'USA_MLS', 'Uzbekistan', 'Vietnam',
   ]);

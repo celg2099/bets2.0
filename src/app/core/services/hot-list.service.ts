@@ -1,6 +1,6 @@
 import { Injectable, signal } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { forkJoin, from, mergeMap, toArray, catchError, of, map, concatMap } from 'rxjs';
+import { forkJoin, from, mergeMap, toArray, catchError, of, map, concatMap, retry } from 'rxjs';
 import {
   Liga,
   EpsStatus,
@@ -43,7 +43,7 @@ export class HotListService {
 
     from(ligas)
       .pipe(
-        mergeMap((liga) => this.procesarLiga(liga), 5),
+        mergeMap((liga) => this.procesarLiga(liga), 3),
         toArray()
       )
       .subscribe({
@@ -109,6 +109,7 @@ export class HotListService {
         `${this.sofascoreUrl}/unique-tournament/${id}/seasons`
       )
       .pipe(
+        retry({ count: 2, delay: 1000 }),
         concatMap((seasonsResp) => {
           const seasonId = seasonsResp.seasons[0].id;
           return this.http
@@ -116,17 +117,21 @@ export class HotListService {
               `${this.sofascoreUrl}/unique-tournament/${id}/season/${seasonId}/rounds`
             )
             .pipe(
+              retry({ count: 2, delay: 1000 }),
               concatMap((roundsResp) => {
                 const currentRound =
                   roundsResp.currentRound?.round ?? roundsResp.rounds.length;
-                const requests = Array.from(
+                const roundRequests = Array.from(
                   { length: currentRound },
                   (_, i) =>
                     this.http.get<SofascoreEventsResponse>(
                       `${this.sofascoreUrl}/unique-tournament/${id}/season/${seasonId}/events/round/${i + 1}`
-                    )
+                    ).pipe(retry({ count: 1, delay: 800 }))
                 );
-                return forkJoin(requests).pipe(
+                // Max 4 rondas simultáneas para no saturar Sofascore
+                return from(roundRequests).pipe(
+                  mergeMap((req) => req, 4),
+                  toArray(),
                   map((responses) => responses.flatMap((r) => r.events ?? []))
                 );
               })
