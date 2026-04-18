@@ -117,7 +117,7 @@ export class LigasService {
     { nombrePublico: 'Republica_Checa', nombreForApi: 'czech-republic/1st-league/', historico: 0, enable: 1 },
     { nombrePublico: 'Rumania', nombreForApi: 'romania/liga-1/', historico: 0, enable: 1 },
     { nombrePublico: 'Singapur', nombreForApi: 'singapore/sg-premier-league/', historico: 0, enable: 1 },
-    { nombrePublico: 'Sudafrica', nombreForApi: 'south-africa/premier-league/', archivoLigas: 'Tunez.json', historico: 0, enable: 1 },
+    { nombrePublico: 'Sudafrica', nombreForApi: 'south-africa/premier-league/', archivoLigas: 'Sudafrica.json', historico: 0, enable: 1 },
     { nombrePublico: 'Suecia', nombreForApi: 'sweden/allsvenskan/', historico: 0, enable: 1 },
     { nombrePublico: 'Suiza', nombreForApi: 'switzerland/super-league/', historico: 0, enable: 1 },
     { nombrePublico: 'Tanzania', nombreForApi: 'tanzania/premier-league/', historico: 0, enable: 1 },
