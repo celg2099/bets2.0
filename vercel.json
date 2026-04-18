@@ -1,10 +1,4 @@
 {
-  "functions": {
-    "api/sofascore/[...path].js": {
-      "memory": 256,
-      "maxDuration": 10
-    }
-  },
   "rewrites": [
     {
       "source": "/v1/api/:path*",
@@ -15,7 +9,7 @@
       "destination": "https://www.livescore.com/en/football/:path*"
     },
     {
-      "source": "/((?!api/).*)",
+      "source": "/((?!api).*)",
       "destination": "/index.html"
     }
   ]
