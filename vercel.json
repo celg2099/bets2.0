@@ -9,7 +9,7 @@
       "destination": "https://www.livescore.com/en/football/:path*"
     },
     {
-      "source": "/((?!api/|assets/|.*\\..*).*)",
+      "source": "/((?!api/).*)",
       "destination": "/index.html"
     }
   ]
