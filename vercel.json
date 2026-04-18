@@ -9,6 +9,10 @@
       "destination": "https://www.livescore.com/en/football/:path*"
     },
     {
+      "source": "/api/sofascore/:path*",
+      "destination": "/api/sofa-proxy?path=:path*"
+    },
+    {
       "source": "/((?!api).*)",
       "destination": "/index.html"
     }
