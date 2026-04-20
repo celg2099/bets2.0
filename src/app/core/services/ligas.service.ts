@@ -112,7 +112,7 @@ export class LigasService {
     { nombrePublico: 'Polonia', nombreForApi: 'poland/ekstraklasa/', historico: 0, enable: 1 },
     { nombrePublico: 'Polonia_L1', nombreForApi: 'poland/i-liga/', historico: 0, enable: 1 },
     { nombrePublico: 'Portugal', nombreForApi: 'portugal/primeira-liga/', historico: 0, enable: 1 },
-    { nombrePublico: 'Portugal_L2', nombreForApi: 'portugal/segunda-liga/', historico: 0, enable: 1 },
+    { nombrePublico: 'Portugal_L2', nombreForApi: 'portugal/segunda-liga/', archivoLigas: 'Portugal_L2.json', historico: 0, enable: 1 },
     { nombrePublico: 'Qatar', nombreForApi: 'qatar/qatar-stars-league/', historico: 0, enable: 1 },
     { nombrePublico: 'Republica_Checa', nombreForApi: 'czech-republic/1st-league/', historico: 0, enable: 1 },
     { nombrePublico: 'Rumania', nombreForApi: 'romania/liga-1/', historico: 0, enable: 1 },
@@ -140,9 +140,9 @@ export class LigasService {
     { nombrePublico: 'Oman', nombreForApi: 'F/stars-league/', historico: 0, archivoLigas: 'Oman.json', sofascoreId: 965, enable: 1 },
     { nombrePublico: 'Gambia', nombreForApi: 'C/stars-league/', historico: 0, archivoLigas: 'Gambia.json', sofascoreId: 16610, enable: 1 },
     { nombrePublico: 'Gambia_L2', nombreForApi: 'C/stars-leagueL2/', historico: 0, archivoLigas: 'Gambia_L2.json',  sofascoreId: 16638, enable: 1 },
-   /* { nombrePublico: 'Mali', nombreForApi: 'D/stars-league/', historico: 0, sofascoreId: 21434, enable: 1 },
-    { nombrePublico: 'Nigeria', nombreForApi: 'E/stars-league/', historico: 0, sofascoreId: 2060, enable: 1 },
-*/
+   // { nombrePublico: 'Chile_L2', nombreForApi: 'D/stars-league/', historico: 0, sofascoreId: 1240, enable: 1 },
+   // { nombrePublico: 'Uruguay_L2', nombreForApi: 'E/stars-league/', historico: 0, sofascoreId: 1908, enable: 1 },
+
   ];
 
   private readonly historicosDisponibles = new Set<string>([
