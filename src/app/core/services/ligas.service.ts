@@ -127,7 +127,7 @@ export class LigasService {
     //{ nombrePublico: 'Turquia_L1', nombreForApi: 'turkiye/1st-lig/', historico: 0, sofascoreId: 98 },
     { nombrePublico: 'Ucrania', nombreForApi: 'ukraine/premier-league/', historico: 0, enable: 1 },
     { nombrePublico: 'Uganda', nombreForApi: 'uganda/premier-league/', historico: 0, enable: 1 },
-    { nombrePublico: 'Uruguay', nombreForApi: 'uruguay/primera-division-apertura/', historico: 0, enable: 1 },
+    { nombrePublico: 'Uruguay', nombreForApi: 'uruguay/primera-division-apertura/',  archivoLigas: 'Uruguay.json', historico: 0, enable: 1 },
     { nombrePublico: 'USA_MLS', nombreForApi: 'usa/major-league-soccer/', historico: 0, enable: 1 },
     { nombrePublico: 'Uzbekistan', nombreForApi: 'uzbekistan/superliga/', historico: 0, enable: 1 },
     { nombrePublico: 'Venezuela', nombreForApi: 'venezuela/primera-division/', historico: 0, enable: 1 },
@@ -141,7 +141,7 @@ export class LigasService {
     { nombrePublico: 'Gambia', nombreForApi: 'C/stars-league/', historico: 0, archivoLigas: 'Gambia.json', sofascoreId: 16610, enable: 1 },
     { nombrePublico: 'Gambia_L2', nombreForApi: 'C/stars-leagueL2/', historico: 0, archivoLigas: 'Gambia_L2.json',  sofascoreId: 16638, enable: 1 },
    // { nombrePublico: 'Chile_L2', nombreForApi: 'D/stars-league/', historico: 0, sofascoreId: 1240, enable: 1 },
-   // { nombrePublico: 'Uruguay_L2', nombreForApi: 'E/stars-league/', historico: 0, sofascoreId: 1908, enable: 1 },
+    { nombrePublico: 'Uruguay_L2', nombreForApi: 'E/stars-league/', archivoLigas: 'Uruguay_L2.json' ,historico: 0, sofascoreId: 1908, enable: 1 },
 
   ];
 
@@ -160,7 +160,7 @@ export class LigasService {
     'Peru', 'Polonia', 'Polonia_L1', 'Portugal', 'Portugal_L2', 'Qatar',
     'Etiopia', 'Gambia', 'Gambia_L2','Oman', 'Republica_Checa', 'Rumania', 'Rusia', 'Senegal', 'Singapur', 'Sudafrica',
     'Suecia', 'Suiza', 'Tanzania', 'Thailandia', 'Tunez', 'Turquia', 'Ucrania',
-    'Uruguay', 'USA_MLS', 'Uzbekistan', 'Vietnam',
+    'Uruguay', 'Uruguay_L2','USA_MLS', 'Uzbekistan', 'Vietnam',
   ]);
 
   tieneHistorico(nombrePublico: string): boolean {
