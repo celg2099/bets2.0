@@ -90,7 +90,7 @@ export class LigaDataService {
                 const currentRound =
                   roundsResp.currentRound?.round ?? roundsResp.rounds.length;
                 const requests = Array.from(
-                  { length: currentRound },
+                  { length: currentRound + 1 },
                   (_, i) =>
                     this.http.get<SofascoreEventsResponse>(
                       `${this.sofascoreUrl}/unique-tournament/${tournamentId}/season/${seasonId}/events/round/${i + 1}`

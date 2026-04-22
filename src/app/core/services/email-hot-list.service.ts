@@ -165,6 +165,21 @@ export class EmailHotListService {
     // Histórico Acumulado
     const sortedHistorico = [...historico].sort((a, b) => b.pctInmediato - a.pctInmediato);
     const historicoRows = limitarAcumulado ? sortedHistorico.slice(0, 20) : sortedHistorico;
+
+    // Top de lo Top: top 10 del histórico cruzado con datos actuales
+    const hotCheckMap = new Map(todasLasLigas.map((h) => [h.pais, h]));
+    const filasTopTop = sortedHistorico.slice(0, 10).map((h) => {
+      const hc = hotCheckMap.get(h.pais);
+      const dateBg = hc ? this.nextGameDateBg(hc.dateNextGame) : '';
+      return `<tr>
+        <td style="${tdBase}">${this.ligaLabel(h.pais, ambosSet)}</td>
+        <td style="${tdCenter}">${hc?.conteoActual ?? '—'}</td>
+        <td style="${tdCenter}">${hc?.maxConteo ?? '—'}</td>
+        <td style="${tdCenter}">${hc?.gamesFinished ?? '—'}</td>
+        <td style="${tdCenter}">${hc ? hc.percentDraw.toFixed(1) + '%' : '—'}</td>
+        <td style="${tdDate}${dateBg}">${hc?.dateNextGame ?? ''}</td>
+      </tr>`;
+    }).join('');
     const [t1Inm, t2Inm] = this.top2(sortedHistorico, 'pctInmediato');
     const [t1Leq3, t2Leq3] = this.top2(sortedHistorico, 'pctLeq3');
     const [t1Leq5, t2Leq5] = this.top2(sortedHistorico, 'pctLeq5');
@@ -192,7 +207,20 @@ export class EmailHotListService {
 
   <div style="padding:8px 20px 12px; background:#fff; border:1px solid #e0e0e0;">
 
-    <h3 style="margin:0 0 4px; font-size:15px; color:#1a5276;">&#11088; Ligas Principales (Pr&oacute;ximas a Jugarse)</h3>
+    <h3 style="margin:0 0 4px; font-size:15px; color:#b71c1c;">&#127942; Top de lo Top</h3>
+    <table style="${tableStyle}">
+      <thead><tr>
+        <th style="${thStyle}">Pa&iacute;s</th>
+        <th style="${thCStyle}">Conteo Actual</th>
+        <th style="${thCStyle}">M&aacute;x Conteo</th>
+        <th style="${thCStyle}">Juegos</th>
+        <th style="${thCStyle}">% Empates</th>
+        <th style="${thStyle}">Pr&oacute;ximo Partido</th>
+      </tr></thead>
+      <tbody>${filasTopTop}</tbody>
+    </table>
+
+    <h3 style="margin:10px 0 4px; font-size:15px; color:#1a5276;">&#11088; Ligas Principales (Pr&oacute;ximas a Jugarse)</h3>
     <table style="${tableStyle}">
       <thead><tr>
         <th style="${thStyle}">Pa&iacute;s</th>

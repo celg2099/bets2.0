@@ -41,7 +41,7 @@ export class LigasService {
     { nombrePublico: 'Chile', nombreForApi: 'chile/primera-division/', historico: 0, enable: 1 },
     { nombrePublico: 'China', nombreForApi: 'china/super-league/', historico: 0, enable: 1 },
     { nombrePublico: 'Chipre', nombreForApi: 'cyprus/1-division/', historico: 0, enable: 1 },
-    { nombrePublico: 'Colombia', nombreForApi: 'colombia/primera-a-apertura/', historico: 0, enable: 1 },
+    { nombrePublico: 'Colombia', nombreForApi: 'colombia/primera-a-apertura/',  archivoLigas: 'Colombia.json',historico: 0, enable: 1 },
     { nombrePublico: 'Colombia_B', nombreForApi: 'colombia/primera-b-apertura/', historico: 0, enable: 1 },
     { nombrePublico: 'Costa_Rica', nombreForApi: 'costa-rica/primera-division-clausura/', historico: 0, enable: 1 },
     { nombrePublico: 'Croacia', nombreForApi: 'croatia/1st-league/', historico: 0, enable: 1 },
