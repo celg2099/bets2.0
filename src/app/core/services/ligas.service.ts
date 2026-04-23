@@ -21,7 +21,8 @@ export class LigasService {
     { nombrePublico: 'Argelia', nombreForApi: 'algeria/ligue-1-2025/', historico: 0, archivoLigas: 'Argelia.json', enable: 1 },
     { nombrePublico: 'Argelia_L2', nombreForApi: 'libia/premier-league/', historico: 0, archivoLigas: 'Argelia_L2.json', sofascoreId: 9459, enable: 1 },
     { nombrePublico: 'Argentina', nombreForApi: 'argentina/primera-division-apertura/', historico: 0, archivoLigas: 'Argentina.json', enable: 1 },
-    { nombrePublico: 'Argentina_Women', nombreForApi: 'argentina/womens-primera-division-c/', historico: 0, enable: 1 },
+    { nombrePublico: 'Argentina_L1', nombreForApi: 'argentina/premier-league/', historico: 0, archivoLigas: 'Argentina_L1.json', sofascoreId: 703, enable: 1 },
+    //{ nombrePublico: 'Argentina_Women', nombreForApi: 'argentina/womens-primera-division-c/', historico: 0, enable: 1 },
     //{ nombrePublico: 'Argentina B Zone A', nombreForApi: 'argentina/primera-nacional-zone-a/', historico: 0 },
     //{ nombrePublico: 'Argentina B Zone B', nombreForApi: 'argentina/primera-nacional-zone-b/', historico: 0 },
     { nombrePublico: 'Armenia', nombreForApi: 'armenia/premier-league/', historico: 0, enable: 1 },
@@ -146,7 +147,7 @@ export class LigasService {
   ];
 
   private readonly historicosDisponibles = new Set<string>([
-    'Albania', 'Alemania_L2', 'Arabia_Saudita', 'Argelia', 'Argelia_L2', 'Argentina',
+    'Albania', 'Alemania_L2', 'Arabia_Saudita', 'Argelia', 'Argelia_L2', 'Argentina', 'Argentina_L1',
     'Argentina_Women', 'Armenia', 'Australia', 'Australia_Tasmania',
     'Bielorusia', 'Bolivia', 'Brasil', 'Brasil_B', 'Bulgaria', 'Camerun',
     'Canada', 'Chile', 'China', 'Colombia', 'Colombia_B', 'Costa_Rica',
