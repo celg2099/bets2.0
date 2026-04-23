@@ -87,10 +87,9 @@ export class LigaDataService {
             )
             .pipe(
               concatMap((roundsResp) => {
-                const currentRound =
-                  roundsResp.currentRound?.round ?? roundsResp.rounds.length;
+                const totalRounds = roundsResp.rounds.length;
                 const requests = Array.from(
-                  { length: currentRound + 1 },
+                  { length: totalRounds },
                   (_, i) =>
                     this.http.get<SofascoreEventsResponse>(
                       `${this.sofascoreUrl}/unique-tournament/${tournamentId}/season/${seasonId}/events/round/${i + 1}`
