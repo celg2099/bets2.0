@@ -87,7 +87,8 @@ export class LigaDataService {
             )
             .pipe(
               concatMap((roundsResp) => {
-                const totalRounds = roundsResp.rounds.length;
+                const currentRound = roundsResp.currentRound?.round ?? roundsResp.rounds.length;
+                const totalRounds = Math.min(currentRound + 1, roundsResp.rounds.length);
                 const requests = Array.from(
                   { length: totalRounds },
                   (_, i) =>

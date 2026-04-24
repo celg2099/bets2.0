@@ -121,8 +121,9 @@ export class HotListService {
               concatMap((roundsResp) => {
                 const currentRound =
                   roundsResp.currentRound?.round ?? roundsResp.rounds.length;
+                const totalRounds = Math.min(currentRound + 1, roundsResp.rounds.length);
                 const roundRequests = Array.from(
-                  { length: currentRound },
+                  { length: totalRounds },
                   (_, i) =>
                     this.http.get<SofascoreEventsResponse>(
                       `${this.sofascoreUrl}/unique-tournament/${id}/season/${seasonId}/events/round/${i + 1}`
