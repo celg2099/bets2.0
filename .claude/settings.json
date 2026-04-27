@@ -7,7 +7,8 @@
       "Bash(node -e \"const p = require\\('./package.json'\\); console.log\\('type:', p.type\\); console.log\\('node engines:', p.engines\\);\")",
       "Bash(git -C /c/Users/Carlos/Desktop/Angular/Bets2.0/bets2.0 log --oneline -20)",
       "Bash(git -C /c/Users/Carlos/Desktop/Angular/Bets2.0/bets2.0 log --pretty=format:\"%h %ad %s\" --date=short -10)",
-      "Bash(git -C /c/Users/Carlos/Desktop/Angular/Bets2.0/bets2.0 diff HEAD~3..HEAD --name-only)"
+      "Bash(git -C /c/Users/Carlos/Desktop/Angular/Bets2.0/bets2.0 diff HEAD~3..HEAD --name-only)",
+      "Bash(node scripts/top_marcadores.mjs)"
     ]
   }
 }

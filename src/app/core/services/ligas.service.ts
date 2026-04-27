@@ -88,7 +88,7 @@ export class LigasService {
     { nombrePublico: 'Jamaica', nombreForApi: 'jamaica/premier-league/', historico: 0, enable: 1 },
     { nombrePublico: 'Japon', nombreForApi: 'japan/j-league/', historico: 0, enable: 1 },
     { nombrePublico: 'Jordania', nombreForApi: 'jordan/pro-league/', historico: 0, enable: 1 },
-    { nombrePublico: 'Kazajistan', nombreForApi: 'kazakhstan/premier-league/', historico: 0, enable: 1 },
+    { nombrePublico: 'Kazajistan', nombreForApi: 'kazakhstan/premier-league/', archivoLigas: 'Kazajistan.json', historico: 0, enable: 1 },
     { nombrePublico: 'Korea_del_Sur', nombreForApi: 'republic-of-korea/k-league-1/', historico: 0, enable: 1 },
     { nombrePublico: 'Kuwait', nombreForApi: 'kuwait/premier-league/', historico: 0, enable: 1 },
     { nombrePublico: 'Lituania', nombreForApi: 'lithuania/a-lyga/', historico: 0, enable: 1 },
@@ -141,8 +141,11 @@ export class LigasService {
     { nombrePublico: 'Oman', nombreForApi: 'F/stars-league/', historico: 0, archivoLigas: 'Oman.json', sofascoreId: 965, enable: 1 },
     { nombrePublico: 'Gambia', nombreForApi: 'C/stars-league/', historico: 0, archivoLigas: 'Gambia.json', sofascoreId: 16610, enable: 1 },
     { nombrePublico: 'Gambia_L2', nombreForApi: 'C/stars-leagueL2/', historico: 0, archivoLigas: 'Gambia_L2.json',  sofascoreId: 16638, enable: 1 },
-   // { nombrePublico: 'Chile_L2', nombreForApi: 'D/stars-league/', historico: 0, sofascoreId: 1240, enable: 1 },
-    { nombrePublico: 'Uruguay_L2', nombreForApi: 'E/stars-league/', archivoLigas: 'Uruguay_L2.json' ,historico: 0, sofascoreId: 1908, enable: 1 },
+    //{ nombrePublico: 'Chile_L2', nombreForApi: 'D/stars-league/', historico: 0, sofascoreId: 1240, enable: 1 },
+    //{ nombrePublico: 'Uruguay_L2', nombreForApi: 'E/stars-league/', archivoLigas: 'Uruguay_L2.json' ,historico: 0, sofascoreId: 1908, enable: 1 },
+    //{ nombrePublico: 'Somalia', nombreForApi: 'somalia/stars-league/', historico: 0, sofascoreId: 22403, enable: 1 },
+   // { nombrePublico: 'Chad', nombreForApi: 'chad/stars-league/', historico: 0, sofascoreId: 22106, enable: 1 },
+  // { nombrePublico: 'Mauritania', nombreForApi: 'mauritania/ligue-1/', sofascoreId: 23703, historico: 0, enable: 1 },
 
   ];
 

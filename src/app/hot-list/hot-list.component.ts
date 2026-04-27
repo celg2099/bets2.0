@@ -84,11 +84,25 @@ export class HotListComponent {
     const col = this.mainCol();
     const asc = this.mainAsc();
     return [...rows].sort((a, b) => {
+      if (col === 'dateNextGame') {
+        const ta = this.dateStrToTimestamp(a.dateNextGame);
+        const tb = this.dateStrToTimestamp(b.dateNextGame);
+        return asc ? ta - tb : tb - ta;
+      }
       const va = a[col as keyof HotCheck];
       const vb = b[col as keyof HotCheck];
       if (typeof va === 'string') return asc ? va.localeCompare(vb as string) : (vb as string).localeCompare(va);
       return asc ? (va as number) - (vb as number) : (vb as number) - (va as number);
     });
+  }
+
+  private dateStrToTimestamp(dateStr: string): number {
+    if (!dateStr) return Infinity;
+    // Formato: DD/MM/YYYY HH:mm:ss
+    const [datePart, timePart = '00:00:00'] = dateStr.split(' ');
+    const [dd, mm, yyyy] = datePart.split('/');
+    const [hh, min, ss] = timePart.split(':');
+    return new Date(+yyyy, +mm - 1, +dd, +hh, +min, +ss).getTime();
   }
 
   // ─── Actions ─────────────────────────────────────────────
