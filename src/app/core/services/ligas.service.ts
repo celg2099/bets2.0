@@ -121,7 +121,7 @@ export class LigasService {
     { nombrePublico: 'Sudafrica', nombreForApi: 'south-africa/premier-league/', archivoLigas: 'Sudafrica.json', historico: 0, enable: 1 },
     { nombrePublico: 'Suecia', nombreForApi: 'sweden/allsvenskan/', historico: 0, enable: 1 },
     { nombrePublico: 'Suiza', nombreForApi: 'switzerland/super-league/', historico: 0, enable: 1 },
-    { nombrePublico: 'Tanzania', nombreForApi: 'tanzania/premier-league/', historico: 0, enable: 1 },
+    { nombrePublico: 'Tanzania', nombreForApi: 'tanzania/premier-league/', historico: 0, archivoLigas: 'Tanzania.json', enable: 1 },
     { nombrePublico: 'Thailandia', nombreForApi: 'thailand/thai-league/', historico: 0, enable: 1 },
     { nombrePublico: 'Tunez', nombreForApi: 'libia/premier-league/', historico: 0, archivoLigas: 'Tunez.json', sofascoreId: 984, enable: 1 },  // 10633 - id tunez L2
     { nombrePublico: 'Turquia', nombreForApi: 'turquia/1st-lig', historico: 0, archivoLigas: 'Turquia.json', sofascoreId: 52, enable: 1 },
@@ -145,7 +145,7 @@ export class LigasService {
     //{ nombrePublico: 'Uruguay_L2', nombreForApi: 'E/stars-league/', archivoLigas: 'Uruguay_L2.json' ,historico: 0, sofascoreId: 1908, enable: 1 },
     //{ nombrePublico: 'Somalia', nombreForApi: 'somalia/stars-league/', historico: 0, sofascoreId: 22403, enable: 1 },
    // { nombrePublico: 'Chad', nombreForApi: 'chad/stars-league/', historico: 0, sofascoreId: 22106, enable: 1 },
-  // { nombrePublico: 'Mauritania', nombreForApi: 'mauritania/ligue-1/', sofascoreId: 23703, historico: 0, enable: 1 },
+   // { nombrePublico: 'Egipto_LB', nombreForApi: 'mauritania/ligue-1/', sofascoreId: 23703, archivoLigas: 'Egipto_LB.json', historico: 0, enable: 1 },
 
   ];
 
@@ -164,7 +164,7 @@ export class LigasService {
     'Peru', 'Polonia', 'Polonia_L1', 'Portugal', 'Portugal_L2', 'Qatar',
     'Etiopia', 'Gambia', 'Gambia_L2','Oman', 'Republica_Checa', 'Rumania', 'Rusia', 'Senegal', 'Singapur', 'Sudafrica',
     'Suecia', 'Suiza', 'Tanzania', 'Thailandia', 'Tunez', 'Turquia', 'Ucrania',
-    'Uruguay', 'Uruguay_L2','USA_MLS', 'Uzbekistan', 'Vietnam',
+    'Uruguay', 'Uruguay_L2','USA_MLS', 'Uzbekistan', 'Vietnam', 'Egipto_LB'
   ]);
 
   tieneHistorico(nombrePublico: string): boolean {
