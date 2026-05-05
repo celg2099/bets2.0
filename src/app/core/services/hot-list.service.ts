@@ -127,7 +127,10 @@ export class HotListService {
                   (_, i) =>
                     this.http.get<SofascoreEventsResponse>(
                       `${this.sofascoreUrl}/unique-tournament/${id}/season/${seasonId}/events/round/${i + 1}`
-                    ).pipe(retry({ count: 1, delay: 800 }))
+                    ).pipe(
+                      retry({ count: 1, delay: 800 }),
+                      catchError(() => of({ events: [] } as SofascoreEventsResponse))
+                    )
                 );
                 // Max 4 rondas simultáneas para no saturar Sofascore
                 return from(roundRequests).pipe(
