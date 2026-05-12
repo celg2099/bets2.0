@@ -149,7 +149,7 @@ export class LigasService {
     //{ nombrePublico: 'Somalia', nombreForApi: 'somalia/stars-league/', historico: 0, sofascoreId: 22403, enable: 1 },
     { nombrePublico: 'Chad', nombreForApi: 'chad/stars-league/', historico: 0, sofascoreId: 22106, enable: 1 },
    // { nombrePublico: 'Egipto_LB', nombreForApi: 'mauritania/ligue-1/', sofascoreId: 23703, archivoLigas: 'Egipto_LB.json', historico: 0, enable: 1 },
-
+    { nombrePublico: 'Zimbawe', nombreForApi: 'Zimbawe/stars-league/', historico: 0, sofascoreId: 11033, enable: 1 },
   ];
 
   private readonly historicosDisponibles = new Set<string>([
