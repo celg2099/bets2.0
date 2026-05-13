@@ -99,6 +99,20 @@ Defined in `src/app/core/interfaces/results.interface.ts`: `Liga`, `Event`, `Hot
 1. Add `public/Ligas/[LeagueName].json` with match data
 2. Register in `LigasService`: `{ archivoLigas, sofascoreId, enable, historico, ... }`
 3. Run `node scripts/gen_historico.mjs LeagueName`
+4. Add the league name to the `historicosDisponibles` Set in `LigasService` — without this, `tieneHistorico()` returns false and the league never appears in the Histórico Acumulado or Top 10 of the email/PDF, even if the file exists.
+
+### Sofascore Round Error Handling
+
+`HotListService` processes all leagues in parallel and must swallow per-round errors silently. Each round request uses:
+```typescript
+.pipe(
+  retry({ count: 1, delay: 800 }),
+  catchError(() => of({ events: [] } as SofascoreEventsResponse))
+)
+```
+Without the `catchError`, a 404 on the next scheduled round (which may not exist yet) kills the entire league — it disappears from the hot-list and all email/PDF sections. `LigaDataService` has the same pattern for its own round requests. Keep them in sync.
+
+`HotListService.generarLista()` processes **all** leagues (no `enable` filter) — the `enable` flag is only used by UI components to decide what to display.
 
 ### Styling
 

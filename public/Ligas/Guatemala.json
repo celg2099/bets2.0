@@ -3,19 +3,10 @@
   "fuente": "Sofascore",
   "torneos": [
     {
-      "tournamentId": 11619,
-      "nombre": "Liga Nacional de Fútbol de Guatemala, Apertura"
-    }
-    ,
-    {
-      "tournamentId": 11615,
-      "nombre": "Liga Nacional de Fútbol de Guatemala, Clausura"
-    }
-  ],
-  "temporadas": [
-    {
+      "tipo": "Apertura",
       "nombre": "Liga Nacional. Apertura 2015",
-      "año": "2015",
+      "temporada": "15/16",
+      "tournamentId": 11619,
       "seasonId": 9696,
       "jornadas": [
         {
@@ -2903,13 +2894,13 @@
             }
           ]
         }
-      ],
-      "torneo": "apertura",
-      "tournamentId": 11619
+      ]
     },
     {
+      "tipo": "Clausura",
       "nombre": "Liga Nacional. Clausura 2016",
-      "año": "2016",
+      "temporada": "15/16",
+      "tournamentId": 11615,
       "seasonId": 9696,
       "jornadas": [
         {
@@ -5588,13 +5579,13 @@
             }
           ]
         }
-      ],
-      "torneo": "clausura",
-      "tournamentId": 11615
+      ]
     },
     {
+      "tipo": "Apertura",
       "nombre": "Liga Nacional. Apertura 2016",
-      "año": "2016",
+      "temporada": "16/17",
+      "tournamentId": 11619,
       "seasonId": 11873,
       "jornadas": [
         {
@@ -8218,13 +8209,13 @@
             }
           ]
         }
-      ],
-      "torneo": "apertura",
-      "tournamentId": 11619
+      ]
     },
     {
+      "tipo": "Clausura",
       "nombre": "Liga Nacional. Clausura 2017",
-      "año": "2017",
+      "temporada": "16/17",
+      "tournamentId": 11615,
       "seasonId": 11873,
       "jornadas": [
         {
@@ -11314,13 +11305,13 @@
             }
           ]
         }
-      ],
-      "torneo": "clausura",
-      "tournamentId": 11615
+      ]
     },
     {
+      "tipo": "Apertura",
       "nombre": "Liga Nacional. Apertura 2017",
-      "año": "2017",
+      "temporada": "17/18",
+      "tournamentId": 11619,
       "seasonId": 13678,
       "jornadas": [
         {
@@ -15831,13 +15822,13 @@
             }
           ]
         }
-      ],
-      "torneo": "apertura",
-      "tournamentId": 11619
+      ]
     },
     {
+      "tipo": "Clausura",
       "nombre": "Liga Nacional. Clausura 2018",
-      "año": "2018",
+      "temporada": "17/18",
+      "tournamentId": 11615,
       "seasonId": 13678,
       "jornadas": [
         {
@@ -20602,13 +20593,13 @@
             }
           ]
         }
-      ],
-      "torneo": "clausura",
-      "tournamentId": 11615
+      ]
     },
     {
+      "tipo": "Apertura",
       "nombre": "Liga Nacional. Apertura 2018",
-      "año": "2018",
+      "temporada": "18/19",
+      "tournamentId": 11619,
       "seasonId": 18024,
       "jornadas": [
         {
@@ -25480,13 +25471,13 @@
             }
           ]
         }
-      ],
-      "torneo": "apertura",
-      "tournamentId": 11619
+      ]
     },
     {
+      "tipo": "Clausura",
       "nombre": "Liga Nacional. Clausura 2019",
-      "año": "2019",
+      "temporada": "18/19",
+      "tournamentId": 11615,
       "seasonId": 20064,
       "jornadas": [
         {
@@ -30318,13 +30309,13 @@
             }
           ]
         }
-      ],
-      "torneo": "clausura",
-      "tournamentId": 11615
+      ]
     },
     {
+      "tipo": "Apertura",
       "nombre": "Liga Nacional. Apertura 2019",
-      "año": "2019",
+      "temporada": "19/20",
+      "tournamentId": 11619,
       "seasonId": 24022,
       "jornadas": [
         {
@@ -35270,13 +35261,13 @@
             }
           ]
         }
-      ],
-      "torneo": "apertura",
-      "tournamentId": 11619
+      ]
     },
     {
+      "tipo": "Clausura",
       "nombre": "Liga Nacional. Clausura 2020",
-      "año": "2020",
+      "temporada": "19/20",
+      "tournamentId": 11615,
       "seasonId": 26871,
       "jornadas": [
         {
@@ -38217,13 +38208,13 @@
             }
           ]
         }
-      ],
-      "torneo": "clausura",
-      "tournamentId": 11615
+      ]
     },
     {
+      "tipo": "Apertura",
       "nombre": "Liga Nacional. Apertura 2020",
-      "año": "2020",
+      "temporada": "20/21",
+      "tournamentId": 11619,
       "seasonId": 29443,
       "jornadas": [
         {
@@ -41776,13 +41767,13 @@
             }
           ]
         }
-      ],
-      "torneo": "apertura",
-      "tournamentId": 11619
+      ]
     },
     {
+      "tipo": "Clausura",
       "nombre": "Liga Nacional. Clausura 2021",
-      "año": "2021",
+      "temporada": "20/21",
+      "tournamentId": 11615,
       "seasonId": 35669,
       "jornadas": [
         {
@@ -44446,13 +44437,13 @@
             }
           ]
         }
-      ],
-      "torneo": "clausura",
-      "tournamentId": 11615
+      ]
     },
     {
+      "tipo": "Apertura",
       "nombre": "Liga Nacional. Apertura 2021",
-      "año": "2021",
+      "temporada": "21/22",
+      "tournamentId": 11619,
       "seasonId": 37354,
       "jornadas": [
         {
@@ -49234,13 +49225,13 @@
             }
           ]
         }
-      ],
-      "torneo": "apertura",
-      "tournamentId": 11619
+      ]
     },
     {
+      "tipo": "Clausura",
       "nombre": "Liga Nacional. Clausura 2022",
-      "año": "2022",
+      "temporada": "21/22",
+      "tournamentId": 11615,
       "seasonId": 40152,
       "jornadas": [
         {
@@ -54396,13 +54387,13 @@
             }
           ]
         }
-      ],
-      "torneo": "clausura",
-      "tournamentId": 11615
+      ]
     },
     {
+      "tipo": "Apertura",
       "nombre": "Liga Nacional. Apertura 2022",
-      "año": "2022",
+      "temporada": "22/23",
+      "tournamentId": 11619,
       "seasonId": 42695,
       "jornadas": [
         {
@@ -59630,13 +59621,13 @@
             }
           ]
         }
-      ],
-      "torneo": "apertura",
-      "tournamentId": 11619
+      ]
     },
     {
+      "tipo": "Clausura",
       "nombre": "Liga Nacional. Clausura 2023",
-      "año": "2023",
+      "temporada": "22/23",
+      "tournamentId": 11615,
       "seasonId": 48117,
       "jornadas": [
         {
@@ -64136,13 +64127,13 @@
             }
           ]
         }
-      ],
-      "torneo": "clausura",
-      "tournamentId": 11615
+      ]
     },
     {
+      "tipo": "Apertura",
       "nombre": "Liga Nacional. Apertura 2023",
-      "año": "2023",
+      "temporada": "23/24",
+      "tournamentId": 11619,
       "seasonId": 53134,
       "jornadas": [
         {
@@ -67558,13 +67549,13 @@
             }
           ]
         }
-      ],
-      "torneo": "apertura",
-      "tournamentId": 11619
+      ]
     },
     {
+      "tipo": "Clausura",
       "nombre": "Liga Nacional. Clausura 2024",
-      "año": "2024",
+      "temporada": "23/24",
+      "tournamentId": 11615,
       "seasonId": 57479,
       "jornadas": [
         {
@@ -70763,13 +70754,13 @@
             }
           ]
         }
-      ],
-      "torneo": "clausura",
-      "tournamentId": 11615
+      ]
     },
     {
+      "tipo": "Apertura",
       "nombre": "Liga Nacional. Apertura 2024",
-      "año": "2024",
+      "temporada": "24/25",
+      "tournamentId": 11619,
       "seasonId": 61855,
       "jornadas": [
         {
@@ -74136,13 +74127,13 @@
             }
           ]
         }
-      ],
-      "torneo": "apertura",
-      "tournamentId": 11619
+      ]
     },
     {
+      "tipo": "Clausura",
       "nombre": "Liga Nacional. Clausura 2025",
-      "año": "2025",
+      "temporada": "24/25",
+      "tournamentId": 11615,
       "seasonId": 69800,
       "jornadas": [
         {
@@ -77810,13 +77801,13 @@
             }
           ]
         }
-      ],
-      "torneo": "clausura",
-      "tournamentId": 11615
+      ]
     },
     {
+      "tipo": "Apertura",
       "nombre": "Liga Nacional. Apertura 2025",
-      "año": "2025",
+      "temporada": "25/26",
+      "tournamentId": 11619,
       "seasonId": 76913,
       "jornadas": [
         {
@@ -82249,13 +82240,13 @@
             }
           ]
         }
-      ],
-      "torneo": "apertura",
-      "tournamentId": 11619
+      ]
     },
     {
+      "tipo": "Clausura",
       "nombre": "Liga Bantrab. Clausura 2026",
-      "año": "2026",
+      "temporada": "25/26",
+      "tournamentId": 11615,
       "seasonId": 88355,
       "jornadas": [
         {
@@ -86603,9 +86594,7 @@
             }
           ]
         }
-      ],
-      "torneo": "clausura",
-      "tournamentId": 11615
+      ]
     }
   ]
 }
