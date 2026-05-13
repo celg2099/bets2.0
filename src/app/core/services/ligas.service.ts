@@ -149,8 +149,13 @@ export class LigasService {
     { nombrePublico: 'Uruguay_L2', nombreForApi: 'E/stars-league/', archivoLigas: 'Uruguay_L2.json' ,historico: 0, sofascoreId: 1908, enable: 1 },
     { nombrePublico: 'Eswatini', nombreForApi: 'Eswatini/stars-league/', historico: 0, sofascoreId: 18452, enable: 1 },
     { nombrePublico: 'Chad', nombreForApi: 'chad/stars-league/', historico: 0, sofascoreId: 22106, enable: 1 },
+<<<<<<< HEAD
     { nombrePublico: 'Burkina', nombreForApi: 'Burkina/ligue-1/', sofascoreId: 29369,  historico: 0, enable: 1 },
 
+=======
+   // { nombrePublico: 'Egipto_LB', nombreForApi: 'mauritania/ligue-1/', sofascoreId: 23703, archivoLigas: 'Egipto_LB.json', historico: 0, enable: 1 },
+    { nombrePublico: 'Zimbawe', nombreForApi: 'Zimbawe/stars-league/', historico: 0, sofascoreId: 11033, enable: 1 },
+>>>>>>> ab27e9707c10699466df434b9f72e89a067e518b
   ];
 
   private readonly historicosDisponibles = new Set<string>([
