@@ -1,0 +1,1933 @@
+{
+  "descripcion": "Super Ligue - Niger",
+  "fuente": "Sofascore",
+  "tournamentId": 28091,
+  "temporadas": [
+    {
+      "nombre": "Super Ligue 24/25",
+      "año": "2024/2025",
+      "seasonId": 78795,
+      "jornadas": [
+        {
+          "numero": 1,
+          "partidos": [
+            {
+              "id": 14241925,
+              "fechaHora": "09/11/2024 09:15",
+              "local": "Espoir FC",
+              "visitante": "US Gendarmerie Nationale",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14241926,
+              "fechaHora": "09/11/2024 09:15",
+              "local": "JS Tahoua",
+              "visitante": "AS Police Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14241924,
+              "fechaHora": "09/11/2024 09:15",
+              "local": "Jangorzo FC",
+              "visitante": "Olympic Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14241930,
+              "fechaHora": "09/11/2024 09:15",
+              "local": "Sahel Niamey",
+              "visitante": "Liberté FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14241928,
+              "fechaHora": "09/11/2024 09:15",
+              "local": "Urana FC",
+              "visitante": "ASN Nigelec",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14241931,
+              "fechaHora": "10/11/2024 09:15",
+              "local": "AS Douanes Niamey",
+              "visitante": "Wombeye",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14241932,
+              "fechaHora": "10/11/2024 09:15",
+              "local": "AS Renaissance de Boukoki",
+              "visitante": "AS Forces Armées Nigériennes",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14241942,
+              "fechaHora": "11/11/2024 09:15",
+              "local": "AS Garde Nationale Nigérienne",
+              "visitante": "AS UAM",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 4,
+                "golesVisitante": 3
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "partidos": [
+            {
+              "id": 14241944,
+              "fechaHora": "13/11/2024 09:15",
+              "local": "JS Tahoua",
+              "visitante": "ASN Nigelec",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 5
+              },
+              "goles": []
+            },
+            {
+              "id": 14241943,
+              "fechaHora": "13/11/2024 09:15",
+              "local": "Urana FC",
+              "visitante": "AS Police Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14242428,
+              "fechaHora": "15/11/2024 09:15",
+              "local": "Liberté FC",
+              "visitante": "Jangorzo FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14242427,
+              "fechaHora": "15/11/2024 09:15",
+              "local": "Olympic Niamey",
+              "visitante": "AS Forces Armées Nigériennes",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14242432,
+              "fechaHora": "16/11/2024 09:15",
+              "local": "AS Garde Nationale Nigérienne",
+              "visitante": "AS Douanes Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14242429,
+              "fechaHora": "16/11/2024 09:15",
+              "local": "Espoir FC",
+              "visitante": "AS Renaissance de Boukoki",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14242430,
+              "fechaHora": "16/11/2024 09:15",
+              "local": "Wombeye",
+              "visitante": "Sahel Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14242433,
+              "fechaHora": "17/11/2024 09:15",
+              "local": "AS UAM",
+              "visitante": "US Gendarmerie Nationale",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 3
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "partidos": [
+            {
+              "id": 14242435,
+              "fechaHora": "20/11/2024 09:15",
+              "local": "Wombeye",
+              "visitante": "AS Renaissance de Boukoki",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14242436,
+              "fechaHora": "22/11/2024 09:15",
+              "local": "AS UAM",
+              "visitante": "Urana FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14242437,
+              "fechaHora": "22/11/2024 09:15",
+              "local": "US Gendarmerie Nationale",
+              "visitante": "JS Tahoua",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 4,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14242441,
+              "fechaHora": "23/11/2024 09:15",
+              "local": "AS Forces Armées Nigériennes",
+              "visitante": "AS Police Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14242438,
+              "fechaHora": "23/11/2024 09:15",
+              "local": "ASN Nigelec",
+              "visitante": "Espoir FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14242440,
+              "fechaHora": "23/11/2024 09:15",
+              "local": "Jangorzo FC",
+              "visitante": "AS Garde Nationale Nigérienne",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14242442,
+              "fechaHora": "24/11/2024 09:15",
+              "local": "Olympic Niamey",
+              "visitante": "Liberté FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14242443,
+              "fechaHora": "24/11/2024 09:15",
+              "local": "Sahel Niamey",
+              "visitante": "AS Douanes Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "partidos": [
+            {
+              "id": 14242447,
+              "fechaHora": "25/11/2024 09:15",
+              "local": "US Gendarmerie Nationale",
+              "visitante": "Urana FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14242448,
+              "fechaHora": "26/11/2024 09:15",
+              "local": "ASN Nigelec",
+              "visitante": "AS UAM",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14242451,
+              "fechaHora": "27/11/2024 09:15",
+              "local": "AS Douanes Niamey",
+              "visitante": "JS Tahoua",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 3,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14242450,
+              "fechaHora": "27/11/2024 09:15",
+              "local": "Espoir FC",
+              "visitante": "AS Garde Nationale Nigérienne",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14242449,
+              "fechaHora": "27/11/2024 09:15",
+              "local": "Olympic Niamey",
+              "visitante": "Wombeye",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14242453,
+              "fechaHora": "28/11/2024 09:15",
+              "local": "AS Forces Armées Nigériennes",
+              "visitante": "Sahel Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14242452,
+              "fechaHora": "28/11/2024 09:15",
+              "local": "AS Renaissance de Boukoki",
+              "visitante": "Jangorzo FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14242454,
+              "fechaHora": "29/11/2024 09:00",
+              "local": "AS Police Niamey",
+              "visitante": "Liberté FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "partidos": [
+            {
+              "id": 14248099,
+              "fechaHora": "30/11/2024 09:00",
+              "local": "AS UAM",
+              "visitante": "Wombeye",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14248101,
+              "fechaHora": "02/12/2024 09:00",
+              "local": "AS Douanes Niamey",
+              "visitante": "AS Police Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14248100,
+              "fechaHora": "02/12/2024 09:00",
+              "local": "AS Renaissance de Boukoki",
+              "visitante": "ASN Nigelec",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14248106,
+              "fechaHora": "03/12/2024 09:00",
+              "local": "AS Garde Nationale Nigérienne",
+              "visitante": "Liberté FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14248104,
+              "fechaHora": "03/12/2024 09:00",
+              "local": "JS Tahoua",
+              "visitante": "Olympic Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14248102,
+              "fechaHora": "03/12/2024 09:00",
+              "local": "Jangorzo FC",
+              "visitante": "US Gendarmerie Nationale",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14248103,
+              "fechaHora": "03/12/2024 09:00",
+              "local": "Sahel Niamey",
+              "visitante": "Espoir FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14248105,
+              "fechaHora": "03/12/2024 09:00",
+              "local": "Urana FC",
+              "visitante": "AS Forces Armées Nigériennes",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 3
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 6,
+          "partidos": [
+            {
+              "id": 14248107,
+              "fechaHora": "05/12/2024 09:00",
+              "local": "AS Police Niamey",
+              "visitante": "ASN Nigelec",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14248108,
+              "fechaHora": "06/12/2024 09:00",
+              "local": "Liberté FC",
+              "visitante": "AS Douanes Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14248111,
+              "fechaHora": "07/12/2024 09:00",
+              "local": "Espoir FC",
+              "visitante": "AS UAM",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 3,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14248112,
+              "fechaHora": "07/12/2024 09:00",
+              "local": "JS Tahoua",
+              "visitante": "AS Forces Armées Nigériennes",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 3
+              },
+              "goles": []
+            },
+            {
+              "id": 14248110,
+              "fechaHora": "07/12/2024 09:00",
+              "local": "Sahel Niamey",
+              "visitante": "AS Garde Nationale Nigérienne",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14248114,
+              "fechaHora": "07/12/2024 09:00",
+              "local": "US Gendarmerie Nationale",
+              "visitante": "AS Renaissance de Boukoki",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14248113,
+              "fechaHora": "07/12/2024 09:00",
+              "local": "Urana FC",
+              "visitante": "Olympic Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14248109,
+              "fechaHora": "07/12/2024 09:00",
+              "local": "Wombeye",
+              "visitante": "Jangorzo FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 7,
+          "partidos": [
+            {
+              "id": 14248115,
+              "fechaHora": "28/12/2024 09:00",
+              "local": "Sahel Niamey",
+              "visitante": "AS Police Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14248116,
+              "fechaHora": "29/12/2024 09:00",
+              "local": "Jangorzo FC",
+              "visitante": "JS Tahoua",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14248117,
+              "fechaHora": "29/12/2024 09:15",
+              "local": "Olympic Niamey",
+              "visitante": "Espoir FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14248119,
+              "fechaHora": "31/12/2024 09:15",
+              "local": "AS Garde Nationale Nigérienne",
+              "visitante": "Wombeye",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14248118,
+              "fechaHora": "31/12/2024 09:15",
+              "local": "Liberté FC",
+              "visitante": "Urana FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14248121,
+              "fechaHora": "01/01/2025 09:00",
+              "local": "AS UAM",
+              "visitante": "AS Forces Armées Nigériennes",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14248122,
+              "fechaHora": "01/01/2025 09:15",
+              "local": "AS Douanes Niamey",
+              "visitante": "AS Renaissance de Boukoki",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14248123,
+              "fechaHora": "02/01/2025 09:00",
+              "local": "ASN Nigelec",
+              "visitante": "US Gendarmerie Nationale",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 8,
+          "partidos": [
+            {
+              "id": 14248126,
+              "fechaHora": "02/01/2025 09:15",
+              "local": "Espoir FC",
+              "visitante": "JS Tahoua",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14248131,
+              "fechaHora": "03/01/2025 09:15",
+              "local": "AS Garde Nationale Nigérienne",
+              "visitante": "Urana FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14248129,
+              "fechaHora": "03/01/2025 09:15",
+              "local": "AS Police Niamey",
+              "visitante": "Jangorzo FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14248132,
+              "fechaHora": "04/01/2025 09:15",
+              "local": "AS Forces Armées Nigériennes",
+              "visitante": "Wombeye",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 3,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14248134,
+              "fechaHora": "04/01/2025 09:15",
+              "local": "AS Renaissance de Boukoki",
+              "visitante": "Sahel Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14248133,
+              "fechaHora": "04/01/2025 09:15",
+              "local": "AS UAM",
+              "visitante": "Olympic Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14248137,
+              "fechaHora": "05/01/2025 09:15",
+              "local": "ASN Nigelec",
+              "visitante": "Liberté FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14248136,
+              "fechaHora": "05/01/2025 09:15",
+              "local": "US Gendarmerie Nationale",
+              "visitante": "AS Douanes Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 9,
+          "partidos": [
+            {
+              "id": 14339436,
+              "fechaHora": "07/01/2025 09:15",
+              "local": "Jangorzo FC",
+              "visitante": "Urana FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14339441,
+              "fechaHora": "08/01/2025 09:15",
+              "local": "JS Tahoua",
+              "visitante": "Sahel Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14339442,
+              "fechaHora": "08/01/2025 09:15",
+              "local": "Liberté FC",
+              "visitante": "AS UAM",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14339439,
+              "fechaHora": "08/01/2025 09:15",
+              "local": "Wombeye",
+              "visitante": "Espoir FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14339443,
+              "fechaHora": "09/01/2025 09:15",
+              "local": "Olympic Niamey",
+              "visitante": "AS Police Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14339445,
+              "fechaHora": "11/01/2025 09:00",
+              "local": "AS Forces Armées Nigériennes",
+              "visitante": "US Gendarmerie Nationale",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14339446,
+              "fechaHora": "11/01/2025 09:00",
+              "local": "AS Renaissance de Boukoki",
+              "visitante": "AS Garde Nationale Nigérienne",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14339448,
+              "fechaHora": "12/01/2025 09:00",
+              "local": "AS Douanes Niamey",
+              "visitante": "ASN Nigelec",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 10,
+          "partidos": [
+            {
+              "id": 14339452,
+              "fechaHora": "13/01/2025 09:00",
+              "local": "Jangorzo FC",
+              "visitante": "Espoir FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14339465,
+              "fechaHora": "13/01/2025 09:15",
+              "local": "AS Police Niamey",
+              "visitante": "AS UAM",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14339464,
+              "fechaHora": "13/01/2025 09:15",
+              "local": "Urana FC",
+              "visitante": "Wombeye",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14339524,
+              "fechaHora": "14/01/2025 09:15",
+              "local": "AS Renaissance de Boukoki",
+              "visitante": "Liberté FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14340564,
+              "fechaHora": "18/01/2025 09:15",
+              "local": "AS Garde Nationale Nigérienne",
+              "visitante": "JS Tahoua",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14340565,
+              "fechaHora": "18/01/2025 09:15",
+              "local": "ASN Nigelec",
+              "visitante": "AS Forces Armées Nigériennes",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14340567,
+              "fechaHora": "20/01/2025 09:15",
+              "local": "AS Douanes Niamey",
+              "visitante": "Olympic Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 3,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14340566,
+              "fechaHora": "20/01/2025 09:15",
+              "local": "Sahel Niamey",
+              "visitante": "US Gendarmerie Nationale",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 2
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 11,
+          "partidos": [
+            {
+              "id": 14340568,
+              "fechaHora": "22/01/2025 09:15",
+              "local": "AS UAM",
+              "visitante": "JS Tahoua",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14340571,
+              "fechaHora": "24/01/2025 09:15",
+              "local": "AS Renaissance de Boukoki",
+              "visitante": "Urana FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14340569,
+              "fechaHora": "24/01/2025 09:15",
+              "local": "Jangorzo FC",
+              "visitante": "AS Douanes Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14340570,
+              "fechaHora": "24/01/2025 09:15",
+              "local": "US Gendarmerie Nationale",
+              "visitante": "Liberté FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14340574,
+              "fechaHora": "25/01/2025 09:15",
+              "local": "AS Forces Armées Nigériennes",
+              "visitante": "Espoir FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14340573,
+              "fechaHora": "25/01/2025 09:15",
+              "local": "AS Garde Nationale Nigérienne",
+              "visitante": "ASN Nigelec",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14340575,
+              "fechaHora": "25/01/2025 09:15",
+              "local": "Olympic Niamey",
+              "visitante": "Sahel Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14340572,
+              "fechaHora": "25/01/2025 09:15",
+              "local": "Wombeye",
+              "visitante": "AS Police Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 12,
+          "partidos": [
+            {
+              "id": 14340579,
+              "fechaHora": "29/01/2025 09:15",
+              "local": "AS Police Niamey",
+              "visitante": "Espoir FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14340576,
+              "fechaHora": "29/01/2025 09:15",
+              "local": "JS Tahoua",
+              "visitante": "Liberté FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14340578,
+              "fechaHora": "29/01/2025 09:15",
+              "local": "Sahel Niamey",
+              "visitante": "Jangorzo FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14340580,
+              "fechaHora": "30/01/2025 09:15",
+              "local": "ASN Nigelec",
+              "visitante": "Wombeye",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 4,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14340581,
+              "fechaHora": "31/01/2025 09:15",
+              "local": "AS UAM",
+              "visitante": "AS Renaissance de Boukoki",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14340582,
+              "fechaHora": "01/02/2025 09:00",
+              "local": "Urana FC",
+              "visitante": "AS Douanes Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14340583,
+              "fechaHora": "01/02/2025 09:15",
+              "local": "US Gendarmerie Nationale",
+              "visitante": "Olympic Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 5,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14340584,
+              "fechaHora": "02/02/2025 09:00",
+              "local": "AS Forces Armées Nigériennes",
+              "visitante": "AS Garde Nationale Nigérienne",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 13,
+          "partidos": [
+            {
+              "id": 14340585,
+              "fechaHora": "03/02/2025 09:00",
+              "local": "JS Tahoua",
+              "visitante": "Wombeye",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14340586,
+              "fechaHora": "04/02/2025 09:15",
+              "local": "Olympic Niamey",
+              "visitante": "ASN Nigelec",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14340590,
+              "fechaHora": "05/02/2025 09:15",
+              "local": "AS Garde Nationale Nigérienne",
+              "visitante": "US Gendarmerie Nationale",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 3,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14340587,
+              "fechaHora": "05/02/2025 09:15",
+              "local": "Espoir FC",
+              "visitante": "AS Douanes Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14340588,
+              "fechaHora": "05/02/2025 09:15",
+              "local": "Jangorzo FC",
+              "visitante": "AS UAM",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14340591,
+              "fechaHora": "05/02/2025 09:15",
+              "local": "Liberté FC",
+              "visitante": "AS Forces Armées Nigériennes",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14340589,
+              "fechaHora": "05/02/2025 09:15",
+              "local": "Urana FC",
+              "visitante": "Sahel Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14340592,
+              "fechaHora": "06/02/2025 09:15",
+              "local": "AS Police Niamey",
+              "visitante": "AS Renaissance de Boukoki",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 14,
+          "partidos": [
+            {
+              "id": 14340622,
+              "fechaHora": "09/02/2025 09:15",
+              "local": "AS Forces Armées Nigériennes",
+              "visitante": "Jangorzo FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 3,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14340620,
+              "fechaHora": "09/02/2025 09:15",
+              "local": "Urana FC",
+              "visitante": "Espoir FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14340621,
+              "fechaHora": "09/02/2025 09:15",
+              "local": "Wombeye",
+              "visitante": "Liberté FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14340623,
+              "fechaHora": "12/02/2025 09:15",
+              "local": "AS Garde Nationale Nigérienne",
+              "visitante": "Olympic Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14340624,
+              "fechaHora": "13/02/2025 09:15",
+              "local": "AS Douanes Niamey",
+              "visitante": "AS UAM",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14340625,
+              "fechaHora": "13/02/2025 09:15",
+              "local": "US Gendarmerie Nationale",
+              "visitante": "AS Police Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14340626,
+              "fechaHora": "14/02/2025 09:15",
+              "local": "AS Renaissance de Boukoki",
+              "visitante": "JS Tahoua",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14340627,
+              "fechaHora": "15/02/2025 09:15",
+              "local": "ASN Nigelec",
+              "visitante": "Sahel Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 15,
+          "partidos": [
+            {
+              "id": 14340629,
+              "fechaHora": "16/02/2025 09:15",
+              "local": "AS Forces Armées Nigériennes",
+              "visitante": "AS Douanes Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14340628,
+              "fechaHora": "16/02/2025 09:15",
+              "local": "AS Police Niamey",
+              "visitante": "AS Garde Nationale Nigérienne",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14340630,
+              "fechaHora": "17/02/2025 09:15",
+              "local": "Liberté FC",
+              "visitante": "Espoir FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14340631,
+              "fechaHora": "17/02/2025 09:15",
+              "local": "US Gendarmerie Nationale",
+              "visitante": "Wombeye",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 3,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14340632,
+              "fechaHora": "18/02/2025 09:00",
+              "local": "JS Tahoua",
+              "visitante": "Urana FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14340633,
+              "fechaHora": "19/02/2025 09:00",
+              "local": "Jangorzo FC",
+              "visitante": "ASN Nigelec",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14340634,
+              "fechaHora": "20/02/2025 09:00",
+              "local": "Olympic Niamey",
+              "visitante": "AS Renaissance de Boukoki",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14340635,
+              "fechaHora": "20/02/2025 09:00",
+              "local": "Sahel Niamey",
+              "visitante": "AS UAM",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 16,
+          "partidos": [
+            {
+              "id": 14345864,
+              "fechaHora": "05/04/2025 09:00",
+              "local": "Espoir FC",
+              "visitante": "Liberté FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14345865,
+              "fechaHora": "05/04/2025 09:00",
+              "local": "Urana FC",
+              "visitante": "JS Tahoua",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14345866,
+              "fechaHora": "05/04/2025 09:00",
+              "local": "Wombeye",
+              "visitante": "US Gendarmerie Nationale",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 5
+              },
+              "goles": []
+            },
+            {
+              "id": 14345869,
+              "fechaHora": "05/04/2025 09:30",
+              "local": "AS Douanes Niamey",
+              "visitante": "AS Forces Armées Nigériennes",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14345867,
+              "fechaHora": "05/04/2025 09:30",
+              "local": "AS Garde Nationale Nigérienne",
+              "visitante": "AS Police Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14345871,
+              "fechaHora": "06/04/2025 09:30",
+              "local": "AS Renaissance de Boukoki",
+              "visitante": "Olympic Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14345870,
+              "fechaHora": "06/04/2025 09:30",
+              "local": "AS UAM",
+              "visitante": "Sahel Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14345872,
+              "fechaHora": "07/04/2025 09:30",
+              "local": "ASN Nigelec",
+              "visitante": "Jangorzo FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 3,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 17,
+          "partidos": [
+            {
+              "id": 14632505,
+              "fechaHora": "09/04/2025 09:00",
+              "local": "Espoir FC",
+              "visitante": "Urana FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14632512,
+              "fechaHora": "11/04/2025 09:30",
+              "local": "AS Police Niamey",
+              "visitante": "US Gendarmerie Nationale",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14632510,
+              "fechaHora": "11/04/2025 09:30",
+              "local": "Liberté FC",
+              "visitante": "Wombeye",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14632521,
+              "fechaHora": "12/04/2025 09:00",
+              "local": "JS Tahoua",
+              "visitante": "AS Renaissance de Boukoki",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14632517,
+              "fechaHora": "12/04/2025 09:00",
+              "local": "Jangorzo FC",
+              "visitante": "AS Forces Armées Nigériennes",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 4
+              },
+              "goles": []
+            },
+            {
+              "id": 14632526,
+              "fechaHora": "12/04/2025 09:00",
+              "local": "Olympic Niamey",
+              "visitante": "AS Garde Nationale Nigérienne",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14632525,
+              "fechaHora": "12/04/2025 09:00",
+              "local": "Sahel Niamey",
+              "visitante": "ASN Nigelec",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 3
+              },
+              "goles": []
+            },
+            {
+              "id": 14632530,
+              "fechaHora": "13/04/2025 09:30",
+              "local": "AS UAM",
+              "visitante": "AS Douanes Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 18,
+          "partidos": [
+            {
+              "id": 14632552,
+              "fechaHora": "17/04/2025 09:30",
+              "local": "ASN Nigelec",
+              "visitante": "Olympic Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14632550,
+              "fechaHora": "17/04/2025 09:30",
+              "local": "Sahel Niamey",
+              "visitante": "Urana FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14632561,
+              "fechaHora": "18/04/2025 09:00",
+              "local": "AS Douanes Niamey",
+              "visitante": "Espoir FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 3,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14632557,
+              "fechaHora": "18/04/2025 09:00",
+              "local": "AS Renaissance de Boukoki",
+              "visitante": "AS Police Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14632556,
+              "fechaHora": "18/04/2025 09:00",
+              "local": "Wombeye",
+              "visitante": "JS Tahoua",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14632569,
+              "fechaHora": "19/04/2025 09:30",
+              "local": "AS UAM",
+              "visitante": "Jangorzo FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14632571,
+              "fechaHora": "19/04/2025 09:30",
+              "local": "US Gendarmerie Nationale",
+              "visitante": "AS Garde Nationale Nigérienne",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14632574,
+              "fechaHora": "20/04/2025 09:30",
+              "local": "AS Forces Armées Nigériennes",
+              "visitante": "Liberté FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 4,
+                "golesVisitante": 1
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 19,
+          "partidos": [
+            {
+              "id": 14632582,
+              "fechaHora": "21/04/2025 09:30",
+              "local": "AS Douanes Niamey",
+              "visitante": "Urana FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14632596,
+              "fechaHora": "22/04/2025 09:30",
+              "local": "AS Renaissance de Boukoki",
+              "visitante": "AS UAM",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14632595,
+              "fechaHora": "22/04/2025 09:30",
+              "local": "Espoir FC",
+              "visitante": "AS Police Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14632597,
+              "fechaHora": "23/04/2025 09:00",
+              "local": "Jangorzo FC",
+              "visitante": "Sahel Niamey",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14632598,
+              "fechaHora": "23/04/2025 09:30",
+              "local": "AS Garde Nationale Nigérienne",
+              "visitante": "AS Forces Armées Nigériennes",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14632599,
+              "fechaHora": "23/04/2025 09:30",
+              "local": "Liberté FC",
+              "visitante": "JS Tahoua",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14632601,
+              "fechaHora": "23/04/2025 09:30",
+              "local": "Wombeye",
+              "visitante": "ASN Nigelec",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14632605,
+              "fechaHora": "24/04/2025 09:30",
+              "local": "Olympic Niamey",
+              "visitante": "US Gendarmerie Nationale",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

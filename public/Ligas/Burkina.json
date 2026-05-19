@@ -1,0 +1,1407 @@
+{
+  "descripcion": "FasoFoot Ligue 1 - Burkina Faso",
+  "fuente": "Sofascore",
+  "tournamentId": 29369,
+  "temporadas": [
+    {
+      "nombre": "FasoFoot Ligue 1 24/25",
+      "año": "2024/2025",
+      "seasonId": 82405,
+      "jornadas": [
+        {
+          "numero": 1,
+          "partidos": [
+            {
+              "id": 14653151,
+              "fechaHora": "05/10/2024 09:30",
+              "local": "AS Sonabel",
+              "visitante": "US Comoé",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14653153,
+              "fechaHora": "05/10/2024 09:30",
+              "local": "ASFA Yennega",
+              "visitante": "Real du Faso",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14653152,
+              "fechaHora": "05/10/2024 09:30",
+              "local": "Majestic FC",
+              "visitante": "ASF Bobo Dioulasso",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14653149,
+              "fechaHora": "05/10/2024 09:30",
+              "local": "Sporting Cascades",
+              "visitante": "AS Douanes",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14653148,
+              "fechaHora": "05/10/2024 09:30",
+              "local": "Vitesse FC",
+              "visitante": "ASEC Koudougou",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 5,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14653155,
+              "fechaHora": "06/10/2024 09:30",
+              "local": "Racing Club Bobo-Dioulasso",
+              "visitante": "Rahimo FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14653154,
+              "fechaHora": "06/10/2024 09:30",
+              "local": "Étoile Filante de Ouagadougou",
+              "visitante": "US Forces Armees",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "partidos": [
+            {
+              "id": 14653163,
+              "fechaHora": "12/10/2024 09:30",
+              "local": "Rahimo FC",
+              "visitante": "Majestic FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14653162,
+              "fechaHora": "12/10/2024 09:30",
+              "local": "Real du Faso",
+              "visitante": "Salitas FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14655604,
+              "fechaHora": "14/10/2024 09:30",
+              "local": "ASF Bobo Dioulasso",
+              "visitante": "Sporting Cascades",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "partidos": [
+            {
+              "id": 14655607,
+              "fechaHora": "17/10/2024 09:30",
+              "local": "ASFA Yennega",
+              "visitante": "ASF Bobo Dioulasso",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14655606,
+              "fechaHora": "17/10/2024 09:30",
+              "local": "Racing Club Bobo-Dioulasso",
+              "visitante": "US Comoé",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14655605,
+              "fechaHora": "17/10/2024 09:30",
+              "local": "Sporting Cascades",
+              "visitante": "Majestic FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 2
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "partidos": [
+            {
+              "id": 14655608,
+              "fechaHora": "22/10/2024 09:30",
+              "local": "Rahimo FC",
+              "visitante": "Sporting Cascades",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14655609,
+              "fechaHora": "22/10/2024 09:30",
+              "local": "Rail Club de Kadiogo",
+              "visitante": "Vitesse FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "partidos": [
+            {
+              "id": 14655612,
+              "fechaHora": "26/10/2024 09:30",
+              "local": "ASEC Koudougou",
+              "visitante": "US Forces Armees",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14655610,
+              "fechaHora": "26/10/2024 09:30",
+              "local": "Salitas FC",
+              "visitante": "Majestic FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 3,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 13030253,
+              "fechaHora": "26/10/2024 10:00",
+              "local": "ASFA Yennega",
+              "visitante": "Sporting Cascades",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14655622,
+              "fechaHora": "27/10/2024 09:30",
+              "local": "AS Sonabel",
+              "visitante": "AS Douanes",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14655617,
+              "fechaHora": "27/10/2024 09:30",
+              "local": "US Comoé",
+              "visitante": "Rahimo FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 3,
+                "golesVisitante": 3
+              },
+              "goles": []
+            },
+            {
+              "id": 14655613,
+              "fechaHora": "27/10/2024 09:30",
+              "local": "Vitesse FC",
+              "visitante": "Real du Faso",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14655628,
+              "fechaHora": "27/10/2024 09:30",
+              "local": "Étoile Filante de Ouagadougou",
+              "visitante": "ASF Bobo Dioulasso",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14655634,
+              "fechaHora": "28/10/2024 09:30",
+              "local": "Racing Club Bobo-Dioulasso",
+              "visitante": "Rail Club de Kadiogo",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 6,
+          "partidos": [
+            {
+              "id": 14655651,
+              "fechaHora": "31/10/2024 09:30",
+              "local": "ASF Bobo Dioulasso",
+              "visitante": "AS Sonabel",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14655669,
+              "fechaHora": "01/11/2024 09:30",
+              "local": "AS Douanes",
+              "visitante": "Vitesse FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 3,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14655660,
+              "fechaHora": "01/11/2024 09:30",
+              "local": "Rahimo FC",
+              "visitante": "ASFA Yennega",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14655665,
+              "fechaHora": "01/11/2024 09:30",
+              "local": "Rail Club de Kadiogo",
+              "visitante": "ASEC Koudougou",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 7,
+          "partidos": [
+            {
+              "id": 14655688,
+              "fechaHora": "05/11/2024 09:30",
+              "local": "Racing Club Bobo-Dioulasso",
+              "visitante": "AS Douanes",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 8,
+          "partidos": [
+            {
+              "id": 14655698,
+              "fechaHora": "09/11/2024 09:30",
+              "local": "ASF Bobo Dioulasso",
+              "visitante": "Racing Club Bobo-Dioulasso",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14655711,
+              "fechaHora": "10/11/2024 09:30",
+              "local": "AS Douanes",
+              "visitante": "ASEC Koudougou",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14655705,
+              "fechaHora": "10/11/2024 09:30",
+              "local": "Majestic FC",
+              "visitante": "Vitesse FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14655703,
+              "fechaHora": "10/11/2024 09:30",
+              "local": "Rahimo FC",
+              "visitante": "Salitas FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 3,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14655702,
+              "fechaHora": "10/11/2024 09:30",
+              "local": "Sporting Cascades",
+              "visitante": "AS Sonabel",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 9,
+          "partidos": [
+            {
+              "id": 14655738,
+              "fechaHora": "16/11/2024 09:30",
+              "local": "ASEC Koudougou",
+              "visitante": "ASF Bobo Dioulasso",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14655734,
+              "fechaHora": "16/11/2024 09:30",
+              "local": "Racing Club Bobo-Dioulasso",
+              "visitante": "Majestic FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14655728,
+              "fechaHora": "16/11/2024 09:30",
+              "local": "Rail Club de Kadiogo",
+              "visitante": "Rahimo FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14655723,
+              "fechaHora": "16/11/2024 09:30",
+              "local": "US Comoé",
+              "visitante": "AS Douanes",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14655746,
+              "fechaHora": "17/11/2024 09:30",
+              "local": "AS Sonabel",
+              "visitante": "ASFA Yennega",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14655741,
+              "fechaHora": "17/11/2024 09:30",
+              "local": "Vitesse FC",
+              "visitante": "Sporting Cascades",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 10,
+          "partidos": [
+            {
+              "id": 14655755,
+              "fechaHora": "22/11/2024 09:30",
+              "local": "Rahimo FC",
+              "visitante": "Étoile Filante de Ouagadougou",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14655780,
+              "fechaHora": "23/11/2024 09:30",
+              "local": "Majestic FC",
+              "visitante": "ASEC Koudougou",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 3,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14655775,
+              "fechaHora": "23/11/2024 09:30",
+              "local": "Salitas FC",
+              "visitante": "AS Sonabel",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14655770,
+              "fechaHora": "23/11/2024 09:30",
+              "local": "Sporting Cascades",
+              "visitante": "Racing Club Bobo-Dioulasso",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14655942,
+              "fechaHora": "24/11/2024 09:30",
+              "local": "AS Douanes",
+              "visitante": "US Forces Armees",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14655792,
+              "fechaHora": "24/11/2024 09:30",
+              "local": "ASF Bobo Dioulasso",
+              "visitante": "US Comoé",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 11,
+          "partidos": [
+            {
+              "id": 14655957,
+              "fechaHora": "27/11/2024 09:30",
+              "local": "US Forces Armees",
+              "visitante": "ASF Bobo Dioulasso",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 12,
+          "partidos": [
+            {
+              "id": 14655991,
+              "fechaHora": "01/12/2024 09:30",
+              "local": "Majestic FC",
+              "visitante": "US Forces Armees",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14655987,
+              "fechaHora": "01/12/2024 09:30",
+              "local": "Rahimo FC",
+              "visitante": "AS Sonabel",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14655980,
+              "fechaHora": "01/12/2024 09:30",
+              "local": "Sporting Cascades",
+              "visitante": "US Comoé",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 3,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14655997,
+              "fechaHora": "01/12/2024 09:30",
+              "local": "Étoile Filante de Ouagadougou",
+              "visitante": "Vitesse FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14656015,
+              "fechaHora": "02/12/2024 09:30",
+              "local": "AS Douanes",
+              "visitante": "Real du Faso",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14656010,
+              "fechaHora": "02/12/2024 09:30",
+              "local": "ASF Bobo Dioulasso",
+              "visitante": "Rail Club de Kadiogo",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 13,
+          "partidos": [
+            {
+              "id": 14656023,
+              "fechaHora": "06/12/2024 09:30",
+              "local": "US Forces Armees",
+              "visitante": "Sporting Cascades",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14656034,
+              "fechaHora": "07/12/2024 09:30",
+              "local": "Racing Club Bobo-Dioulasso",
+              "visitante": "Étoile Filante de Ouagadougou",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14656028,
+              "fechaHora": "07/12/2024 09:30",
+              "local": "Real du Faso",
+              "visitante": "ASF Bobo Dioulasso",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 14,
+          "partidos": [
+            {
+              "id": 14656041,
+              "fechaHora": "10/12/2024 09:30",
+              "local": "Majestic FC",
+              "visitante": "Real du Faso",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14656040,
+              "fechaHora": "10/12/2024 09:30",
+              "local": "Sporting Cascades",
+              "visitante": "Rail Club de Kadiogo",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14656051,
+              "fechaHora": "11/12/2024 09:30",
+              "local": "Salitas FC",
+              "visitante": "US Comoé",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14656096,
+              "fechaHora": "19/01/2025 09:30",
+              "local": "AS Sonabel",
+              "visitante": "Racing Club Bobo-Dioulasso",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14656215,
+              "fechaHora": "19/01/2025 09:30",
+              "local": "Étoile Filante de Ouagadougou",
+              "visitante": "ASEC Koudougou",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 15,
+          "partidos": [
+            {
+              "id": 14656073,
+              "fechaHora": "15/12/2024 09:30",
+              "local": "ASF Bobo Dioulasso",
+              "visitante": "Rahimo FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 3
+              },
+              "goles": []
+            },
+            {
+              "id": 14656062,
+              "fechaHora": "15/12/2024 09:30",
+              "local": "US Forces Armees",
+              "visitante": "Salitas FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14656082,
+              "fechaHora": "16/12/2024 09:30",
+              "local": "Rail Club de Kadiogo",
+              "visitante": "ASFA Yennega",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14656254,
+              "fechaHora": "23/01/2025 09:30",
+              "local": "US Comoé",
+              "visitante": "Étoile Filante de Ouagadougou",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 17,
+          "partidos": [
+            {
+              "id": 14656275,
+              "fechaHora": "08/02/2025 09:30",
+              "local": "Racing Club Bobo-Dioulasso",
+              "visitante": "AS Sonabel",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 18,
+          "partidos": [
+            {
+              "id": 14656323,
+              "fechaHora": "15/02/2025 09:30",
+              "local": "AS Sonabel",
+              "visitante": "Vitesse FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14656328,
+              "fechaHora": "15/02/2025 09:30",
+              "local": "ASFA Yennega",
+              "visitante": "US Comoé",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14656327,
+              "fechaHora": "15/02/2025 09:30",
+              "local": "Majestic FC",
+              "visitante": "Rail Club de Kadiogo",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14656325,
+              "fechaHora": "15/02/2025 09:30",
+              "local": "Rahimo FC",
+              "visitante": "AS Douanes",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14656321,
+              "fechaHora": "15/02/2025 09:30",
+              "local": "Sporting Cascades",
+              "visitante": "US Forces Armees",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 3,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14656329,
+              "fechaHora": "16/02/2025 09:30",
+              "local": "Étoile Filante de Ouagadougou",
+              "visitante": "Racing Club Bobo-Dioulasso",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 19,
+          "partidos": [
+            {
+              "id": 14656343,
+              "fechaHora": "23/02/2025 09:30",
+              "local": "AS Sonabel",
+              "visitante": "Rahimo FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 20,
+          "partidos": [
+            {
+              "id": 14656357,
+              "fechaHora": "08/03/2025 10:00",
+              "local": "Salitas FC",
+              "visitante": "Vitesse FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14656360,
+              "fechaHora": "09/03/2025 10:00",
+              "local": "AS Douanes",
+              "visitante": "Rail Club de Kadiogo",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14656358,
+              "fechaHora": "09/03/2025 10:00",
+              "local": "ASF Bobo Dioulasso",
+              "visitante": "US Forces Armees",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 21,
+          "partidos": [
+            {
+              "id": 14656366,
+              "fechaHora": "14/03/2025 10:00",
+              "local": "ASEC Koudougou",
+              "visitante": "Majestic FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14656363,
+              "fechaHora": "14/03/2025 10:00",
+              "local": "US Comoé",
+              "visitante": "ASF Bobo Dioulasso",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14656361,
+              "fechaHora": "14/03/2025 10:00",
+              "local": "Vitesse FC",
+              "visitante": "ASFA Yennega",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14656370,
+              "fechaHora": "15/03/2025 10:00",
+              "local": "Racing Club Bobo-Dioulasso",
+              "visitante": "Sporting Cascades",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 3,
+                "golesVisitante": 3
+              },
+              "goles": []
+            },
+            {
+              "id": 14656369,
+              "fechaHora": "15/03/2025 10:00",
+              "local": "Rail Club de Kadiogo",
+              "visitante": "Real du Faso",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 22,
+          "partidos": [
+            {
+              "id": 14656371,
+              "fechaHora": "24/03/2025 10:00",
+              "local": "AS Douanes",
+              "visitante": "US Comoé",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 23,
+          "partidos": [
+            {
+              "id": 13684433,
+              "fechaHora": "29/03/2025 10:00",
+              "local": "AS Sonabel",
+              "visitante": "Sporting Cascades",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 24,
+          "partidos": [
+            {
+              "id": 14656617,
+              "fechaHora": "07/04/2025 10:00",
+              "local": "ASF Bobo Dioulasso",
+              "visitante": "Vitesse FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 26,
+          "partidos": [
+            {
+              "id": 14656645,
+              "fechaHora": "18/04/2025 10:00",
+              "local": "Majestic FC",
+              "visitante": "Salitas FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14656646,
+              "fechaHora": "19/04/2025 10:00",
+              "local": "ASF Bobo Dioulasso",
+              "visitante": "Étoile Filante de Ouagadougou",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 0
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 27,
+          "partidos": [
+            {
+              "id": 14656647,
+              "fechaHora": "27/04/2025 10:00",
+              "local": "Racing Club Bobo-Dioulasso",
+              "visitante": "US Forces Armees",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14657065,
+              "fechaHora": "28/04/2025 10:00",
+              "local": "Salitas FC",
+              "visitante": "ASF Bobo Dioulasso",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 13828260,
+              "fechaHora": "28/04/2025 10:00",
+              "local": "Sporting Cascades",
+              "visitante": "Rahimo FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 2
+              },
+              "goles": [
+                {
+                  "equipo": "Rahimo FC",
+                  "minuto": 56,
+                  "tiempoAdicional": null,
+                  "periodo": 2,
+                  "tipo": "Gol",
+                  "marcadorAlMomento": "0-1"
+                },
+                {
+                  "equipo": "Rahimo FC",
+                  "minuto": 71,
+                  "tiempoAdicional": null,
+                  "periodo": 2,
+                  "tipo": "Gol",
+                  "marcadorAlMomento": "0-2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": 28,
+          "partidos": [
+            {
+              "id": 14657138,
+              "fechaHora": "05/05/2025 10:00",
+              "local": "AS Douanes",
+              "visitante": "Salitas FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 2
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 29,
+          "partidos": [
+            {
+              "id": 14657173,
+              "fechaHora": "10/05/2025 10:00",
+              "local": "ASFA Yennega",
+              "visitante": "AS Douanes",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14657160,
+              "fechaHora": "10/05/2025 10:00",
+              "local": "Majestic FC",
+              "visitante": "Rahimo FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14657168,
+              "fechaHora": "10/05/2025 10:00",
+              "local": "Racing Club Bobo-Dioulasso",
+              "visitante": "ASEC Koudougou",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 3,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14657157,
+              "fechaHora": "10/05/2025 10:00",
+              "local": "Salitas FC",
+              "visitante": "Real du Faso",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14657153,
+              "fechaHora": "10/05/2025 10:00",
+              "local": "Sporting Cascades",
+              "visitante": "ASF Bobo Dioulasso",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14657147,
+              "fechaHora": "10/05/2025 10:00",
+              "local": "Vitesse FC",
+              "visitante": "US Comoé",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14657165,
+              "fechaHora": "10/05/2025 10:00",
+              "local": "Étoile Filante de Ouagadougou",
+              "visitante": "Rail Club de Kadiogo",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14657194,
+              "fechaHora": "15/06/2025 10:00",
+              "local": "AS Sonabel",
+              "visitante": "US Forces Armees",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 3
+              },
+              "goles": []
+            }
+          ]
+        },
+        {
+          "numero": 30,
+          "partidos": [
+            {
+              "id": 14657187,
+              "fechaHora": "17/05/2025 10:00",
+              "local": "AS Douanes",
+              "visitante": "Sporting Cascades",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 1,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14657183,
+              "fechaHora": "17/05/2025 10:00",
+              "local": "ASEC Koudougou",
+              "visitante": "Vitesse FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 0
+              },
+              "goles": []
+            },
+            {
+              "id": 14657182,
+              "fechaHora": "17/05/2025 10:00",
+              "local": "ASF Bobo Dioulasso",
+              "visitante": "Majestic FC",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 2,
+                "golesVisitante": 2
+              },
+              "goles": []
+            },
+            {
+              "id": 14657177,
+              "fechaHora": "17/05/2025 10:00",
+              "local": "Real du Faso",
+              "visitante": "ASFA Yennega",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14657175,
+              "fechaHora": "17/05/2025 10:00",
+              "local": "US Comoé",
+              "visitante": "AS Sonabel",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 0,
+                "golesVisitante": 1
+              },
+              "goles": []
+            },
+            {
+              "id": 14657174,
+              "fechaHora": "17/05/2025 10:00",
+              "local": "US Forces Armees",
+              "visitante": "Étoile Filante de Ouagadougou",
+              "estado": "Ended",
+              "resultado": {
+                "golesLocal": 3,
+                "golesVisitante": 1
+              },
+              "goles": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
