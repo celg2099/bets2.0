@@ -45,7 +45,7 @@ export class LigasService {
     { nombrePublico: 'China_L2', nombreForApi: 'China_L2/super-league/', historico: 0, archivoLigas: 'China_L2.json', sofascoreId: 10381, enable: 1 },
      //: % bajo de empate. { nombrePublico: 'Chipre', nombreForApi: 'cyprus/1-division/', historico: 0, enable: 1 },
     { nombrePublico: 'Colombia', nombreForApi: 'colombia/primera-a-apertura/',  archivoLigas: 'Colombia.json', historico: 0, enable: 1 },
-    { nombrePublico: 'Colombia_B', nombreForApi: 'colombia/primera-b-apertura/', historico: 0, enable: 1 },
+    { nombrePublico: 'Colombia_B', nombreForApi: 'colombia/primera-b-apertura/', archivoLigas: 'Colombia_B.json', historico: 0, enable: 1 },
     { nombrePublico: 'Costa_Rica', nombreForApi: 'costa-rica/primera-division-clausura/', historico: 0, enable: 1 },
     { nombrePublico: 'Croacia', nombreForApi: 'croatia/1st-league/', historico: 0, enable: 1 },
     { nombrePublico: 'Dinamarca', nombreForApi: 'denmark/superliga/', historico: 0, enable: 1 },

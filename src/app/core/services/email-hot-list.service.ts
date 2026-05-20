@@ -166,18 +166,24 @@ export class EmailHotListService {
     const sortedHistorico = [...historico].sort((a, b) => b.pctInmediato - a.pctInmediato);
     const historicoRows = limitarAcumulado ? sortedHistorico.slice(0, 20) : sortedHistorico;
 
-    // Top de lo Top: top 10 del histórico cruzado con datos actuales
+    // Top de lo Top: top 10 del histórico con próximo partido, recorriendo sortedHistorico hasta completar
     const hotCheckMap = new Map(todasLasLigas.map((h) => [h.pais, h]));
-    const filasTopTop = sortedHistorico.slice(0, 10).map((h) => {
+    const topTop: HistAcumRow[] = [];
+    for (const h of sortedHistorico) {
+      if (topTop.length === 10) break;
       const hc = hotCheckMap.get(h.pais);
-      const dateBg = hc ? this.nextGameDateBg(hc.dateNextGame) : '';
+      if (hc?.dateNextGame) topTop.push(h);
+    }
+    const filasTopTop = topTop.map((h) => {
+      const hc = hotCheckMap.get(h.pais)!;
+      const dateBg = this.nextGameDateBg(hc.dateNextGame);
       return `<tr>
         <td style="${tdBase}">${this.ligaLabel(h.pais, ambosSet)}</td>
-        <td style="${tdCenter}">${hc?.conteoActual ?? '—'}</td>
-        <td style="${tdCenter}">${hc?.maxConteo ?? '—'}</td>
-        <td style="${tdCenter}">${hc?.gamesFinished ?? '—'}</td>
-        <td style="${tdCenter}">${hc ? hc.percentDraw.toFixed(1) + '%' : '—'}</td>
-        <td style="${tdDate}${dateBg}">${hc?.dateNextGame ?? ''}</td>
+        <td style="${tdCenter}">${hc.conteoActual}</td>
+        <td style="${tdCenter}">${hc.maxConteo}</td>
+        <td style="${tdCenter}">${hc.gamesFinished}</td>
+        <td style="${tdCenter}">${hc.percentDraw.toFixed(1)}%</td>
+        <td style="${tdDate}${dateBg}">${hc.dateNextGame}</td>
       </tr>`;
     }).join('');
     const [t1Inm, t2Inm] = this.top2(sortedHistorico, 'pctInmediato');
