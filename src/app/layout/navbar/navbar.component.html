@@ -4,9 +4,19 @@
     <button class="icon-btn menu-toggle" (click)="onMenuToggle()" aria-label="Toggle menu">
       <span class="material-icons">menu</span>
     </button>
-    <div class="search-box">
-      <span class="material-icons search-icon">search</span>
-      <input type="text" placeholder="Search here..." class="search-input" />
+  </div>
+
+  <div class="navbar-center">
+    <div class="source-stat">
+      <span class="source-dot dot-sofascore"></span>
+      <span class="source-label">Sofascore</span>
+      <span class="source-count">{{ sofascoreCount() }}</span>
+    </div>
+    <div class="source-divider"></div>
+    <div class="source-stat">
+      <span class="source-dot dot-livescore"></span>
+      <span class="source-label">Livescore</span>
+      <span class="source-count">{{ livescoreCount() }}</span>
     </div>
   </div>
 

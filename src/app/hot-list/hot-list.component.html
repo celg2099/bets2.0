@@ -113,6 +113,7 @@
         <table class="hl-table">
           <thead>
             <tr>
+              <th class="col-row-num">#</th>
               <th class="sortable" (click)="clickMainSort('pais')">
                 PAIS
                 <span class="material-icons sort-icon">{{ mainCol() === 'pais' ? (mainAsc() ? 'arrow_upward' : 'arrow_downward') : 'unfold_more' }}</span>
@@ -144,9 +145,10 @@
             </tr>
           </thead>
           <tbody>
-            @for (item of filas; track item.liga) {
+            @for (item of filas; track item.liga; let i = $index) {
               <tr [class.row-hot]="isHot(item)" [class.row-super-hot]="item.conteoActual >= item.maxConteo"
                   class="row-clickable" (click)="irALiga(item.pais)">
+                <td class="col-row-num">{{ i + 1 }}</td>
                 <td class="col-pais">{{ item.pais }}</td>
                 <td class="col-num"
                     [class.celda-max]="item.conteoActual >= item.maxConteo"
@@ -186,6 +188,7 @@
         <table class="hl-table hl-table-hist">
           <thead>
             <tr>
+              <th class="col-row-num">#</th>
               <th class="sortable" (click)="clickHistSort('pais')">
                 PAIS
                 <span class="material-icons sort-icon">{{ histCol() === 'pais' ? (histAsc() ? 'arrow_upward' : 'arrow_downward') : 'unfold_more' }}</span>
@@ -209,8 +212,9 @@
             </tr>
           </thead>
           <tbody>
-            @for (item of rows; track item.liga) {
+            @for (item of rows; track item.liga; let i = $index) {
               <tr class="row-clickable" (click)="irALiga(item.pais)">
+                <td class="col-row-num">{{ i + 1 }}</td>
                 <td class="col-pais">{{ item.pais }}</td>
                 <td class="col-num"
                     [class.hist-top]="item.pctInmediato === histTopValues()['pctInmediato'][0]"
