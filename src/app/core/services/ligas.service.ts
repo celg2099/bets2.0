@@ -82,6 +82,7 @@ export class LigasService {
     { nombrePublico: 'Inglaterra_L2', nombreForApi: 'england/league-2/', historico: 0, enable: 1 },
     { nombrePublico: 'Irlanda', nombreForApi: 'ireland/league-of-ireland-premier-division/', historico: 0, enable: 1 },
     { nombrePublico: 'Irlanda_Del_Norte', nombreForApi: 'northern-ireland/premiership/', historico: 0, enable: 1 },
+    { nombrePublico: 'Iran_L2', nombreForApi: 'Iran_L2/botola-2/', historico: 0, archivoLigas: 'Iran_L2.json', sofascoreId: 11338, enable: 1 },
     { nombrePublico: 'Islandia', nombreForApi: 'iceland/urvalsdeild/', historico: 0, enable: 1 },
     { nombrePublico: 'Islas_Faroe', nombreForApi: 'faroe-islands/premier-league/', historico: 0, enable: 1 },
     { nombrePublico: 'Israel', nombreForApi: 'israel/premier-league/', historico: 0, enable: 1 },
@@ -144,6 +145,7 @@ export class LigasService {
 
     { nombrePublico: 'Rusia', nombreForApi: 'libia/stars-league/', historico: 0, archivoLigas: 'Rusia.json', sofascoreId: 203, enable: 1 }, // GOOD
     { nombrePublico: 'Senegal', nombreForApi: 'senegal/stars-league/', historico: 0, archivoLigas: 'Senegal.json', sofascoreId: 1226, enable: 1 },
+    { nombrePublico: 'Senegal_L2', nombreForApi: 'Senegal_L2/stars-league/', historico: 0, sofascoreId: 30857, enable: 1 },
     { nombrePublico: 'Etiopia', nombreForApi: 'B/stars-league/', historico: 0, archivoLigas: 'Etiopia.json', sofascoreId: 16601, enable: 1 },
     { nombrePublico: 'Oman', nombreForApi: 'F/stars-league/', historico: 0, archivoLigas: 'Oman.json', sofascoreId: 965, enable: 1 },
     { nombrePublico: 'Gambia', nombreForApi: 'C/stars-league/', historico: 0, archivoLigas: 'Gambia.json', sofascoreId: 16610, enable: 1 },
@@ -170,12 +172,12 @@ export class LigasService {
     'El_Salvador', 'Emiratos_Arabes_Unidos', 'Eslovenia', 'España',
     'España_L2', 'España_D2_G3', 'Estonia', 'Finlandia', 'Francia', 'Francia_L2', 'Georgia',
     'Grecia', 'Guatemala', 'Guatemala_1era', 'Holanda', 'Honduras', 'Hong_Kong', 'Hungria', 'India', 'India_I_League',
-    'Indonesia', 'Israel', 'Italia', 'Italia_B', 'Jamaica', 'Japon',
+    'Indonesia', 'Iran_L2', 'Israel', 'Italia', 'Italia_B', 'Jamaica', 'Japon',
     'Jordania', 'Kazajistan', 'Korea_del_Sur', 'Kuwait', 'Lituania', 'Mauritania', 'Mauritania_L1',
-    'Marruecos', 'Marruecos_L2', 'Mexico', 'Mexico_Expansion', 'México_Femenil', 'Nicaragua', 'Niger', 'Noruega', 
+    'Marruecos', 'Marruecos_L2', 'Mexico', 'Mexico_Expansion', 'México_Femenil', 'Nicaragua', 'Niger', 'Noruega',
     'Panama', 'Paraguay', 'Paraguay_Int', 'Peru', 'Polonia', 'Polonia_L1', 'Portugal', 'Portugal_L2', 'Qatar',
-    'Etiopia', 'Gambia', 'Gambia_L2','Oman', 'Republica_Checa', 'Rumania', 'Rusia', 
-    'Senegal', 'Singapur', 'Sierra_Leona', 'Sudafrica','Suecia', 'Suiza', 
+    'Etiopia', 'Gambia', 'Gambia_L2','Oman', 'Republica_Checa', 'Rumania', 'Rusia',
+    'Senegal', 'Singapur', 'Sierra_Leona', 'Sudafrica','Suecia', 'Suiza',
     'Tanzania', 'Thailandia', 'Tunez', 'Turquia', 'Ucrania',
     'Uruguay', 'Uruguay_L2', 'Uganda', 'USA_MLS', 'Uzbekistan', 'Vietnam', 'Egipto_LB'
   ]);
