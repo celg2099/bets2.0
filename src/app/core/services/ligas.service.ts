@@ -19,7 +19,7 @@ export class LigasService {
    //: Muchos partidos a la misma hora. { nombrePublico: 'Angola', nombreForApi: 'angola/girabola/', historico: 0,  sofascoreId: 2308, enable: 1 },
     { nombrePublico: 'Arabia_Saudita', nombreForApi: 'saudi-arabia/saudi-professional-league/', historico: 0,  archivoLigas: 'Arabia_Saudita.json', enable: 1 },
     { nombrePublico: 'Argelia', nombreForApi: 'algeria/ligue-1-2025/', historico: 0, archivoLigas: 'Argelia.json', enable: 1 },
-    { nombrePublico: 'Argelia_L2', nombreForApi: 'libia/premier-league/', historico: 0, archivoLigas: 'Argelia_L2.json', sofascoreId: 9459, enable: 1 },
+    { nombrePublico: 'Argelia_L2', nombreForApi: 'libia/premier-league2/', historico: 0, archivoLigas: 'Argelia_L2.json', sofascoreId: 9459, enable: 1 },
     { nombrePublico: 'Argentina', nombreForApi: 'argentina/primera-division-apertura/', historico: 0, archivoLigas: 'Argentina.json', enable: 1 },
     { nombrePublico: 'Argentina_L1', nombreForApi: 'argentina/premier-league/', historico: 0, archivoLigas: 'Argentina_L1.json', sofascoreId: 703, enable: 1 },
     //{ nombrePublico: 'Argentina_C', nombreForApi: 'argentina/premier-league/', historico: 0, sofascoreId: 11386, enable: 1 },
