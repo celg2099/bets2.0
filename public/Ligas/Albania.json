@@ -40341,2251 +40341,1627 @@
       ]
     },
     {
-      "nombre": "Kategoria Superiore 25/26",
-      "año": "25/26",
-      "seasonId": 78745,
-      "jornadas": [
-        {
-          "numero": 1,
-          "partidos": [
-            {
-              "id": 14341955,
-              "fechaHora": "22/08/2025 12:00",
-              "local": "KF Vllaznia",
-              "visitante": "KF Egnatia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14341957,
-              "fechaHora": "23/08/2025 09:00",
-              "local": "KF Bylis",
-              "visitante": "KF Tirana",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14341956,
-              "fechaHora": "23/08/2025 12:00",
-              "local": "AF Elbasani",
-              "visitante": "Flamurtari FC",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14341952,
-              "fechaHora": "24/08/2025 12:00",
-              "local": "FK Partizani",
-              "visitante": "KF Vora",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14341953,
-              "fechaHora": "24/08/2025 12:00",
-              "local": "KF Teuta Durrës",
-              "visitante": "Dinamo City",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 14498944,
-              "fechaHora": "17/09/2025 07:00",
-              "local": "KF Teuta Durrës",
-              "visitante": "Dinamo City",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 0
-              }
-            }
-          ]
-        },
-        {
-          "numero": 2,
-          "partidos": [
-            {
-              "id": 14231973,
-              "fechaHora": "30/08/2025 08:00",
-              "local": "Flamurtari FC",
-              "visitante": "KF Bylis",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 3,
-                "golesVisitante": 3
-              }
-            },
-            {
-              "id": 14231971,
-              "fechaHora": "30/08/2025 12:00",
-              "local": "FK Partizani",
-              "visitante": "KF Teuta Durrës",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14231976,
-              "fechaHora": "30/08/2025 12:00",
-              "local": "KF Egnatia",
-              "visitante": "AF Elbasani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14231982,
-              "fechaHora": "31/08/2025 09:00",
-              "local": "KF Vora",
-              "visitante": "KF Tirana",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 3,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14231979,
-              "fechaHora": "31/08/2025 12:00",
-              "local": "Dinamo City",
-              "visitante": "KF Vllaznia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 3,
-                "golesVisitante": 1
-              }
-            }
-          ]
-        },
-        {
-          "numero": 3,
-          "partidos": [
-            {
-              "id": 14341962,
-              "fechaHora": "13/09/2025 08:00",
-              "local": "KF Bylis",
-              "visitante": "KF Egnatia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371076,
-              "fechaHora": "13/09/2025 08:00",
-              "local": "KF Tirana",
-              "visitante": "Flamurtari FC",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14341959,
-              "fechaHora": "13/09/2025 11:00",
-              "local": "KF Vllaznia",
-              "visitante": "FK Partizani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 4,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14341960,
-              "fechaHora": "14/09/2025 11:00",
-              "local": "AF Elbasani",
-              "visitante": "Dinamo City",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14341958,
-              "fechaHora": "14/09/2025 11:00",
-              "local": "KF Teuta Durrës",
-              "visitante": "KF Vora",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 1
-              }
-            }
-          ]
-        },
-        {
-          "numero": 4,
-          "partidos": [
-            {
-              "id": 14371090,
-              "fechaHora": "20/09/2025 11:00",
-              "local": "FK Partizani",
-              "visitante": "AF Elbasani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371115,
-              "fechaHora": "20/09/2025 11:00",
-              "local": "KF Egnatia",
-              "visitante": "KF Tirana",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371127,
-              "fechaHora": "21/09/2025 08:00",
-              "local": "Dinamo City",
-              "visitante": "KF Bylis",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371140,
-              "fechaHora": "21/09/2025 08:00",
-              "local": "KF Vora",
-              "visitante": "Flamurtari FC",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371102,
-              "fechaHora": "21/09/2025 11:00",
-              "local": "KF Teuta Durrës",
-              "visitante": "KF Vllaznia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 1
-              }
-            }
-          ]
-        },
-        {
-          "numero": 5,
-          "partidos": [
-            {
-              "id": 14371165,
-              "fechaHora": "27/09/2025 08:00",
-              "local": "KF Bylis",
-              "visitante": "FK Partizani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 3,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371166,
-              "fechaHora": "27/09/2025 08:00",
-              "local": "KF Tirana",
-              "visitante": "Dinamo City",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 2
-              }
-            },
-            {
-              "id": 14371164,
-              "fechaHora": "27/09/2025 11:00",
-              "local": "AF Elbasani",
-              "visitante": "KF Teuta Durrës",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371167,
-              "fechaHora": "28/09/2025 11:00",
-              "local": "Flamurtari FC",
-              "visitante": "KF Egnatia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 2
-              }
-            },
-            {
-              "id": 14371152,
-              "fechaHora": "28/09/2025 11:00",
-              "local": "KF Vllaznia",
-              "visitante": "KF Vora",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 0
-              }
-            }
-          ]
-        },
-        {
-          "numero": 6,
-          "partidos": [
-            {
-              "id": 14371168,
-              "fechaHora": "03/10/2025 11:00",
-              "local": "FK Partizani",
-              "visitante": "KF Tirana",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 3
-              }
-            },
-            {
-              "id": 14371172,
-              "fechaHora": "04/10/2025 07:30",
-              "local": "Dinamo City",
-              "visitante": "Flamurtari FC",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371171,
-              "fechaHora": "04/10/2025 11:00",
-              "local": "KF Vllaznia",
-              "visitante": "AF Elbasani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371173,
-              "fechaHora": "05/10/2025 06:00",
-              "local": "KF Vora",
-              "visitante": "KF Egnatia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371169,
-              "fechaHora": "05/10/2025 09:00",
-              "local": "KF Teuta Durrës",
-              "visitante": "KF Bylis",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 0
-              }
-            }
-          ]
-        },
-        {
-          "numero": 7,
-          "partidos": [
-            {
-              "id": 14371191,
-              "fechaHora": "18/10/2025 06:00",
-              "local": "KF Bylis",
-              "visitante": "KF Vllaznia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371211,
-              "fechaHora": "18/10/2025 09:00",
-              "local": "KF Egnatia",
-              "visitante": "Dinamo City",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371202,
-              "fechaHora": "18/10/2025 09:00",
-              "local": "KF Tirana",
-              "visitante": "KF Teuta Durrës",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371181,
-              "fechaHora": "19/10/2025 09:00",
-              "local": "AF Elbasani",
-              "visitante": "KF Vora",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 2
-              }
-            },
-            {
-              "id": 14371209,
-              "fechaHora": "19/10/2025 09:00",
-              "local": "Flamurtari FC",
-              "visitante": "FK Partizani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 1
-              }
-            }
-          ]
-        },
-        {
-          "numero": 8,
-          "partidos": [
-            {
-              "id": 14371222,
-              "fechaHora": "24/10/2025 06:00",
-              "local": "KF Vora",
-              "visitante": "Dinamo City",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 2
-              }
-            },
-            {
-              "id": 14371220,
-              "fechaHora": "24/10/2025 09:00",
-              "local": "AF Elbasani",
-              "visitante": "KF Bylis",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371218,
-              "fechaHora": "24/10/2025 09:00",
-              "local": "KF Vllaznia",
-              "visitante": "KF Tirana",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 3,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371213,
-              "fechaHora": "25/10/2025 09:00",
-              "local": "FK Partizani",
-              "visitante": "KF Egnatia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371215,
-              "fechaHora": "25/10/2025 09:00",
-              "local": "KF Teuta Durrës",
-              "visitante": "Flamurtari FC",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 3,
-                "golesVisitante": 2
-              }
-            }
-          ]
-        },
-        {
-          "numero": 9,
-          "partidos": [
-            {
-              "id": 14371224,
-              "fechaHora": "28/10/2025 07:00",
-              "local": "KF Bylis",
-              "visitante": "KF Vora",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371230,
-              "fechaHora": "28/10/2025 10:00",
-              "local": "KF Egnatia",
-              "visitante": "KF Teuta Durrës",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371228,
-              "fechaHora": "29/10/2025 10:00",
-              "local": "Flamurtari FC",
-              "visitante": "KF Vllaznia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371232,
-              "fechaHora": "29/10/2025 12:30",
-              "local": "Dinamo City",
-              "visitante": "FK Partizani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371226,
-              "fechaHora": "29/10/2025 12:30",
-              "local": "KF Tirana",
-              "visitante": "AF Elbasani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 4
-              }
-            }
-          ]
-        },
-        {
-          "numero": 10,
-          "partidos": [
-            {
-              "id": 14371243,
-              "fechaHora": "03/11/2025 07:00",
-              "local": "KF Tirana",
-              "visitante": "KF Bylis",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 2
-              }
-            },
-            {
-              "id": 14371236,
-              "fechaHora": "03/11/2025 10:00",
-              "local": "Dinamo City",
-              "visitante": "KF Teuta Durrës",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371241,
-              "fechaHora": "03/11/2025 10:00",
-              "local": "Flamurtari FC",
-              "visitante": "AF Elbasani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371238,
-              "fechaHora": "04/11/2025 09:00",
-              "local": "KF Egnatia",
-              "visitante": "KF Vllaznia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 2
-              }
-            },
-            {
-              "id": 14371234,
-              "fechaHora": "04/11/2025 09:00",
-              "local": "KF Vora",
-              "visitante": "FK Partizani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 0
-              }
-            }
-          ]
-        },
-        {
-          "numero": 11,
-          "partidos": [
-            {
-              "id": 14371247,
-              "fechaHora": "07/11/2025 10:00",
-              "local": "KF Bylis",
-              "visitante": "Flamurtari FC",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371254,
-              "fechaHora": "08/11/2025 07:00",
-              "local": "KF Tirana",
-              "visitante": "KF Vora",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 2
-              }
-            },
-            {
-              "id": 14371252,
-              "fechaHora": "08/11/2025 10:00",
-              "local": "KF Vllaznia",
-              "visitante": "Dinamo City",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371249,
-              "fechaHora": "09/11/2025 10:00",
-              "local": "AF Elbasani",
-              "visitante": "KF Egnatia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371245,
-              "fechaHora": "09/11/2025 10:00",
-              "local": "KF Teuta Durrës",
-              "visitante": "FK Partizani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 3
-              }
-            }
-          ]
-        },
-        {
-          "numero": 12,
-          "partidos": [
-            {
-              "id": 14371263,
-              "fechaHora": "22/11/2025 09:00",
-              "local": "KF Egnatia",
-              "visitante": "KF Bylis",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 5,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371257,
-              "fechaHora": "22/11/2025 09:00",
-              "local": "KF Vora",
-              "visitante": "KF Teuta Durrës",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371261,
-              "fechaHora": "22/11/2025 12:00",
-              "local": "Dinamo City",
-              "visitante": "AF Elbasani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371259,
-              "fechaHora": "23/11/2025 09:30",
-              "local": "FK Partizani",
-              "visitante": "KF Vllaznia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371265,
-              "fechaHora": "23/11/2025 09:30",
-              "local": "Flamurtari FC",
-              "visitante": "KF Tirana",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 1
-              }
-            }
-          ]
-        },
-        {
-          "numero": 13,
-          "partidos": [
-            {
-              "id": 14371268,
-              "fechaHora": "28/11/2025 11:00",
-              "local": "AF Elbasani",
-              "visitante": "FK Partizani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371270,
-              "fechaHora": "28/11/2025 11:00",
-              "local": "KF Vllaznia",
-              "visitante": "KF Teuta Durrës",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371274,
-              "fechaHora": "29/11/2025 06:30",
-              "local": "KF Bylis",
-              "visitante": "Dinamo City",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371272,
-              "fechaHora": "29/11/2025 06:30",
-              "local": "KF Tirana",
-              "visitante": "KF Egnatia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371276,
-              "fechaHora": "29/11/2025 09:30",
-              "local": "Flamurtari FC",
-              "visitante": "KF Vora",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 1
-              }
-            }
-          ]
-        },
-        {
-          "numero": 14,
-          "partidos": [
-            {
-              "id": 14371283,
-              "fechaHora": "03/12/2025 09:30",
-              "local": "FK Partizani",
-              "visitante": "KF Bylis",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371281,
-              "fechaHora": "03/12/2025 09:30",
-              "local": "KF Teuta Durrës",
-              "visitante": "AF Elbasani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371285,
-              "fechaHora": "03/12/2025 12:30",
-              "local": "Dinamo City",
-              "visitante": "KF Tirana",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 6,
-                "golesVisitante": 2
-              }
-            },
-            {
-              "id": 14371287,
-              "fechaHora": "04/12/2025 09:30",
-              "local": "KF Egnatia",
-              "visitante": "Flamurtari FC",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371278,
-              "fechaHora": "04/12/2025 09:30",
-              "local": "KF Vora",
-              "visitante": "KF Vllaznia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 0
-              }
-            }
-          ]
-        },
-        {
-          "numero": 15,
-          "partidos": [
-            {
-              "id": 14371291,
-              "fechaHora": "07/12/2025 06:30",
-              "local": "KF Bylis",
-              "visitante": "KF Teuta Durrës",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371289,
-              "fechaHora": "07/12/2025 11:00",
-              "local": "KF Tirana",
-              "visitante": "FK Partizani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 2
-              }
-            },
-            {
-              "id": 14371299,
-              "fechaHora": "08/12/2025 09:00",
-              "local": "KF Egnatia",
-              "visitante": "KF Vora",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371293,
-              "fechaHora": "08/12/2025 12:00",
-              "local": "AF Elbasani",
-              "visitante": "KF Vllaznia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371297,
-              "fechaHora": "08/12/2025 12:00",
-              "local": "Flamurtari FC",
-              "visitante": "Dinamo City",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 3
-              }
-            }
-          ]
-        },
-        {
-          "numero": 16,
-          "partidos": [
-            {
-              "id": 14371307,
-              "fechaHora": "13/12/2025 09:30",
-              "local": "FK Partizani",
-              "visitante": "Flamurtari FC",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371301,
-              "fechaHora": "13/12/2025 09:30",
-              "local": "KF Vora",
-              "visitante": "AF Elbasani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371305,
-              "fechaHora": "13/12/2025 12:30",
-              "local": "KF Teuta Durrës",
-              "visitante": "KF Tirana",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371303,
-              "fechaHora": "14/12/2025 09:30",
-              "local": "KF Vllaznia",
-              "visitante": "KF Bylis",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371310,
-              "fechaHora": "14/12/2025 12:00",
-              "local": "Dinamo City",
-              "visitante": "KF Egnatia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 2
-              }
-            }
-          ]
-        },
-        {
-          "numero": 17,
-          "partidos": [
-            {
-              "id": 14371320,
-              "fechaHora": "19/12/2025 09:30",
-              "local": "Dinamo City",
-              "visitante": "KF Vora",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371312,
-              "fechaHora": "19/12/2025 09:30",
-              "local": "KF Egnatia",
-              "visitante": "FK Partizani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371314,
-              "fechaHora": "19/12/2025 12:30",
-              "local": "Flamurtari FC",
-              "visitante": "KF Teuta Durrës",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 2
-              }
-            },
-            {
-              "id": 14371318,
-              "fechaHora": "20/12/2025 06:30",
-              "local": "KF Bylis",
-              "visitante": "AF Elbasani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 3,
-                "golesVisitante": 2
-              }
-            },
-            {
-              "id": 14371316,
-              "fechaHora": "20/12/2025 06:30",
-              "local": "KF Tirana",
-              "visitante": "KF Vllaznia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 1
-              }
-            }
-          ]
-        },
-        {
-          "numero": 18,
-          "partidos": [
-            {
-              "id": 14371331,
-              "fechaHora": "23/12/2025 11:00",
-              "local": "FK Partizani",
-              "visitante": "Dinamo City",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 3
-              }
-            },
-            {
-              "id": 14371329,
-              "fechaHora": "23/12/2025 11:00",
-              "local": "KF Teuta Durrës",
-              "visitante": "KF Egnatia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371323,
-              "fechaHora": "24/12/2025 06:30",
-              "local": "KF Vora",
-              "visitante": "KF Bylis",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 4,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371325,
-              "fechaHora": "24/12/2025 09:30",
-              "local": "AF Elbasani",
-              "visitante": "KF Tirana",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371327,
-              "fechaHora": "24/12/2025 09:30",
-              "local": "KF Vllaznia",
-              "visitante": "Flamurtari FC",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 3,
-                "golesVisitante": 2
-              }
-            }
-          ]
-        },
-        {
-          "numero": 19,
-          "partidos": [
-            {
-              "id": 14371343,
-              "fechaHora": "14/01/2026 06:30",
-              "local": "KF Bylis",
-              "visitante": "KF Tirana",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371341,
-              "fechaHora": "14/01/2026 10:00",
-              "local": "AF Elbasani",
-              "visitante": "Flamurtari FC",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371338,
-              "fechaHora": "14/01/2026 10:00",
-              "local": "KF Vllaznia",
-              "visitante": "KF Egnatia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371333,
-              "fechaHora": "15/01/2026 06:30",
-              "local": "FK Partizani",
-              "visitante": "KF Vora",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371335,
-              "fechaHora": "15/01/2026 10:00",
-              "local": "KF Teuta Durrës",
-              "visitante": "Dinamo City",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 0
-              }
-            }
-          ]
-        },
-        {
-          "numero": 20,
-          "partidos": [
-            {
-              "id": 14371347,
-              "fechaHora": "18/01/2026 10:00",
-              "local": "Flamurtari FC",
-              "visitante": "KF Bylis",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 3,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371350,
-              "fechaHora": "18/01/2026 10:00",
-              "local": "KF Egnatia",
-              "visitante": "AF Elbasani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 2
-              }
-            },
-            {
-              "id": 14371355,
-              "fechaHora": "19/01/2026 06:30",
-              "local": "KF Vora",
-              "visitante": "KF Tirana",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371345,
-              "fechaHora": "19/01/2026 10:00",
-              "local": "FK Partizani",
-              "visitante": "KF Teuta Durrës",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371353,
-              "fechaHora": "19/01/2026 12:30",
-              "local": "Dinamo City",
-              "visitante": "KF Vllaznia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 2
-              }
-            }
-          ]
-        },
-        {
-          "numero": 21,
-          "partidos": [
-            {
-              "id": 14371079,
-              "fechaHora": "24/01/2026 06:30",
-              "local": "KF Bylis",
-              "visitante": "KF Egnatia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 2
-              }
-            },
-            {
-              "id": 14371077,
-              "fechaHora": "24/01/2026 09:30",
-              "local": "KF Vllaznia",
-              "visitante": "FK Partizani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371075,
-              "fechaHora": "25/01/2026 06:30",
-              "local": "KF Teuta Durrës",
-              "visitante": "KF Vora",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371080,
-              "fechaHora": "25/01/2026 06:30",
-              "local": "KF Tirana",
-              "visitante": "Flamurtari FC",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371078,
-              "fechaHora": "25/01/2026 09:30",
-              "local": "AF Elbasani",
-              "visitante": "Dinamo City",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 0
-              }
-            }
-          ]
-        },
-        {
-          "numero": 22,
-          "partidos": [
-            {
-              "id": 14371085,
-              "fechaHora": "31/01/2026 06:30",
-              "local": "KF Vora",
-              "visitante": "Flamurtari FC",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371081,
-              "fechaHora": "31/01/2026 09:30",
-              "local": "FK Partizani",
-              "visitante": "AF Elbasani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 2
-              }
-            },
-            {
-              "id": 14371084,
-              "fechaHora": "31/01/2026 12:00",
-              "local": "Dinamo City",
-              "visitante": "KF Bylis",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371083,
-              "fechaHora": "01/02/2026 09:30",
-              "local": "KF Egnatia",
-              "visitante": "KF Tirana",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371082,
-              "fechaHora": "01/02/2026 09:30",
-              "local": "KF Teuta Durrës",
-              "visitante": "KF Vllaznia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 1
-              }
-            }
-          ]
-        },
-        {
-          "numero": 23,
-          "partidos": [
-            {
-              "id": 14371088,
-              "fechaHora": "06/02/2026 06:30",
-              "local": "KF Bylis",
-              "visitante": "FK Partizani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 2
-              }
-            },
-            {
-              "id": 14371086,
-              "fechaHora": "06/02/2026 06:30",
-              "local": "KF Vllaznia",
-              "visitante": "KF Vora",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371087,
-              "fechaHora": "06/02/2026 09:30",
-              "local": "AF Elbasani",
-              "visitante": "KF Teuta Durrës",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371091,
-              "fechaHora": "06/02/2026 12:00",
-              "local": "Flamurtari FC",
-              "visitante": "KF Egnatia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371089,
-              "fechaHora": "07/02/2026 06:30",
-              "local": "KF Tirana",
-              "visitante": "Dinamo City",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 1
-              }
-            }
-          ]
-        },
-        {
-          "numero": 24,
-          "partidos": [
-            {
-              "id": 14371096,
-              "fechaHora": "14/02/2026 06:30",
-              "local": "KF Vora",
-              "visitante": "KF Egnatia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371093,
-              "fechaHora": "14/02/2026 09:30",
-              "local": "KF Teuta Durrës",
-              "visitante": "KF Bylis",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371095,
-              "fechaHora": "15/02/2026 09:30",
-              "local": "Dinamo City",
-              "visitante": "Flamurtari FC",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371092,
-              "fechaHora": "15/02/2026 09:30",
-              "local": "FK Partizani",
-              "visitante": "KF Tirana",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371094,
-              "fechaHora": "15/02/2026 12:30",
-              "local": "KF Vllaznia",
-              "visitante": "AF Elbasani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 1
-              }
-            }
-          ]
-        },
-        {
-          "numero": 25,
-          "partidos": [
-            {
-              "id": 14371101,
-              "fechaHora": "20/02/2026 12:00",
-              "local": "KF Egnatia",
-              "visitante": "Dinamo City",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371097,
-              "fechaHora": "21/02/2026 06:30",
-              "local": "AF Elbasani",
-              "visitante": "KF Vora",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371098,
-              "fechaHora": "21/02/2026 06:30",
-              "local": "KF Bylis",
-              "visitante": "KF Vllaznia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371099,
-              "fechaHora": "22/02/2026 06:30",
-              "local": "KF Tirana",
-              "visitante": "KF Teuta Durrës",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371100,
-              "fechaHora": "22/02/2026 09:30",
-              "local": "Flamurtari FC",
-              "visitante": "FK Partizani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 2
-              }
-            }
-          ]
-        },
-        {
-          "numero": 26,
-          "partidos": [
-            {
-              "id": 14371106,
-              "fechaHora": "27/02/2026 12:00",
-              "local": "KF Vllaznia",
-              "visitante": "KF Tirana",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 3,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371108,
-              "fechaHora": "28/02/2026 06:30",
-              "local": "KF Vora",
-              "visitante": "Dinamo City",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 2
-              }
-            },
-            {
-              "id": 14371107,
-              "fechaHora": "28/02/2026 09:30",
-              "local": "AF Elbasani",
-              "visitante": "KF Bylis",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371103,
-              "fechaHora": "28/02/2026 09:30",
-              "local": "FK Partizani",
-              "visitante": "KF Egnatia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371105,
-              "fechaHora": "28/02/2026 12:30",
-              "local": "KF Teuta Durrës",
-              "visitante": "Flamurtari FC",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 1
-              }
-            }
-          ]
-        },
-        {
-          "numero": 27,
-          "partidos": [
-            {
-              "id": 14371109,
-              "fechaHora": "08/03/2026 08:00",
-              "local": "KF Bylis",
-              "visitante": "KF Vora",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371110,
-              "fechaHora": "08/03/2026 08:00",
-              "local": "KF Tirana",
-              "visitante": "AF Elbasani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371111,
-              "fechaHora": "08/03/2026 11:00",
-              "local": "Flamurtari FC",
-              "visitante": "KF Vllaznia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371113,
-              "fechaHora": "09/03/2026 12:00",
-              "local": "Dinamo City",
-              "visitante": "FK Partizani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 2
-              }
-            },
-            {
-              "id": 14371112,
-              "fechaHora": "09/03/2026 12:00",
-              "local": "KF Egnatia",
-              "visitante": "KF Teuta Durrës",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 4,
-                "golesVisitante": 2
-              }
-            }
-          ]
-        },
-        {
-          "numero": 28,
-          "partidos": [
-            {
-              "id": 14371117,
-              "fechaHora": "13/03/2026 12:00",
-              "local": "KF Egnatia",
-              "visitante": "KF Vllaznia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371119,
-              "fechaHora": "14/03/2026 08:00",
-              "local": "KF Tirana",
-              "visitante": "KF Bylis",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371118,
-              "fechaHora": "14/03/2026 11:00",
-              "local": "Flamurtari FC",
-              "visitante": "AF Elbasani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 2
-              }
-            },
-            {
-              "id": 14371114,
-              "fechaHora": "15/03/2026 08:00",
-              "local": "KF Vora",
-              "visitante": "FK Partizani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 2
-              }
-            },
-            {
-              "id": 14371116,
-              "fechaHora": "15/03/2026 11:00",
-              "local": "Dinamo City",
-              "visitante": "KF Teuta Durrës",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 1
-              }
-            }
-          ]
-        },
-        {
-          "numero": 29,
-          "partidos": [
-            {
-              "id": 14371122,
-              "fechaHora": "20/03/2026 12:00",
-              "local": "AF Elbasani",
-              "visitante": "KF Egnatia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371121,
-              "fechaHora": "21/03/2026 08:00",
-              "local": "KF Bylis",
-              "visitante": "Flamurtari FC",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371120,
-              "fechaHora": "21/03/2026 11:00",
-              "local": "KF Teuta Durrës",
-              "visitante": "FK Partizani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 2,
-                "golesVisitante": 2
-              }
-            },
-            {
-              "id": 14371123,
-              "fechaHora": "21/03/2026 11:00",
-              "local": "KF Vllaznia",
-              "visitante": "Dinamo City",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371124,
-              "fechaHora": "22/03/2026 08:00",
-              "local": "KF Tirana",
-              "visitante": "KF Vora",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 3,
-                "golesVisitante": 0
-              }
-            }
-          ]
-        },
-        {
-          "numero": 30,
-          "partidos": [
-            {
-              "id": 14371130,
-              "fechaHora": "03/04/2026 11:00",
-              "local": "Flamurtari FC",
-              "visitante": "KF Tirana",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371126,
-              "fechaHora": "04/04/2026 09:00",
-              "local": "FK Partizani",
-              "visitante": "KF Vllaznia",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 0,
-                "golesVisitante": 2
-              }
-            },
-            {
-              "id": 14371129,
-              "fechaHora": "04/04/2026 09:00",
-              "local": "KF Egnatia",
-              "visitante": "KF Bylis",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 3,
-                "golesVisitante": 0
-              }
-            },
-            {
-              "id": 14371128,
-              "fechaHora": "04/04/2026 12:00",
-              "local": "Dinamo City",
-              "visitante": "AF Elbasani",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 4,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371125,
-              "fechaHora": "05/04/2026 07:00",
-              "local": "KF Vora",
-              "visitante": "KF Teuta Durrës",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 0
-              }
-            }
-          ]
-        },
-        {
-          "numero": 31,
-          "partidos": [
-            {
-              "id": 14371134,
-              "fechaHora": "03/04/2026 08:00",
-              "local": "KF Bylis",
-              "visitante": "Dinamo City",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 14371135,
-              "fechaHora": "11/04/2026 11:00",
-              "local": "Flamurtari FC",
-              "visitante": "KF Vora",
-              "estado": "Ended",
-              "goles": [],
-              "resultado": {
-                "golesLocal": 1,
-                "golesVisitante": 1
-              }
-            },
-            {
-              "id": 14371133,
-              "fechaHora": "12/04/2026 08:00",
-              "local": "KF Tirana",
-              "visitante": "KF Egnatia",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 14371132,
-              "fechaHora": "12/04/2026 11:00",
-              "local": "KF Vllaznia",
-              "visitante": "KF Teuta Durrës",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 15868106,
-              "fechaHora": "13/04/2026 08:00",
-              "local": "KF Bylis",
-              "visitante": "Dinamo City",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 14371131,
-              "fechaHora": "13/04/2026 11:00",
-              "local": "AF Elbasani",
-              "visitante": "FK Partizani",
-              "estado": "Scheduled",
-              "goles": []
-            }
-          ]
-        },
-        {
-          "numero": 32,
-          "partidos": [
-            {
-              "id": 14371139,
-              "fechaHora": "17/04/2026 11:00",
-              "local": "Dinamo City",
-              "visitante": "KF Tirana",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 14371136,
-              "fechaHora": "18/04/2026 08:00",
-              "local": "KF Vora",
-              "visitante": "KF Vllaznia",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 14371141,
-              "fechaHora": "18/04/2026 11:00",
-              "local": "KF Egnatia",
-              "visitante": "Flamurtari FC",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 14371137,
-              "fechaHora": "18/04/2026 11:00",
-              "local": "KF Teuta Durrës",
-              "visitante": "AF Elbasani",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 14371138,
-              "fechaHora": "19/04/2026 11:00",
-              "local": "FK Partizani",
-              "visitante": "KF Bylis",
-              "estado": "Scheduled",
-              "goles": []
-            }
-          ]
-        },
-        {
-          "numero": 33,
-          "partidos": [
-            {
-              "id": 14371142,
-              "fechaHora": "25/04/2026 11:00",
-              "local": "KF Tirana",
-              "visitante": "FK Partizani",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 14371143,
-              "fechaHora": "26/04/2026 08:00",
-              "local": "KF Bylis",
-              "visitante": "KF Teuta Durrës",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 14371146,
-              "fechaHora": "26/04/2026 11:00",
-              "local": "KF Egnatia",
-              "visitante": "KF Vora",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 14371144,
-              "fechaHora": "27/04/2026 11:00",
-              "local": "AF Elbasani",
-              "visitante": "KF Vllaznia",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 14371145,
-              "fechaHora": "27/04/2026 11:00",
-              "local": "Flamurtari FC",
-              "visitante": "Dinamo City",
-              "estado": "Scheduled",
-              "goles": []
-            }
-          ]
-        },
-        {
-          "numero": 34,
-          "partidos": [
-            {
-              "id": 14371151,
-              "fechaHora": "02/05/2026 08:00",
-              "local": "Dinamo City",
-              "visitante": "KF Egnatia",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 14371150,
-              "fechaHora": "02/05/2026 08:00",
-              "local": "FK Partizani",
-              "visitante": "Flamurtari FC",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 14371149,
-              "fechaHora": "02/05/2026 08:00",
-              "local": "KF Teuta Durrës",
-              "visitante": "KF Tirana",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 14371148,
-              "fechaHora": "02/05/2026 08:00",
-              "local": "KF Vllaznia",
-              "visitante": "KF Bylis",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 14371147,
-              "fechaHora": "02/05/2026 08:00",
-              "local": "KF Vora",
-              "visitante": "AF Elbasani",
-              "estado": "Scheduled",
-              "goles": []
-            }
-          ]
-        },
-        {
-          "numero": 35,
-          "partidos": [
-            {
-              "id": 14371157,
-              "fechaHora": "06/05/2026 08:00",
-              "local": "Dinamo City",
-              "visitante": "KF Vora",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 14371154,
-              "fechaHora": "06/05/2026 08:00",
-              "local": "Flamurtari FC",
-              "visitante": "KF Teuta Durrës",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 14371156,
-              "fechaHora": "06/05/2026 08:00",
-              "local": "KF Bylis",
-              "visitante": "AF Elbasani",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 14371153,
-              "fechaHora": "06/05/2026 08:00",
-              "local": "KF Egnatia",
-              "visitante": "FK Partizani",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 14371155,
-              "fechaHora": "06/05/2026 08:00",
-              "local": "KF Tirana",
-              "visitante": "KF Vllaznia",
-              "estado": "Scheduled",
-              "goles": []
-            }
-          ]
-        },
-        {
-          "numero": 36,
-          "partidos": [
-            {
-              "id": 14371159,
-              "fechaHora": "10/05/2026 08:00",
-              "local": "AF Elbasani",
-              "visitante": "KF Tirana",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 14371162,
-              "fechaHora": "10/05/2026 08:00",
-              "local": "FK Partizani",
-              "visitante": "Dinamo City",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 14371161,
-              "fechaHora": "10/05/2026 08:00",
-              "local": "KF Teuta Durrës",
-              "visitante": "KF Egnatia",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 14371160,
-              "fechaHora": "10/05/2026 08:00",
-              "local": "KF Vllaznia",
-              "visitante": "Flamurtari FC",
-              "estado": "Scheduled",
-              "goles": []
-            },
-            {
-              "id": 14371158,
-              "fechaHora": "10/05/2026 08:00",
-              "local": "KF Vora",
-              "visitante": "KF Bylis",
-              "estado": "Scheduled",
-              "goles": []
-            }
-          ]
-        }
-      ]
+            "nombre": "Kategoria Superiore 25/26",
+            "año": "25/26",
+            "jornadas": [{
+                    "numero": 1,
+                    "partidos": [{
+                            "fechaHora": "22/08/2025 12:00",
+                            "local": "Vllaznia",
+                            "visitante": "KF Egnatia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "23/08/2025 09:00",
+                            "local": "KF Bylis",
+                            "visitante": "KF Tirana",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "23/08/2025 12:00",
+                            "local": "AF Elbasani",
+                            "visitante": "Flamurtari FC",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "24/08/2025 12:00",
+                            "local": "Partizani",
+                            "visitante": "Vora",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "30/08/2025 08:00",
+                            "local": "Flamurtari FC",
+                            "visitante": "KF Bylis",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 3,
+                                "golesVisitante": 3
+                            }
+                        }, {
+                            "fechaHora": "30/08/2025 12:00",
+                            "local": "KF Egnatia",
+                            "visitante": "AF Elbasani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "30/08/2025 12:00",
+                            "local": "Partizani",
+                            "visitante": "Teuta Durres",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "31/08/2025 09:00",
+                            "local": "Vora",
+                            "visitante": "KF Tirana",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 3,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "31/08/2025 12:00",
+                            "local": "FC Dinamo City",
+                            "visitante": "Vllaznia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 3,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "13/09/2025 08:00",
+                            "local": "KF Bylis",
+                            "visitante": "KF Egnatia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "13/09/2025 08:00",
+                            "local": "KF Tirana",
+                            "visitante": "Flamurtari FC",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "13/09/2025 11:00",
+                            "local": "Vllaznia",
+                            "visitante": "Partizani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 4,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "14/09/2025 11:00",
+                            "local": "AF Elbasani",
+                            "visitante": "FC Dinamo City",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "14/09/2025 11:00",
+                            "local": "Teuta Durres",
+                            "visitante": "Vora",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "17/09/2025 07:00",
+                            "local": "Teuta Durres",
+                            "visitante": "FC Dinamo City",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "20/09/2025 11:00",
+                            "local": "KF Egnatia",
+                            "visitante": "KF Tirana",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "20/09/2025 11:00",
+                            "local": "Partizani",
+                            "visitante": "AF Elbasani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "21/09/2025 08:00",
+                            "local": "FC Dinamo City",
+                            "visitante": "KF Bylis",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "21/09/2025 08:00",
+                            "local": "Vora",
+                            "visitante": "Flamurtari FC",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "21/09/2025 11:00",
+                            "local": "Teuta Durres",
+                            "visitante": "Vllaznia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "27/09/2025 08:00",
+                            "local": "KF Bylis",
+                            "visitante": "Partizani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 3,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "27/09/2025 08:00",
+                            "local": "KF Tirana",
+                            "visitante": "FC Dinamo City",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "27/09/2025 11:00",
+                            "local": "AF Elbasani",
+                            "visitante": "Teuta Durres",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "28/09/2025 11:00",
+                            "local": "Flamurtari FC",
+                            "visitante": "KF Egnatia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "28/09/2025 11:00",
+                            "local": "Vllaznia",
+                            "visitante": "Vora",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "03/10/2025 11:00",
+                            "local": "Partizani",
+                            "visitante": "KF Tirana",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 3
+                            }
+                        }, {
+                            "fechaHora": "04/10/2025 07:30",
+                            "local": "FC Dinamo City",
+                            "visitante": "Flamurtari FC",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "04/10/2025 11:00",
+                            "local": "Vllaznia",
+                            "visitante": "AF Elbasani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "05/10/2025 06:00",
+                            "local": "Vora",
+                            "visitante": "KF Egnatia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "05/10/2025 09:00",
+                            "local": "Teuta Durres",
+                            "visitante": "KF Bylis",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "18/10/2025 06:00",
+                            "local": "KF Bylis",
+                            "visitante": "Vllaznia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "18/10/2025 09:00",
+                            "local": "KF Egnatia",
+                            "visitante": "FC Dinamo City",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "18/10/2025 09:00",
+                            "local": "KF Tirana",
+                            "visitante": "Teuta Durres",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "19/10/2025 09:00",
+                            "local": "AF Elbasani",
+                            "visitante": "Vora",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "19/10/2025 09:00",
+                            "local": "Flamurtari FC",
+                            "visitante": "Partizani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "24/10/2025 06:00",
+                            "local": "Vora",
+                            "visitante": "FC Dinamo City",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "24/10/2025 09:00",
+                            "local": "AF Elbasani",
+                            "visitante": "KF Bylis",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "24/10/2025 09:00",
+                            "local": "Vllaznia",
+                            "visitante": "KF Tirana",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 3,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "25/10/2025 09:00",
+                            "local": "Partizani",
+                            "visitante": "KF Egnatia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "25/10/2025 09:00",
+                            "local": "Teuta Durres",
+                            "visitante": "Flamurtari FC",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 3,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "28/10/2025 07:00",
+                            "local": "KF Bylis",
+                            "visitante": "Vora",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "28/10/2025 10:00",
+                            "local": "KF Egnatia",
+                            "visitante": "Teuta Durres",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "29/10/2025 10:00",
+                            "local": "Flamurtari FC",
+                            "visitante": "Vllaznia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "29/10/2025 12:30",
+                            "local": "FC Dinamo City",
+                            "visitante": "Partizani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "29/10/2025 12:30",
+                            "local": "KF Tirana",
+                            "visitante": "AF Elbasani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 4
+                            }
+                        }, {
+                            "fechaHora": "03/11/2025 07:00",
+                            "local": "KF Tirana",
+                            "visitante": "KF Bylis",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "03/11/2025 10:00",
+                            "local": "FC Dinamo City",
+                            "visitante": "Teuta Durres",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "03/11/2025 10:00",
+                            "local": "Flamurtari FC",
+                            "visitante": "AF Elbasani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "04/11/2025 09:00",
+                            "local": "KF Egnatia",
+                            "visitante": "Vllaznia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "04/11/2025 09:00",
+                            "local": "Vora",
+                            "visitante": "Partizani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "07/11/2025 10:00",
+                            "local": "KF Bylis",
+                            "visitante": "Flamurtari FC",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "08/11/2025 07:00",
+                            "local": "KF Tirana",
+                            "visitante": "Vora",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "08/11/2025 10:00",
+                            "local": "Vllaznia",
+                            "visitante": "FC Dinamo City",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "09/11/2025 10:00",
+                            "local": "AF Elbasani",
+                            "visitante": "KF Egnatia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "09/11/2025 10:00",
+                            "local": "Teuta Durres",
+                            "visitante": "Partizani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 3
+                            }
+                        }, {
+                            "fechaHora": "22/11/2025 09:00",
+                            "local": "KF Egnatia",
+                            "visitante": "KF Bylis",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 5,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "22/11/2025 09:00",
+                            "local": "Vora",
+                            "visitante": "Teuta Durres",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "22/11/2025 12:00",
+                            "local": "FC Dinamo City",
+                            "visitante": "AF Elbasani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "23/11/2025 09:30",
+                            "local": "Flamurtari FC",
+                            "visitante": "KF Tirana",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "23/11/2025 09:30",
+                            "local": "Partizani",
+                            "visitante": "Vllaznia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "28/11/2025 11:00",
+                            "local": "AF Elbasani",
+                            "visitante": "Partizani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "28/11/2025 11:00",
+                            "local": "Vllaznia",
+                            "visitante": "Teuta Durres",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "29/11/2025 06:30",
+                            "local": "KF Bylis",
+                            "visitante": "FC Dinamo City",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "29/11/2025 06:30",
+                            "local": "KF Tirana",
+                            "visitante": "KF Egnatia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "29/11/2025 09:30",
+                            "local": "Flamurtari FC",
+                            "visitante": "Vora",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "03/12/2025 09:30",
+                            "local": "Partizani",
+                            "visitante": "KF Bylis",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "03/12/2025 09:30",
+                            "local": "Teuta Durres",
+                            "visitante": "AF Elbasani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "03/12/2025 12:30",
+                            "local": "FC Dinamo City",
+                            "visitante": "KF Tirana",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 6,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "04/12/2025 09:30",
+                            "local": "KF Egnatia",
+                            "visitante": "Flamurtari FC",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "04/12/2025 09:30",
+                            "local": "Vora",
+                            "visitante": "Vllaznia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "07/12/2025 06:30",
+                            "local": "KF Bylis",
+                            "visitante": "Teuta Durres",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "07/12/2025 11:00",
+                            "local": "KF Tirana",
+                            "visitante": "Partizani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "08/12/2025 09:00",
+                            "local": "KF Egnatia",
+                            "visitante": "Vora",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "08/12/2025 12:00",
+                            "local": "AF Elbasani",
+                            "visitante": "Vllaznia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "08/12/2025 12:00",
+                            "local": "Flamurtari FC",
+                            "visitante": "FC Dinamo City",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 3
+                            }
+                        }, {
+                            "fechaHora": "13/12/2025 09:30",
+                            "local": "Partizani",
+                            "visitante": "Flamurtari FC",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "13/12/2025 09:30",
+                            "local": "Vora",
+                            "visitante": "AF Elbasani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "13/12/2025 12:30",
+                            "local": "Teuta Durres",
+                            "visitante": "KF Tirana",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "14/12/2025 09:30",
+                            "local": "Vllaznia",
+                            "visitante": "KF Bylis",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "14/12/2025 12:00",
+                            "local": "FC Dinamo City",
+                            "visitante": "KF Egnatia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "19/12/2025 09:30",
+                            "local": "FC Dinamo City",
+                            "visitante": "Vora",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "19/12/2025 09:30",
+                            "local": "KF Egnatia",
+                            "visitante": "Partizani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "19/12/2025 12:30",
+                            "local": "Flamurtari FC",
+                            "visitante": "Teuta Durres",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "20/12/2025 06:30",
+                            "local": "KF Bylis",
+                            "visitante": "AF Elbasani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 3,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "20/12/2025 06:30",
+                            "local": "KF Tirana",
+                            "visitante": "Vllaznia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "23/12/2025 11:00",
+                            "local": "Partizani",
+                            "visitante": "FC Dinamo City",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 3
+                            }
+                        }, {
+                            "fechaHora": "23/12/2025 11:00",
+                            "local": "Teuta Durres",
+                            "visitante": "KF Egnatia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "24/12/2025 06:30",
+                            "local": "Vora",
+                            "visitante": "KF Bylis",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 4,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "24/12/2025 09:30",
+                            "local": "AF Elbasani",
+                            "visitante": "KF Tirana",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "24/12/2025 09:30",
+                            "local": "Vllaznia",
+                            "visitante": "Flamurtari FC",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 3,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "14/01/2026 06:30",
+                            "local": "KF Bylis",
+                            "visitante": "KF Tirana",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "14/01/2026 10:00",
+                            "local": "AF Elbasani",
+                            "visitante": "Flamurtari FC",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "14/01/2026 10:00",
+                            "local": "Vllaznia",
+                            "visitante": "KF Egnatia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "15/01/2026 10:00",
+                            "local": "Teuta Durres",
+                            "visitante": "FC Dinamo City",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "18/01/2026 10:00",
+                            "local": "Flamurtari FC",
+                            "visitante": "KF Bylis",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 3,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "18/01/2026 10:00",
+                            "local": "KF Egnatia",
+                            "visitante": "AF Elbasani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "19/01/2026 06:30",
+                            "local": "Vora",
+                            "visitante": "KF Tirana",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "19/01/2026 10:00",
+                            "local": "Partizani",
+                            "visitante": "Teuta Durres",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "19/01/2026 12:30",
+                            "local": "FC Dinamo City",
+                            "visitante": "Vllaznia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "24/01/2026 06:30",
+                            "local": "KF Bylis",
+                            "visitante": "KF Egnatia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "24/01/2026 09:30",
+                            "local": "Vllaznia",
+                            "visitante": "Partizani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "25/01/2026 06:30",
+                            "local": "KF Tirana",
+                            "visitante": "Flamurtari FC",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "25/01/2026 06:30",
+                            "local": "Teuta Durres",
+                            "visitante": "Vora",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "25/01/2026 09:30",
+                            "local": "AF Elbasani",
+                            "visitante": "FC Dinamo City",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "31/01/2026 06:30",
+                            "local": "Vora",
+                            "visitante": "Flamurtari FC",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "31/01/2026 09:30",
+                            "local": "Partizani",
+                            "visitante": "AF Elbasani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "31/01/2026 12:00",
+                            "local": "FC Dinamo City",
+                            "visitante": "KF Bylis",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "01/02/2026 09:30",
+                            "local": "KF Egnatia",
+                            "visitante": "KF Tirana",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "01/02/2026 09:30",
+                            "local": "Teuta Durres",
+                            "visitante": "Vllaznia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "06/02/2026 06:30",
+                            "local": "KF Bylis",
+                            "visitante": "Partizani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "06/02/2026 06:30",
+                            "local": "Vllaznia",
+                            "visitante": "Vora",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "06/02/2026 09:30",
+                            "local": "AF Elbasani",
+                            "visitante": "Teuta Durres",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "06/02/2026 12:00",
+                            "local": "Flamurtari FC",
+                            "visitante": "KF Egnatia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "07/02/2026 06:30",
+                            "local": "KF Tirana",
+                            "visitante": "FC Dinamo City",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "14/02/2026 06:30",
+                            "local": "Vora",
+                            "visitante": "KF Egnatia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "14/02/2026 09:30",
+                            "local": "Teuta Durres",
+                            "visitante": "KF Bylis",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "15/02/2026 09:30",
+                            "local": "FC Dinamo City",
+                            "visitante": "Flamurtari FC",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "15/02/2026 09:30",
+                            "local": "Partizani",
+                            "visitante": "KF Tirana",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "15/02/2026 12:30",
+                            "local": "Vllaznia",
+                            "visitante": "AF Elbasani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "20/02/2026 12:00",
+                            "local": "KF Egnatia",
+                            "visitante": "FC Dinamo City",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "21/02/2026 06:30",
+                            "local": "AF Elbasani",
+                            "visitante": "Vora",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "21/02/2026 06:30",
+                            "local": "KF Bylis",
+                            "visitante": "Vllaznia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "22/02/2026 06:30",
+                            "local": "KF Tirana",
+                            "visitante": "Teuta Durres",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "22/02/2026 09:30",
+                            "local": "Flamurtari FC",
+                            "visitante": "Partizani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "27/02/2026 12:00",
+                            "local": "Vllaznia",
+                            "visitante": "KF Tirana",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 3,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "28/02/2026 06:30",
+                            "local": "Vora",
+                            "visitante": "FC Dinamo City",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "28/02/2026 09:30",
+                            "local": "AF Elbasani",
+                            "visitante": "KF Bylis",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "28/02/2026 09:30",
+                            "local": "Partizani",
+                            "visitante": "KF Egnatia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "28/02/2026 12:30",
+                            "local": "Teuta Durres",
+                            "visitante": "Flamurtari FC",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "08/03/2026 08:00",
+                            "local": "KF Bylis",
+                            "visitante": "Vora",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "08/03/2026 08:00",
+                            "local": "KF Tirana",
+                            "visitante": "AF Elbasani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "08/03/2026 11:00",
+                            "local": "Flamurtari FC",
+                            "visitante": "Vllaznia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "09/03/2026 12:00",
+                            "local": "FC Dinamo City",
+                            "visitante": "Partizani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "09/03/2026 12:00",
+                            "local": "KF Egnatia",
+                            "visitante": "Teuta Durres",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 4,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "13/03/2026 12:00",
+                            "local": "KF Egnatia",
+                            "visitante": "Vllaznia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "14/03/2026 08:00",
+                            "local": "KF Tirana",
+                            "visitante": "KF Bylis",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "14/03/2026 11:00",
+                            "local": "Flamurtari FC",
+                            "visitante": "AF Elbasani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "15/03/2026 08:00",
+                            "local": "Vora",
+                            "visitante": "Partizani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "15/03/2026 11:00",
+                            "local": "FC Dinamo City",
+                            "visitante": "Teuta Durres",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "20/03/2026 12:00",
+                            "local": "AF Elbasani",
+                            "visitante": "KF Egnatia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "21/03/2026 08:00",
+                            "local": "KF Bylis",
+                            "visitante": "Flamurtari FC",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "21/03/2026 11:00",
+                            "local": "Teuta Durres",
+                            "visitante": "Partizani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "21/03/2026 11:00",
+                            "local": "Vllaznia",
+                            "visitante": "FC Dinamo City",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "22/03/2026 08:00",
+                            "local": "KF Tirana",
+                            "visitante": "Vora",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 3,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "03/04/2026 11:00",
+                            "local": "Flamurtari FC",
+                            "visitante": "KF Tirana",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "04/04/2026 09:00",
+                            "local": "KF Egnatia",
+                            "visitante": "KF Bylis",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 3,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "04/04/2026 09:00",
+                            "local": "Partizani",
+                            "visitante": "Vllaznia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "04/04/2026 12:00",
+                            "local": "FC Dinamo City",
+                            "visitante": "AF Elbasani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 4,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "05/04/2026 07:00",
+                            "local": "Vora",
+                            "visitante": "Teuta Durres",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "11/04/2026 11:00",
+                            "local": "Flamurtari FC",
+                            "visitante": "Vora",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "12/04/2026 08:00",
+                            "local": "KF Tirana",
+                            "visitante": "KF Egnatia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 3,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "12/04/2026 11:00",
+                            "local": "Vllaznia",
+                            "visitante": "Teuta Durres",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "13/04/2026 08:00",
+                            "local": "KF Bylis",
+                            "visitante": "FC Dinamo City",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "13/04/2026 11:00",
+                            "local": "AF Elbasani",
+                            "visitante": "Partizani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 3,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "18/04/2026 08:00",
+                            "local": "KF Egnatia",
+                            "visitante": "Flamurtari FC",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "18/04/2026 08:00",
+                            "local": "Vora",
+                            "visitante": "Vllaznia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "18/04/2026 11:00",
+                            "local": "Teuta Durres",
+                            "visitante": "AF Elbasani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "18/04/2026 11:15",
+                            "local": "FC Dinamo City",
+                            "visitante": "KF Tirana",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "19/04/2026 11:00",
+                            "local": "Partizani",
+                            "visitante": "KF Bylis",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "25/04/2026 11:00",
+                            "local": "KF Tirana",
+                            "visitante": "Partizani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "26/04/2026 08:00",
+                            "local": "KF Bylis",
+                            "visitante": "Teuta Durres",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "26/04/2026 11:00",
+                            "local": "KF Egnatia",
+                            "visitante": "Vora",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "27/04/2026 11:00",
+                            "local": "AF Elbasani",
+                            "visitante": "Vllaznia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 3,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "27/04/2026 11:00",
+                            "local": "Flamurtari FC",
+                            "visitante": "FC Dinamo City",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 3,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "02/05/2026 08:00",
+                            "local": "FC Dinamo City",
+                            "visitante": "KF Egnatia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "02/05/2026 08:00",
+                            "local": "Partizani",
+                            "visitante": "Flamurtari FC",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 4
+                            }
+                        }, {
+                            "fechaHora": "02/05/2026 08:00",
+                            "local": "Teuta Durres",
+                            "visitante": "KF Tirana",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "02/05/2026 08:00",
+                            "local": "Vllaznia",
+                            "visitante": "KF Bylis",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 0,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "02/05/2026 08:00",
+                            "local": "Vora",
+                            "visitante": "AF Elbasani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 4,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "06/05/2026 08:00",
+                            "local": "FC Dinamo City",
+                            "visitante": "Vora",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "06/05/2026 08:00",
+                            "local": "Flamurtari FC",
+                            "visitante": "Teuta Durres",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "06/05/2026 08:00",
+                            "local": "KF Bylis",
+                            "visitante": "AF Elbasani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "06/05/2026 08:00",
+                            "local": "KF Egnatia",
+                            "visitante": "Partizani",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "06/05/2026 08:00",
+                            "local": "KF Tirana",
+                            "visitante": "Vllaznia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "10/05/2026 08:00",
+                            "local": "AF Elbasani",
+                            "visitante": "KF Tirana",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 1,
+                                "golesVisitante": 3
+                            }
+                        }, {
+                            "fechaHora": "10/05/2026 08:00",
+                            "local": "Partizani",
+                            "visitante": "FC Dinamo City",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 1
+                            }
+                        }, {
+                            "fechaHora": "10/05/2026 08:00",
+                            "local": "Teuta Durres",
+                            "visitante": "KF Egnatia",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 3,
+                                "golesVisitante": 2
+                            }
+                        }, {
+                            "fechaHora": "10/05/2026 08:00",
+                            "local": "Vllaznia",
+                            "visitante": "Flamurtari FC",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 2,
+                                "golesVisitante": 0
+                            }
+                        }, {
+                            "fechaHora": "10/05/2026 08:00",
+                            "local": "Vora",
+                            "visitante": "KF Bylis",
+                            "estado": "Ended",
+                            "resultado": {
+                                "golesLocal": 5,
+                                "golesVisitante": 2
+                            }
+                        }
+                    ]
+                }
+            ]
     }
   ]
 }
+
+
